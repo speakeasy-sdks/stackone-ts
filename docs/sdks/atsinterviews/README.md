@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.get({
-  fields: "maxime",
-  id: "db1a8422-bb67-49d2-b227-15bf0cbb1e31",
-  page: "nobis",
-  pageSize: "quos",
+  fields: "deleniti",
+  id: "9ebf737a-e420-43ce-9e6a-95d8a0d446ce",
+  page: "qui",
+  pageSize: "dolorum",
   raw: false,
-  syncToken: "tempore",
-  updatedAfter: "cupiditate",
-  xAccountId: "aperiam",
+  syncToken: "a",
+  updatedAfter: "esse",
+  xAccountId: "harum",
 }).then((res: AtsInterviewsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,13 +69,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.list({
-  fields: "delectus",
-  page: "dolorem",
-  pageSize: "dolore",
+  fields: "iusto",
+  page: "ipsum",
+  pageSize: "quisquam",
   raw: false,
-  syncToken: "labore",
-  updatedAfter: "adipisci",
-  xAccountId: "dolorum",
+  syncToken: "tenetur",
+  updatedAfter: "amet",
+  xAccountId: "tempore",
 }).then((res: AtsInterviewsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

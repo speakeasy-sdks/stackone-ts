@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.get({
-  fields: "architecto",
-  id: "108e0adc-f4b9-4218-b9fc-e953f73ef7fb",
-  page: "quod",
-  pageSize: "odio",
+  fields: "accusamus",
+  id: "453f870b-326b-45a7-b429-cdb1a8422bb6",
+  page: "quam",
+  pageSize: "molestias",
   raw: false,
-  syncToken: "similique",
-  updatedAfter: "facilis",
-  xAccountId: "vero",
+  syncToken: "temporibus",
+  updatedAfter: "qui",
+  xAccountId: "neque",
 }).then((res: AtsJobsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,13 +69,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.list({
-  fields: "ducimus",
-  page: "dolore",
-  pageSize: "quibusdam",
+  fields: "fugit",
+  page: "magni",
+  pageSize: "odio",
   raw: false,
-  syncToken: "illum",
-  updatedAfter: "sequi",
-  xAccountId: "natus",
+  syncToken: "sunt",
+  updatedAfter: "ullam",
+  xAccountId: "nam",
 }).then((res: AtsJobsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -20,13 +20,14 @@ export class ATSCandidates {
      * Post Candidate (early access)
      */
     async create(
-        req: operations.AtsCandidatePostRequest,
+        atsCreateCandidateRequestDto: shared.AtsCreateCandidateRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.AtsCandidatePostResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.AtsCandidatePostRequest(req);
-        }
-
+        const req = new operations.AtsCandidatePostRequest({
+            atsCreateCandidateRequestDto: atsCreateCandidateRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -256,13 +257,16 @@ export class ATSCandidates {
      * Patch Candidate (early access)
      */
     async update(
-        req: operations.AtsCandidatePatchRequest,
+        atsUpdateCandidatesRequestDto: shared.AtsUpdateCandidatesRequestDto,
+        id: string,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.AtsCandidatePatchResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.AtsCandidatePatchRequest(req);
-        }
-
+        const req = new operations.AtsCandidatePatchRequest({
+            atsUpdateCandidatesRequestDto: atsUpdateCandidatesRequestDto,
+            id: id,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

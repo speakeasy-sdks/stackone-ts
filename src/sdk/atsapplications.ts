@@ -20,13 +20,14 @@ export class ATSApplications {
      * Post Application (early access)
      */
     async create(
-        req: operations.ApplicationPostRequest,
+        atsCreateApplicationRequestDto: shared.AtsCreateApplicationRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.ApplicationPostResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.ApplicationPostRequest(req);
-        }
-
+        const req = new operations.ApplicationPostRequest({
+            atsCreateApplicationRequestDto: atsCreateApplicationRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -410,13 +411,16 @@ export class ATSApplications {
      * Patch Application (early access)
      */
     async update(
-        req: operations.ApplicationPatchRequest,
+        atsUpdateApplicationRequestDto: shared.AtsUpdateApplicationRequestDto,
+        id: string,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.ApplicationPatchResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.ApplicationPatchRequest(req);
-        }
-
+        const req = new operations.ApplicationPatchRequest({
+            atsUpdateApplicationRequestDto: atsUpdateApplicationRequestDto,
+            id: id,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

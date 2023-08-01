@@ -4,6 +4,7 @@
 
 import * as utils from "../internal/utils";
 import * as operations from "./models/operations";
+import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
 import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
@@ -18,13 +19,14 @@ export class Proxy {
      * Proxy Request
      */
     async create(
-        req: operations.ProxyRequestPostRequest,
+        proxyRequestBody: shared.ProxyRequestBody,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.ProxyRequestPostResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.ProxyRequestPostRequest(req);
-        }
-
+        const req = new operations.ProxyRequestPostRequest({
+            proxyRequestBody: proxyRequestBody,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

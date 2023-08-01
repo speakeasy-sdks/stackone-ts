@@ -17,8 +17,12 @@ Post Application (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationPostResponse } from "StackOne/dist/sdk/models/operations";
-import { ApplicationStatusEnumValue } from "StackOne/dist/sdk/models/shared";
+import { ApplicationPostRequest, ApplicationPostResponse } from "StackOne/dist/sdk/models/operations";
+import {
+  ApplicationStatusEnum,
+  ApplicationStatusEnumValue,
+  AtsCreateApplicationRequestDto,
+} from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -26,20 +30,19 @@ const sdk = new StackOne({
     username: "",
   },
 });
-
-sdk.atsApplications.create({
-  atsCreateApplicationRequestDto: {
-    applicationStatus: {
-      sourceValue: "laborum",
-      value: ApplicationStatusEnumValue.Lead,
-    },
-    candidateId: "enim",
-    interviewStageId: "odit",
-    jobId: "quo",
-    locationId: "sequi",
+const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
+  applicationStatus: {
+    sourceValue: "laborum",
+    value: ApplicationStatusEnumValue.Lead,
   },
-  xAccountId: "tenetur",
-}).then((res: ApplicationPostResponse) => {
+  candidateId: "enim",
+  interviewStageId: "odit",
+  jobId: "quo",
+  locationId: "sequi",
+};
+const xAccountId: string = "tenetur";
+
+sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId).then((res: ApplicationPostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -48,10 +51,11 @@ sdk.atsApplications.create({
 
 ### Parameters
 
-| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
-| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `request`                                                                              | [operations.ApplicationPostRequest](../../models/operations/applicationpostrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
-| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `atsCreateApplicationRequestDto`                                                               | [shared.AtsCreateApplicationRequestDto](../../models/shared/atscreateapplicationrequestdto.md) | :heavy_check_mark:                                                                             | N/A                                                                                            |
+| `xAccountId`                                                                                   | *string*                                                                                       | :heavy_check_mark:                                                                             | The account identifier                                                                         |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
@@ -251,8 +255,12 @@ Patch Application (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationPatchResponse } from "StackOne/dist/sdk/models/operations";
-import { ApplicationStatusEnumValue } from "StackOne/dist/sdk/models/shared";
+import { ApplicationPatchRequest, ApplicationPatchResponse } from "StackOne/dist/sdk/models/operations";
+import {
+  ApplicationStatusEnum,
+  ApplicationStatusEnumValue,
+  AtsUpdateApplicationRequestDto,
+} from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -260,21 +268,20 @@ const sdk = new StackOne({
     username: "",
   },
 });
-
-sdk.atsApplications.update({
-  atsUpdateApplicationRequestDto: {
-    applicationStatus: {
-      sourceValue: "vel",
-      value: ApplicationStatusEnumValue.Lead,
-    },
-    candidateId: "omnis",
-    interviewStageId: "molestiae",
-    jobId: "perferendis",
-    locationId: "nihil",
+const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
+  applicationStatus: {
+    sourceValue: "vel",
+    value: ApplicationStatusEnumValue.Lead,
   },
-  id: "4ba4469b-6e21-4419-9989-0afa563e2516",
-  xAccountId: "doloribus",
-}).then((res: ApplicationPatchResponse) => {
+  candidateId: "omnis",
+  interviewStageId: "molestiae",
+  jobId: "perferendis",
+  locationId: "nihil",
+};
+const id: string = "magnam";
+const xAccountId: string = "distinctio";
+
+sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId).then((res: ApplicationPatchResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -283,10 +290,12 @@ sdk.atsApplications.update({
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.ApplicationPatchRequest](../../models/operations/applicationpatchrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `atsUpdateApplicationRequestDto`                                                               | [shared.AtsUpdateApplicationRequestDto](../../models/shared/atsupdateapplicationrequestdto.md) | :heavy_check_mark:                                                                             | N/A                                                                                            |
+| `id`                                                                                           | *string*                                                                                       | :heavy_check_mark:                                                                             | N/A                                                                                            |
+| `xAccountId`                                                                                   | *string*                                                                                       | :heavy_check_mark:                                                                             | The account identifier                                                                         |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response

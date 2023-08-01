@@ -20,13 +20,14 @@ export class Contacts {
      * Post Contact (early access)
      */
     async create(
-        req: operations.CrmContactPostRequest,
+        crmCreateContactRequestDto: shared.CrmCreateContactRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.CrmContactPostResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.CrmContactPostRequest(req);
-        }
-
+        const req = new operations.CrmContactPostRequest({
+            crmCreateContactRequestDto: crmCreateContactRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -256,13 +257,16 @@ export class Contacts {
      * Patch Contact (early access)
      */
     async update(
-        req: operations.CrmContactPatchRequest,
+        crmUpdateContactRequestDto: shared.CrmUpdateContactRequestDto,
+        id: string,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.CrmContactPatchResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.CrmContactPatchRequest(req);
-        }
-
+        const req = new operations.CrmContactPatchRequest({
+            crmUpdateContactRequestDto: crmUpdateContactRequestDto,
+            id: id,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

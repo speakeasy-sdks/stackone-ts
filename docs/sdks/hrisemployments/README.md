@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployments.get({
-  fields: "nulla",
-  id: "20e457e1-858b-46a8-9fbe-3a5aa8e4824d",
-  page: "voluptatem",
-  pageSize: "culpa",
+  fields: "totam",
+  id: "d67864db-b675-4fd5-a60b-375ed4f6fbee",
+  page: "dolore",
+  pageSize: "sunt",
   raw: false,
-  syncToken: "expedita",
-  updatedAfter: "magnam",
-  xAccountId: "consequatur",
+  syncToken: "asperiores",
+  updatedAfter: "adipisci",
+  xAccountId: "non",
 }).then((res: HrisEmploymentsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,13 +69,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployments.list({
-  fields: "esse",
-  page: "ipsam",
-  pageSize: "sit",
+  fields: "amet",
+  page: "beatae",
+  pageSize: "dignissimos",
   raw: false,
-  syncToken: "voluptatum",
-  updatedAfter: "quas",
-  xAccountId: "repudiandae",
+  syncToken: "a",
+  updatedAfter: "debitis",
+  xAccountId: "consectetur",
 }).then((res: HrisEmploymentsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

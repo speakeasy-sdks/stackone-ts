@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.get({
-  fields: "impedit",
-  id: "0f5d2cff-7c70-4a45-a26d-436813f16d9f",
-  page: "nostrum",
-  pageSize: "sapiente",
+  fields: "hic",
+  id: "0cbb1e31-b8b9-40f3-843a-1108e0adcf4b",
+  page: "cupiditate",
+  pageSize: "qui",
   raw: false,
-  syncToken: "quisquam",
-  updatedAfter: "saepe",
-  xAccountId: "ea",
+  syncToken: "quae",
+  updatedAfter: "laudantium",
+  xAccountId: "odio",
 }).then((res: AtsLocationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,13 +69,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.list({
-  fields: "impedit",
-  page: "corporis",
-  pageSize: "veniam",
+  fields: "occaecati",
+  page: "voluptatibus",
+  pageSize: "quisquam",
   raw: false,
-  syncToken: "aliquid",
-  updatedAfter: "inventore",
-  xAccountId: "magnam",
+  syncToken: "vero",
+  updatedAfter: "omnis",
+  xAccountId: "quis",
 }).then((res: AtsLocationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

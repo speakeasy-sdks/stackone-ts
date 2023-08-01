@@ -15,7 +15,8 @@ Post Candidate (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePostRequest, AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -23,42 +24,40 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
+  applicationIds: [
+    "labore",
+    "labore",
+    "suscipit",
+  ],
+  company: "Rohan - Keebler",
+  emails: [
+    {
+      type: "aspernatur",
+      value: "architecto",
+    },
+    {
+      type: "magnam",
+      value: "et",
+    },
+    {
+      type: "excepturi",
+      value: "ullam",
+    },
+    {
+      type: "provident",
+      value: "quos",
+    },
+  ],
+  firstName: "Kiley",
+  lastName: "Bartoletti",
+  name: "Abel O'Hara",
+  phone: "913.249.8285",
+  title: "Miss",
+};
+const xAccountId: string = "in";
 
-sdk.atsCandidates.create({
-  atsCreateCandidateRequestDto: {
-    applicationIds: [
-      "eius",
-      "maxime",
-      "deleniti",
-      "facilis",
-    ],
-    company: "Bradtke - Bradtke",
-    emails: [
-      {
-        type: "ullam",
-        value: "expedita",
-      },
-      {
-        type: "nihil",
-        value: "repellat",
-      },
-      {
-        type: "quibusdam",
-        value: "sed",
-      },
-      {
-        type: "saepe",
-        value: "pariatur",
-      },
-    ],
-    firstName: "Alia",
-    lastName: "Crooks",
-    name: "Miss Nick Cummerata",
-    phone: "(845) 340-0963 x44708",
-    title: "Mrs.",
-  },
-  xAccountId: "voluptatibus",
-}).then((res: AtsCandidatePostResponse) => {
+sdk.atsCandidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -67,10 +66,11 @@ sdk.atsCandidates.create({
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.AtsCandidatePostRequest](../../models/operations/atscandidatepostrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `atsCreateCandidateRequestDto`                                                             | [shared.AtsCreateCandidateRequestDto](../../models/shared/atscreatecandidaterequestdto.md) | :heavy_check_mark:                                                                         | N/A                                                                                        |
+| `xAccountId`                                                                               | *string*                                                                                   | :heavy_check_mark:                                                                         | The account identifier                                                                     |
+| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
 
 
 ### Response
@@ -96,14 +96,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsCandidates.get({
-  fields: "perferendis",
-  id: "d30c5fbb-2587-4053-a02c-73d5fe9b90c2",
-  page: "blanditiis",
-  pageSize: "error",
+  fields: "architecto",
+  id: "1e5b7fd2-ed02-4892-9cdd-c692601fb576",
+  page: "nam",
+  pageSize: "eaque",
   raw: false,
-  syncToken: "eaque",
-  updatedAfter: "occaecati",
-  xAccountId: "rerum",
+  syncToken: "pariatur",
+  updatedAfter: "nemo",
+  xAccountId: "voluptatibus",
 }).then((res: AtsCandidatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -142,13 +142,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsCandidates.list({
-  fields: "adipisci",
-  page: "asperiores",
-  pageSize: "earum",
+  fields: "perferendis",
+  page: "fugiat",
+  pageSize: "amet",
   raw: false,
-  syncToken: "modi",
-  updatedAfter: "iste",
-  xAccountId: "dolorum",
+  syncToken: "aut",
+  updatedAfter: "cumque",
+  xAccountId: "corporis",
 }).then((res: AtsCandidatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -177,7 +177,8 @@ Patch Candidate (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatePatchResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePatchRequest, AtsCandidatePatchResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsUpdateCandidatesRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -185,34 +186,34 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
+  applicationIds: [
+    "libero",
+    "nobis",
+    "dolores",
+    "quis",
+  ],
+  company: "Kuhn - Becker",
+  emails: [
+    {
+      type: "nesciunt",
+      value: "eos",
+    },
+    {
+      type: "perferendis",
+      value: "dolores",
+    },
+  ],
+  firstName: "Peggie",
+  lastName: "Kohler",
+  name: "Eula Hegmann",
+  phone: "(750) 815-6056 x2992",
+  title: "Miss",
+};
+const id: string = "dolorum";
+const xAccountId: string = "deleniti";
 
-sdk.atsCandidates.update({
-  atsUpdateCandidatesRequestDto: {
-    applicationIds: [
-      "pariatur",
-      "provident",
-      "nobis",
-    ],
-    company: "Wintheiser, Hahn and Luettgen",
-    emails: [
-      {
-        type: "dolorem",
-        value: "dolorem",
-      },
-      {
-        type: "dolor",
-        value: "qui",
-      },
-    ],
-    firstName: "Dagmar",
-    lastName: "Welch",
-    name: "Felipe Klein",
-    phone: "720.204.4386",
-    title: "Dr.",
-  },
-  id: "69280d1b-a77a-489e-bf73-7ae4203ce5e6",
-  xAccountId: "deserunt",
-}).then((res: AtsCandidatePatchResponse) => {
+sdk.atsCandidates.update(atsUpdateCandidatesRequestDto, id, xAccountId).then((res: AtsCandidatePatchResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -221,10 +222,12 @@ sdk.atsCandidates.update({
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.AtsCandidatePatchRequest](../../models/operations/atscandidatepatchrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `atsUpdateCandidatesRequestDto`                                                              | [shared.AtsUpdateCandidatesRequestDto](../../models/shared/atsupdatecandidatesrequestdto.md) | :heavy_check_mark:                                                                           | N/A                                                                                          |
+| `id`                                                                                         | *string*                                                                                     | :heavy_check_mark:                                                                           | N/A                                                                                          |
+| `xAccountId`                                                                                 | *string*                                                                                     | :heavy_check_mark:                                                                           | The account identifier                                                                       |
+| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
 
 
 ### Response

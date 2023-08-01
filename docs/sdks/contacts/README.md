@@ -15,7 +15,8 @@ Post Contact (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { CrmContactPostResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmContactPostRequest, CrmContactPostResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmCreateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -23,30 +24,35 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
+  accountIds: [
+    "inventore",
+    "nihil",
+  ],
+  companyName: "totam",
+  dealIds: [
+    "aliquam",
+    "odio",
+    "occaecati",
+    "commodi",
+  ],
+  emails: [
+    "dolores",
+    "deserunt",
+    "molestiae",
+    "accusantium",
+  ],
+  firstName: "Ottilie",
+  lastName: "Keeling",
+  phoneNumbers: [
+    "praesentium",
+    "consequuntur",
+    "deleniti",
+  ],
+};
+const xAccountId: string = "fugit";
 
-sdk.contacts.create({
-  crmCreateContactRequestDto: {
-    accountIds: [
-      "veritatis",
-      "consectetur",
-    ],
-    companyName: "adipisci",
-    dealIds: [
-      "temporibus",
-      "accusantium",
-      "rem",
-    ],
-    emails: [
-      "laudantium",
-    ],
-    firstName: "Hildegard",
-    lastName: "O'Conner",
-    phoneNumbers: [
-      "corrupti",
-    ],
-  },
-  xAccountId: "non",
-}).then((res: CrmContactPostResponse) => {
+sdk.contacts.create(crmCreateContactRequestDto, xAccountId).then((res: CrmContactPostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -55,10 +61,11 @@ sdk.contacts.create({
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [operations.CrmContactPostRequest](../../models/operations/crmcontactpostrequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `crmCreateContactRequestDto`                                                           | [shared.CrmCreateContactRequestDto](../../models/shared/crmcreatecontactrequestdto.md) | :heavy_check_mark:                                                                     | N/A                                                                                    |
+| `xAccountId`                                                                           | *string*                                                                               | :heavy_check_mark:                                                                     | The account identifier                                                                 |
+| `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
 
 
 ### Response
@@ -84,14 +91,14 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.get({
-  fields: "voluptatem",
-  id: "394c2607-1f93-4f5f-8642-dac7af515cc4",
-  page: "ab",
-  pageSize: "adipisci",
+  fields: "fuga",
+  id: "a482562f-222e-4981-bee1-7cbe61e6b7b9",
+  page: "minima",
+  pageSize: "distinctio",
   raw: false,
-  syncToken: "fuga",
-  updatedAfter: "id",
-  xAccountId: "suscipit",
+  syncToken: "eligendi",
+  updatedAfter: "sit",
+  xAccountId: "culpa",
 }).then((res: CrmContactsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -130,13 +137,13 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.list({
-  fields: "velit",
-  page: "culpa",
-  pageSize: "est",
+  fields: "tempore",
+  page: "adipisci",
+  pageSize: "cumque",
   raw: false,
-  syncToken: "recusandae",
-  updatedAfter: "totam",
-  xAccountId: "fugiat",
+  syncToken: "consequuntur",
+  updatedAfter: "consequatur",
+  xAccountId: "minus",
 }).then((res: ContactsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -165,7 +172,8 @@ Patch Contact (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { CrmContactPatchResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmContactPatchRequest, CrmContactPatchResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmUpdateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -173,33 +181,35 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {
+  accountIds: [
+    "sapiente",
+    "consectetur",
+  ],
+  companyName: "esse",
+  dealIds: [
+    "provident",
+    "a",
+    "nulla",
+  ],
+  emails: [
+    "esse",
+    "quasi",
+    "a",
+  ],
+  firstName: "Lilly",
+  lastName: "Mayer",
+  phoneNumbers: [
+    "possimus",
+    "quia",
+    "eveniet",
+    "asperiores",
+  ],
+};
+const id: string = "facere";
+const xAccountId: string = "veritatis";
 
-sdk.contacts.update({
-  crmUpdateContactRequestDto: {
-    accountIds: [
-      "ducimus",
-      "quos",
-    ],
-    companyName: "vel",
-    dealIds: [
-      "possimus",
-      "facilis",
-    ],
-    emails: [
-      "commodi",
-      "in",
-      "corporis",
-    ],
-    firstName: "Vivienne",
-    lastName: "Shields",
-    phoneNumbers: [
-      "recusandae",
-      "aliquid",
-    ],
-  },
-  id: "0b375ed4-f6fb-4ee4-9f33-317fe35b60eb",
-  xAccountId: "vitae",
-}).then((res: CrmContactPatchResponse) => {
+sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId).then((res: CrmContactPatchResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -210,7 +220,9 @@ sdk.contacts.update({
 
 | Parameter                                                                              | Type                                                                                   | Required                                                                               | Description                                                                            |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `request`                                                                              | [operations.CrmContactPatchRequest](../../models/operations/crmcontactpatchrequest.md) | :heavy_check_mark:                                                                     | The request object to use for the request.                                             |
+| `crmUpdateContactRequestDto`                                                           | [shared.CrmUpdateContactRequestDto](../../models/shared/crmupdatecontactrequestdto.md) | :heavy_check_mark:                                                                     | N/A                                                                                    |
+| `id`                                                                                   | *string*                                                                               | :heavy_check_mark:                                                                     | N/A                                                                                    |
+| `xAccountId`                                                                           | *string*                                                                               | :heavy_check_mark:                                                                     | The account identifier                                                                 |
 | `config`                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                           | :heavy_minus_sign:                                                                     | Available config options for making requests.                                          |
 
 

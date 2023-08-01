@@ -20,13 +20,14 @@ export class HRISEmployees {
      * Creates an employee
      */
     async create(
-        req: operations.EmployeePostRequest,
+        hrisCreateEmployeeRequestDto: shared.HrisCreateEmployeeRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.EmployeePostResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.EmployeePostRequest(req);
-        }
-
+        const req = new operations.EmployeePostRequest({
+            hrisCreateEmployeeRequestDto: hrisCreateEmployeeRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

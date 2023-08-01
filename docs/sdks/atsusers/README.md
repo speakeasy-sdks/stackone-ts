@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.get({
-  fields: "ea",
-  id: "c3e250fb-008c-442e-941a-ac366c8dd6b1",
-  page: "tempora",
-  pageSize: "numquam",
+  fields: "ipsum",
+  id: "f73ef7fb-c7ab-4d74-9d39-c0f5d2cff7c7",
+  page: "alias",
+  pageSize: "officia",
   raw: false,
-  syncToken: "explicabo",
-  updatedAfter: "provident",
-  xAccountId: "ipsa",
+  syncToken: "tempora",
+  updatedAfter: "ipsam",
+  xAccountId: "ea",
 }).then((res: AtsUsersGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,13 +69,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.list({
-  fields: "molestiae",
-  page: "magnam",
-  pageSize: "odio",
+  fields: "aspernatur",
+  page: "vel",
+  pageSize: "possimus",
   raw: false,
-  syncToken: "eius",
-  updatedAfter: "esse",
-  xAccountId: "esse",
+  syncToken: "magnam",
+  updatedAfter: "ratione",
+  xAccountId: "ex",
 }).then((res: AtsUsersListResponse) => {
   if (res.statusCode == 200) {
     // handle response

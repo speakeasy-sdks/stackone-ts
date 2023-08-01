@@ -13,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 typescript:
-  version: 1.0.0
+  version: 1.0.1
   author: stackone
   maxMethodParams: 4
   packageName: StackOne

@@ -20,13 +20,14 @@ export class MarketingTemplates {
      * Creates an email template
      */
     async createEmail(
-        req: operations.MarketingEmailTemplateCreateRequest,
+        marketingCreateTemplateRequestDto: shared.MarketingCreateTemplateRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.MarketingEmailTemplateCreateResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.MarketingEmailTemplateCreateRequest(req);
-        }
-
+        const req = new operations.MarketingEmailTemplateCreateRequest({
+            marketingCreateTemplateRequestDto: marketingCreateTemplateRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -113,13 +114,14 @@ export class MarketingTemplates {
      * Creates an omni-channel template
      */
     async createOmnichannel(
-        req: operations.MarketingOmniChannelTemplateCreateRequest,
+        marketingCreateTemplateRequestDto: shared.MarketingCreateTemplateRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.MarketingOmniChannelTemplateCreateResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.MarketingOmniChannelTemplateCreateRequest(req);
-        }
-
+        const req = new operations.MarketingOmniChannelTemplateCreateRequest({
+            marketingCreateTemplateRequestDto: marketingCreateTemplateRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -207,13 +209,14 @@ export class MarketingTemplates {
      * Creates an push template
      */
     async createPush(
-        req: operations.MarketingPushTemplateCreateRequest,
+        marketingCreateTemplateRequestDto: shared.MarketingCreateTemplateRequestDto,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.MarketingPushTemplateCreateResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.MarketingPushTemplateCreateRequest(req);
-        }
-
+        const req = new operations.MarketingPushTemplateCreateRequest({
+            marketingCreateTemplateRequestDto: marketingCreateTemplateRequestDto,
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -531,13 +534,12 @@ export class MarketingTemplates {
      * List templates
      */
     async list(
-        req: operations.MarketingTemplatesListRequest,
+        xAccountId: string,
         config?: AxiosRequestConfig
     ): Promise<operations.MarketingTemplatesListResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.MarketingTemplatesListRequest(req);
-        }
-
+        const req = new operations.MarketingTemplatesListRequest({
+            xAccountId: xAccountId,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults

@@ -14,8 +14,9 @@ Creates an employee
 
 ```typescript
 import { StackOne } from "StackOne";
-import { EmployeePostResponse } from "StackOne/dist/sdk/models/operations";
+import { EmployeePostRequest, EmployeePostResponse } from "StackOne/dist/sdk/models/operations";
 import {
+  HrisCreateEmployeeRequestDto,
   HrisCreateEmployeeRequestDtoEmploymentStatus,
   HrisCreateEmployeeRequestDtoEmploymentType,
   HrisCreateEmployeeRequestDtoEthnicity,
@@ -29,39 +30,38 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
+  avatar: "https://example.com/avatar.png",
+  avatarUrl: "https://example.com/avatar.png",
+  birthday: "2023-06-14T00:00:00Z",
+  companyName: "Example Corp",
+  dateOfBirth: "1990-01-01",
+  department: "Physics",
+  displayName: "Sir Issac Newton",
+  employmentStatus: HrisCreateEmployeeRequestDtoEmploymentStatus.UnmappedValue,
+  employmentType: HrisCreateEmployeeRequestDtoEmploymentType.FullTime,
+  ethnicity: HrisCreateEmployeeRequestDtoEthnicity.NativeHawaiianOrPacificIslander,
+  firstName: "Issac",
+  gender: HrisCreateEmployeeRequestDtoGender.Male,
+  hireDate: "2022-01-01",
+  id: "1687-3",
+  jobTitle: "Physicist",
+  lastName: "Newton",
+  managerId: "67890",
+  maritalStatus: HrisCreateEmployeeRequestDtoMaritalStatus.DomesticPartnership,
+  name: "Issac Newton",
+  personalEmail: "isaac.newton@example.com",
+  personalPhoneNumber: "+1234567890",
+  startDate: "2022-01-01",
+  tenure: "2",
+  terminationDate: "2023-06-14T00:00:00Z",
+  workAnniversary: "2022-06-14T00:00:00Z",
+  workEmail: "newton@example.com",
+  workPhoneNumber: "+1234567890",
+};
+const xAccountId: string = "eum";
 
-sdk.hrisEmployees.create({
-  hrisCreateEmployeeRequestDto: {
-    avatar: "https://example.com/avatar.png",
-    avatarUrl: "https://example.com/avatar.png",
-    birthday: "2023-06-14T00:00:00Z",
-    companyName: "Example Corp",
-    dateOfBirth: "1990-01-01",
-    department: "Physics",
-    displayName: "Sir Issac Newton",
-    employmentStatus: HrisCreateEmployeeRequestDtoEmploymentStatus.Leave,
-    employmentType: HrisCreateEmployeeRequestDtoEmploymentType.Intern,
-    ethnicity: HrisCreateEmployeeRequestDtoEthnicity.TwoOrMoreRaces,
-    firstName: "Issac",
-    gender: HrisCreateEmployeeRequestDtoGender.Female,
-    hireDate: "2022-01-01",
-    id: "1687-3",
-    jobTitle: "Physicist",
-    lastName: "Newton",
-    managerId: "67890",
-    maritalStatus: HrisCreateEmployeeRequestDtoMaritalStatus.Widowed,
-    name: "Issac Newton",
-    personalEmail: "isaac.newton@example.com",
-    personalPhoneNumber: "+1234567890",
-    startDate: "2022-01-01",
-    tenure: "2",
-    terminationDate: "2023-06-14T00:00:00Z",
-    workAnniversary: "2022-06-14T00:00:00Z",
-    workEmail: "newton@example.com",
-    workPhoneNumber: "+1234567890",
-  },
-  xAccountId: "commodi",
-}).then((res: EmployeePostResponse) => {
+sdk.hrisEmployees.create(hrisCreateEmployeeRequestDto, xAccountId).then((res: EmployeePostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -70,10 +70,11 @@ sdk.hrisEmployees.create({
 
 ### Parameters
 
-| Parameter                                                                        | Type                                                                             | Required                                                                         | Description                                                                      |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| `request`                                                                        | [operations.EmployeePostRequest](../../models/operations/employeepostrequest.md) | :heavy_check_mark:                                                               | The request object to use for the request.                                       |
-| `config`                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                     | :heavy_minus_sign:                                                               | Available config options for making requests.                                    |
+| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| `hrisCreateEmployeeRequestDto`                                                             | [shared.HrisCreateEmployeeRequestDto](../../models/shared/hriscreateemployeerequestdto.md) | :heavy_check_mark:                                                                         | N/A                                                                                        |
+| `xAccountId`                                                                               | *string*                                                                                   | :heavy_check_mark:                                                                         | The account identifier                                                                     |
+| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
 
 
 ### Response
@@ -99,15 +100,15 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployees.get({
-  expand: "quidem",
-  fields: "explicabo",
-  id: "6916fe1f-08f4-4294-a369-8f447f603e8b",
-  page: "quaerat",
-  pageSize: "incidunt",
+  expand: "mollitia",
+  fields: "ab",
+  id: "840394c2-6071-4f93-b5f0-642dac7af515",
+  page: "porro",
+  pageSize: "quod",
   raw: false,
-  syncToken: "ipsam",
-  updatedAfter: "debitis",
-  xAccountId: "rem",
+  syncToken: "labore",
+  updatedAfter: "ab",
+  xAccountId: "adipisci",
 }).then((res: HrisEmployeesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -146,14 +147,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployees.list({
-  expand: "sit",
-  fields: "nobis",
-  page: "error",
-  pageSize: "veniam",
+  expand: "fuga",
+  fields: "id",
+  page: "suscipit",
+  pageSize: "velit",
   raw: false,
-  syncToken: "minima",
-  updatedAfter: "recusandae",
-  xAccountId: "reiciendis",
+  syncToken: "culpa",
+  updatedAfter: "est",
+  xAccountId: "recusandae",
 }).then((res: HrisEmployeesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

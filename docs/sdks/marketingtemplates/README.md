@@ -21,7 +21,8 @@ Creates an email template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingEmailTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingEmailTemplateCreateRequest, MarketingEmailTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -29,20 +30,21 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
+  body: "<html><body>My template</body></html>",
+  name: "My template",
+  preheader: "My template preheader",
+  subject: "My template subject",
+  tags: [
+    "explicabo",
+    "asperiores",
+    "facilis",
+    "voluptate",
+  ],
+};
+const xAccountId: string = "expedita";
 
-sdk.marketingTemplates.createEmail({
-  marketingCreateTemplateRequestDto: {
-    body: "<html><body>My template</body></html>",
-    name: "My template",
-    preheader: "My template preheader",
-    subject: "My template subject",
-    tags: [
-      "voluptatem",
-      "quisquam",
-    ],
-  },
-  xAccountId: "repudiandae",
-}).then((res: MarketingEmailTemplateCreateResponse) => {
+sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingEmailTemplateCreateResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -51,10 +53,11 @@ sdk.marketingTemplates.createEmail({
 
 ### Parameters
 
-| Parameter                                                                                                        | Type                                                                                                             | Required                                                                                                         | Description                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                        | [operations.MarketingEmailTemplateCreateRequest](../../models/operations/marketingemailtemplatecreaterequest.md) | :heavy_check_mark:                                                                                               | The request object to use for the request.                                                                       |
-| `config`                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                     | :heavy_minus_sign:                                                                                               | Available config options for making requests.                                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
+| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
@@ -70,7 +73,11 @@ Creates an omni-channel template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingOmniChannelTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import {
+  MarketingOmniChannelTemplateCreateRequest,
+  MarketingOmniChannelTemplateCreateResponse,
+} from "StackOne/dist/sdk/models/operations";
+import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -78,19 +85,18 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
+  body: "<html><body>My template</body></html>",
+  name: "My template",
+  preheader: "My template preheader",
+  subject: "My template subject",
+  tags: [
+    "iste",
+  ],
+};
+const xAccountId: string = "dolore";
 
-sdk.marketingTemplates.createOmnichannel({
-  marketingCreateTemplateRequestDto: {
-    body: "<html><body>My template</body></html>",
-    name: "My template",
-    preheader: "My template preheader",
-    subject: "My template subject",
-    tags: [
-      "atque",
-    ],
-  },
-  xAccountId: "reprehenderit",
-}).then((res: MarketingOmniChannelTemplateCreateResponse) => {
+sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingOmniChannelTemplateCreateResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -99,10 +105,11 @@ sdk.marketingTemplates.createOmnichannel({
 
 ### Parameters
 
-| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                    | [operations.MarketingOmniChannelTemplateCreateRequest](../../models/operations/marketingomnichanneltemplatecreaterequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
-| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
+| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
@@ -118,7 +125,8 @@ Creates an push template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingPushTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingPushTemplateCreateRequest, MarketingPushTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -126,22 +134,20 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
+  body: "<html><body>My template</body></html>",
+  name: "My template",
+  preheader: "My template preheader",
+  subject: "My template subject",
+  tags: [
+    "sed",
+    "in",
+    "commodi",
+  ],
+};
+const xAccountId: string = "quidem";
 
-sdk.marketingTemplates.createPush({
-  marketingCreateTemplateRequestDto: {
-    body: "<html><body>My template</body></html>",
-    name: "My template",
-    preheader: "My template preheader",
-    subject: "My template subject",
-    tags: [
-      "totam",
-      "suscipit",
-      "quidem",
-      "maxime",
-    ],
-  },
-  xAccountId: "et",
-}).then((res: MarketingPushTemplateCreateResponse) => {
+sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingPushTemplateCreateResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -150,10 +156,11 @@ sdk.marketingTemplates.createPush({
 
 ### Parameters
 
-| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                      | [operations.MarketingPushTemplateCreateRequest](../../models/operations/marketingpushtemplatecreaterequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
-| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
+| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
@@ -179,14 +186,14 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.getEmail({
-  fields: "esse",
-  id: "3d689eee-9526-4f8d-986e-881ead4f0e10",
-  page: "beatae",
-  pageSize: "dolores",
+  fields: "explicabo",
+  id: "6916fe1f-08f4-4294-a369-8f447f603e8b",
+  page: "quaerat",
+  pageSize: "incidunt",
   raw: false,
-  syncToken: "enim",
-  updatedAfter: "laboriosam",
-  xAccountId: "velit",
+  syncToken: "ipsam",
+  updatedAfter: "debitis",
+  xAccountId: "rem",
 }).then((res: MarketingEmailTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -225,14 +232,14 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.getOmnichannel({
-  fields: "a",
-  id: "94e29e97-3e92-42a5-ba15-be3e060807e2",
-  page: "cum",
-  pageSize: "iure",
+  fields: "sit",
+  id: "ca55efd2-0e45-47e1-858b-6a89fbe3a5aa",
+  page: "corrupti",
+  pageSize: "accusamus",
   raw: false,
-  syncToken: "necessitatibus",
-  updatedAfter: "ratione",
-  xAccountId: "laborum",
+  syncToken: "tempora",
+  updatedAfter: "atque",
+  xAccountId: "fugit",
 }).then((res: MarketingOmniChannelTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -271,14 +278,14 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.getPush({
-  fields: "distinctio",
-  id: "8845f059-7a60-4ff2-a54a-31e94764a3e8",
-  page: "eum",
-  pageSize: "nemo",
+  fields: "ut",
+  id: "d0ab4075-088e-4518-a206-5e904f3b1194",
+  page: "quidem",
+  pageSize: "atque",
   raw: false,
-  syncToken: "recusandae",
-  updatedAfter: "esse",
-  xAccountId: "provident",
+  syncToken: "laborum",
+  updatedAfter: "nam",
+  xAccountId: "tenetur",
 }).then((res: MarketingPushTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -307,7 +314,7 @@ List templates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingTemplatesListRequest, MarketingTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
@@ -315,10 +322,9 @@ const sdk = new StackOne({
     username: "",
   },
 });
+const xAccountId: string = "laboriosam";
 
-sdk.marketingTemplates.list({
-  xAccountId: "quis",
-}).then((res: MarketingTemplatesListResponse) => {
+sdk.marketingTemplates.list(xAccountId).then((res: MarketingTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -327,10 +333,10 @@ sdk.marketingTemplates.list({
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.MarketingTemplatesListRequest](../../models/operations/marketingtemplateslistrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                    | Type                                                         | Required                                                     | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `xAccountId`                                                 | *string*                                                     | :heavy_check_mark:                                           | The account identifier                                       |
+| `config`                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config) | :heavy_minus_sign:                                           | Available config options for making requests.                |
 
 
 ### Response
@@ -356,13 +362,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listEmail({
-  fields: "eum",
-  page: "reiciendis",
-  pageSize: "provident",
+  fields: "alias",
+  page: "amet",
+  pageSize: "deserunt",
   raw: false,
-  syncToken: "aspernatur",
-  updatedAfter: "ullam",
-  xAccountId: "quasi",
+  syncToken: "voluptate",
+  updatedAfter: "unde",
+  xAccountId: "reiciendis",
 }).then((res: MarketingEmailTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -401,13 +407,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listOmnichannel({
-  fields: "animi",
-  page: "nostrum",
-  pageSize: "mollitia",
+  fields: "provident",
+  page: "repellendus",
+  pageSize: "delectus",
   raw: false,
-  syncToken: "provident",
-  updatedAfter: "possimus",
-  xAccountId: "animi",
+  syncToken: "voluptates",
+  updatedAfter: "perferendis",
+  xAccountId: "est",
 }).then((res: MarketingOmniChannelTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -446,13 +452,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listPush({
-  fields: "ex",
-  page: "aliquid",
-  pageSize: "accusantium",
+  fields: "quidem",
+  page: "reprehenderit",
+  pageSize: "facere",
   raw: false,
-  syncToken: "repellat",
-  updatedAfter: "doloribus",
-  xAccountId: "ullam",
+  syncToken: "fuga",
+  updatedAfter: "praesentium",
+  xAccountId: "mollitia",
 }).then((res: MarketingPushTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

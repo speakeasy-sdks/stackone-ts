@@ -20,13 +20,12 @@ export class Accounts {
      * Delete Account
      */
     async delete(
-        req: operations.AccountsDeleteRequest,
+        id: string,
         config?: AxiosRequestConfig
     ): Promise<operations.AccountsDeleteResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.AccountsDeleteRequest(req);
-        }
-
+        const req = new operations.AccountsDeleteRequest({
+            id: id,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -87,14 +86,10 @@ export class Accounts {
     /**
      * Get Account
      */
-    async get(
-        req: operations.AccountsGetRequest,
-        config?: AxiosRequestConfig
-    ): Promise<operations.AccountsGetResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.AccountsGetRequest(req);
-        }
-
+    async get(id: string, config?: AxiosRequestConfig): Promise<operations.AccountsGetResponse> {
+        const req = new operations.AccountsGetRequest({
+            id: id,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
@@ -156,13 +151,14 @@ export class Accounts {
      * List Accounts
      */
     async list(
-        req: operations.AccountsListRequest,
+        originOwnerId?: string,
+        provider?: string,
         config?: AxiosRequestConfig
     ): Promise<operations.AccountsListResponse> {
-        if (!(req instanceof utils.SpeakeasyBase)) {
-            req = new operations.AccountsListRequest(req);
-        }
-
+        const req = new operations.AccountsListRequest({
+            originOwnerId: originOwnerId,
+            provider: provider,
+        });
         const baseURL: string = utils.templateUrl(
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
