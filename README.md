@@ -6,6 +6,7 @@
    <a href="https://github.com/speakeasy-sdks/stackone-ts/actions"><img src="https://img.shields.io/github/actions/workflow/status/speakeasy-sdks/stackone-ts/speakeasy_sdk_generation.yml?style=for-the-badge" /></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" /></a>
 </div>
+
 <!-- Start SDK Installation -->
 ## SDK Installation
 
