@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/speakeasy-sdks/stackone-ts/assets/6267663/07369aef-cc40-4f35-a68b-e2f7d370dc3c" width="300">
+    <img src="https://github.com/speakeasy-sdks/stackone-ts/assets/6267663/6c1a7629-62dd-4ad9-88b0-a312a87fb3a0" width="300">
     <h1>Typescript SDK</h1>
    <p>Two-way Integrations, Effortlessly.</p>
    <a href="https://docs.stackone.com/docs"><img src="https://img.shields.io/static/v1?label=Docs&message=API Ref&color=5444e4&style=for-the-badge" /></a>
