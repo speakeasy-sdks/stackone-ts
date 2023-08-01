@@ -1,5 +1,11 @@
-# StackOne
-
+div align="center">
+    <img src="https://github.com/speakeasy-sdks/stackone-ts/assets/6267663/07369aef-cc40-4f35-a68b-e2f7d370dc3c" width="300">
+    <h1>Typescript SDK</h1>
+   <p>Two-way Integrations, Effortlessly.</p>
+   <a href="https://docs.stackone.com/docs"><img src="https://img.shields.io/static/v1?label=Docs&message=API Ref&color=5444e4&style=for-the-badge" /></a>
+   <a href="https://github.com/speakeasy-sdks/stackone-ts/actions"><img src="https://img.shields.io/github/actions/workflow/status/speakeasy-sdks/stackone-ts/speakeasy_sdk_generation.yml?style=for-the-badge" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" /></a>
+</div>
 <!-- Start SDK Installation -->
 ## SDK Installation
 
