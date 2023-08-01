@@ -15,5 +15,5 @@ generation:
 typescript:
   version: 1.0.0
   author: stackone
-  maxMethodParams: 0
+  maxMethodParams: 4
   packageName: StackOne
