@@ -1,0 +1,11 @@
+# AtsRejectedReasonsListResponse
+
+
+## Fields
+
+| Field                                                                              | Type                                                                               | Required                                                                           | Description                                                                        |
+| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `contentType`                                                                      | *string*                                                                           | :heavy_check_mark:                                                                 | N/A                                                                                |
+| `rejectedReasonsPaginated`                                                         | [shared.RejectedReasonsPaginated](../../models/shared/rejectedreasonspaginated.md) | :heavy_minus_sign:                                                                 | The list of rejected reasons was retrieved.                                        |
+| `statusCode`                                                                       | *number*                                                                           | :heavy_check_mark:                                                                 | N/A                                                                                |
+| `rawResponse`                                                                      | [AxiosResponse>](https://axios-http.com/docs/res_schema)                           | :heavy_minus_sign:                                                                 | N/A                                                                                |

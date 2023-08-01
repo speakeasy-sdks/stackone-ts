@@ -1,0 +1,12 @@
+# AtsCreateApplicationRequestDto
+
+
+## Fields
+
+| Field                                                                 | Type                                                                  | Required                                                              | Description                                                           |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| `applicationStatus`                                                   | [ApplicationStatusEnum](../../models/shared/applicationstatusenum.md) | :heavy_check_mark:                                                    | N/A                                                                   |
+| `candidateId`                                                         | *string*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
+| `interviewStageId`                                                    | *string*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
+| `jobId`                                                               | *string*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
+| `locationId`                                                          | *string*                                                              | :heavy_check_mark:                                                    | N/A                                                                   |
