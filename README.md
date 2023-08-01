@@ -1,4 +1,4 @@
-div align="center">
+<div align="center">
     <img src="https://github.com/speakeasy-sdks/stackone-ts/assets/6267663/07369aef-cc40-4f35-a68b-e2f7d370dc3c" width="300">
     <h1>Typescript SDK</h1>
    <p>Two-way Integrations, Effortlessly.</p>
