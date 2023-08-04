@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 84192b65941e6bf6bd725ef3816db65c
   docVersion: 1.0.0
-  speakeasyVersion: 1.68.1
-  generationVersion: 2.77.1
+  speakeasyVersion: 1.68.3
+  generationVersion: 2.81.1
 generation:
   comments:
     disableComments: false
@@ -13,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 typescript:
-  version: 1.1.0
+  version: 1.2.0
   author: stackone
   maxMethodParams: 4
   packageName: StackOne
