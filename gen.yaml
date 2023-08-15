@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: 84192b65941e6bf6bd725ef3816db65c
   docVersion: 1.0.0
-  speakeasyVersion: 1.69.1
-  generationVersion: 2.82.0
+  speakeasyVersion: 1.72.0
+  generationVersion: 2.84.1
 generation:
   comments:
     disableComments: false
@@ -17,10 +17,10 @@ features:
     core: 2.82.0
     flattening: 2.81.1
     globalSecurity: 2.81.1
-    globalServerURLs: 2.81.1
+    globalServerURLs: 2.82.0
     nameOverrides: 2.81.1
 typescript:
-  version: 1.3.0
+  version: 1.4.0
   author: stackone
   maxMethodParams: 4
   packageName: StackOne
