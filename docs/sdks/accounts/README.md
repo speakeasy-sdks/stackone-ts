@@ -18,8 +18,8 @@ import { AccountsDeleteRequest, AccountsDeleteResponse } from "StackOne/dist/sdk
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const id: string = "laudantium";
@@ -57,8 +57,8 @@ import { AccountsGetRequest, AccountsGetResponse } from "StackOne/dist/sdk/model
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const id: string = "dicta";
@@ -96,8 +96,8 @@ import { AccountsListRequest, AccountsListResponse } from "StackOne/dist/sdk/mod
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const originOwnerId: string = "dolor";

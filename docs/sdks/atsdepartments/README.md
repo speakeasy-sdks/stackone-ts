@@ -17,8 +17,8 @@ import { AtsDepartmentsGetResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -64,8 +64,8 @@ import { AtsDepartmentsListResponse } from "StackOne/dist/sdk/models/operations"
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 

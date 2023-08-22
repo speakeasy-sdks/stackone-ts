@@ -17,8 +17,8 @@ import { ConnectSessionsAuthenticateResponse } from "StackOne/dist/sdk/models/op
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -58,8 +58,8 @@ import { ConnectSessionCreateCategories } from "StackOne/dist/sdk/models/shared"
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 

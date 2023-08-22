@@ -26,8 +26,8 @@ import {
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
@@ -95,8 +95,8 @@ import { HrisEmployeesGetResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -143,8 +143,8 @@ import { HrisEmployeesListResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 

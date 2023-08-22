@@ -33,8 +33,8 @@ import { AtsInterviewStagesGetResponse } from "StackOne/dist/sdk/models/operatio
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 

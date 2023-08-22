@@ -26,8 +26,8 @@ import {
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
@@ -76,8 +76,8 @@ import { ApplicationsGetResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -123,8 +123,8 @@ import { ApplicationsOffersGetResponse } from "StackOne/dist/sdk/models/operatio
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -171,8 +171,8 @@ import { ApplicationsListResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -217,8 +217,8 @@ import { ApplicationsOffersListResponse } from "StackOne/dist/sdk/models/operati
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -269,8 +269,8 @@ import {
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {

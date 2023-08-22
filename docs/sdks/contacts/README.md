@@ -20,8 +20,8 @@ import { CrmCreateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
@@ -86,8 +86,8 @@ import { CrmContactsGetResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -133,8 +133,8 @@ import { ContactsListResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -180,8 +180,8 @@ import { CrmUpdateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {

@@ -26,8 +26,8 @@ import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shar
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
@@ -82,8 +82,8 @@ import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shar
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
@@ -132,8 +132,8 @@ import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shar
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
@@ -183,8 +183,8 @@ import { MarketingEmailTemplatesGetResponse } from "StackOne/dist/sdk/models/ope
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -230,8 +230,8 @@ import { MarketingOmniChannelTemplatesGetResponse } from "StackOne/dist/sdk/mode
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -277,8 +277,8 @@ import { MarketingPushTemplatesGetResponse } from "StackOne/dist/sdk/models/oper
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -324,8 +324,8 @@ import { MarketingTemplatesListRequest, MarketingTemplatesListResponse } from "S
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const xAccountId: string = "laboriosam";
@@ -363,8 +363,8 @@ import { MarketingEmailTemplatesListResponse } from "StackOne/dist/sdk/models/op
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -409,8 +409,8 @@ import { MarketingOmniChannelTemplatesListResponse } from "StackOne/dist/sdk/mod
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -455,8 +455,8 @@ import { MarketingPushTemplatesListResponse } from "StackOne/dist/sdk/models/ope
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 

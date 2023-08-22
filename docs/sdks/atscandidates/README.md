@@ -20,8 +20,8 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
@@ -91,8 +91,8 @@ import { AtsCandidatesGetResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -138,8 +138,8 @@ import { AtsCandidatesListResponse } from "StackOne/dist/sdk/models/operations";
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 
@@ -185,8 +185,8 @@ import { AtsUpdateCandidatesRequestDto, CandidateEmail } from "StackOne/dist/sdk
 
 const sdk = new StackOne({
   security: {
-    password: "",
-    username: "",
+    password: "BASE_64_ENCODED(API_KEY)",
+    username: "YOUR_USERNAME",
   },
 });
 const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
