@@ -5541,6 +5541,19 @@
          ]
       }
    ],
+   "x-speakeasy-retries": {
+      "strategy": "backoff",
+      "backoff": {
+         "initialInterval": 500,
+         "maxInterval": 60000,
+         "maxElapsedTime": 3600000,
+         "exponent": 1.5
+      },
+      "statusCodes": [
+         "5XX", "4XX"
+      ],
+      "retryConnectionErrors": true
+   },
    "x-speakeasy-name-override": [
       {"operationId":".*_list$",
        "methodNameOverride":"list"},
@@ -5557,7 +5570,8 @@
        "securitySchemes":{
           "basic":{
              "type":"http",
-             "scheme":"basic"
+             "scheme":"basic",
+             "x-speakeasy-example": "Basic BASE_64_ENCODED(API_KEY)"
           }
        },
        "schemas":{
