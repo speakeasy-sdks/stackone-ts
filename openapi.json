@@ -5571,7 +5571,7 @@
           "basic":{
              "type":"http",
              "scheme":"basic",
-             "x-speakeasy-example": "Basic BASE_64_ENCODED(API_KEY)"
+             "x-speakeasy-example": "YOUR_USERNAME;BASE_64_ENCODED(API_KEY)"
           }
        },
        "schemas":{
