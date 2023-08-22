@@ -184,6 +184,7 @@ src/sdk/models/shared/security.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
 docs/sdks/stackone/README.md
+docs/models/utils/retryconfig.md
 docs/sdks/atsinterviewstages/README.md
 docs/sdks/atsrejectedreasons/README.md
 docs/sdks/atsapplications/README.md

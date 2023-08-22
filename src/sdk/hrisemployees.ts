@@ -22,6 +22,7 @@ export class HRISEmployees {
     async create(
         hrisCreateEmployeeRequestDto: shared.HrisCreateEmployeeRequestDto,
         xAccountId: string,
+        retries?: utils.RetryConfig,
         config?: AxiosRequestConfig
     ): Promise<operations.EmployeePostResponse> {
         const req = new operations.EmployeePostRequest({
@@ -64,15 +65,25 @@ export class HRISEmployees {
             "user-agent"
         ] = `speakeasy-sdk/${this.sdkConfiguration.language} ${this.sdkConfiguration.sdkVersion} ${this.sdkConfiguration.genVersion} ${this.sdkConfiguration.openapiDocVersion}`;
 
-        const httpRes: AxiosResponse = await client.request({
-            validateStatus: () => true,
-            url: url,
-            method: "post",
-            headers: headers,
-            responseType: "arraybuffer",
-            data: reqBody,
-            ...config,
-        });
+        let retryConfig: any = retries;
+        if (!retryConfig) {
+            retryConfig = new utils.RetryConfig(
+                "backoff",
+                new utils.BackoffStrategy(500, 60000, 1.5, 3600000),
+                true
+            );
+        }
+        const httpRes: AxiosResponse = await utils.Retry(() => {
+            return client.request({
+                validateStatus: () => true,
+                url: url,
+                method: "post",
+                headers: headers,
+                responseType: "arraybuffer",
+                data: reqBody,
+                ...config,
+            });
+        }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
         const contentType: string = httpRes?.headers?.["content-type"] ?? "";
 
@@ -114,6 +125,7 @@ export class HRISEmployees {
      */
     async get(
         req: operations.HrisEmployeesGetRequest,
+        retries?: utils.RetryConfig,
         config?: AxiosRequestConfig
     ): Promise<operations.HrisEmployeesGetResponse> {
         if (!(req instanceof utils.SpeakeasyBase)) {
@@ -137,14 +149,24 @@ export class HRISEmployees {
             "user-agent"
         ] = `speakeasy-sdk/${this.sdkConfiguration.language} ${this.sdkConfiguration.sdkVersion} ${this.sdkConfiguration.genVersion} ${this.sdkConfiguration.openapiDocVersion}`;
 
-        const httpRes: AxiosResponse = await client.request({
-            validateStatus: () => true,
-            url: url + queryParams,
-            method: "get",
-            headers: headers,
-            responseType: "arraybuffer",
-            ...config,
-        });
+        let retryConfig: any = retries;
+        if (!retryConfig) {
+            retryConfig = new utils.RetryConfig(
+                "backoff",
+                new utils.BackoffStrategy(500, 60000, 1.5, 3600000),
+                true
+            );
+        }
+        const httpRes: AxiosResponse = await utils.Retry(() => {
+            return client.request({
+                validateStatus: () => true,
+                url: url + queryParams,
+                method: "get",
+                headers: headers,
+                responseType: "arraybuffer",
+                ...config,
+            });
+        }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
         const contentType: string = httpRes?.headers?.["content-type"] ?? "";
 
@@ -186,6 +208,7 @@ export class HRISEmployees {
      */
     async list(
         req: operations.HrisEmployeesListRequest,
+        retries?: utils.RetryConfig,
         config?: AxiosRequestConfig
     ): Promise<operations.HrisEmployeesListResponse> {
         if (!(req instanceof utils.SpeakeasyBase)) {
@@ -209,14 +232,24 @@ export class HRISEmployees {
             "user-agent"
         ] = `speakeasy-sdk/${this.sdkConfiguration.language} ${this.sdkConfiguration.sdkVersion} ${this.sdkConfiguration.genVersion} ${this.sdkConfiguration.openapiDocVersion}`;
 
-        const httpRes: AxiosResponse = await client.request({
-            validateStatus: () => true,
-            url: url + queryParams,
-            method: "get",
-            headers: headers,
-            responseType: "arraybuffer",
-            ...config,
-        });
+        let retryConfig: any = retries;
+        if (!retryConfig) {
+            retryConfig = new utils.RetryConfig(
+                "backoff",
+                new utils.BackoffStrategy(500, 60000, 1.5, 3600000),
+                true
+            );
+        }
+        const httpRes: AxiosResponse = await utils.Retry(() => {
+            return client.request({
+                validateStatus: () => true,
+                url: url + queryParams,
+                method: "get",
+                headers: headers,
+                responseType: "arraybuffer",
+                ...config,
+            });
+        }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
         const contentType: string = httpRes?.headers?.["content-type"] ?? "";
 

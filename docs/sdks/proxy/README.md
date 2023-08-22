@@ -44,11 +44,12 @@ sdk.proxy.create(proxyRequestBody, xAccountId).then((res: ProxyRequestPostRespon
 
 ### Parameters
 
-| Parameter                                                          | Type                                                               | Required                                                           | Description                                                        |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
-| `proxyRequestBody`                                                 | [shared.ProxyRequestBody](../../models/shared/proxyrequestbody.md) | :heavy_check_mark:                                                 | The request body                                                   |
-| `xAccountId`                                                       | *string*                                                           | :heavy_check_mark:                                                 | The account identifier                                             |
-| `config`                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)       | :heavy_minus_sign:                                                 | Available config options for making requests.                      |
+| Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `proxyRequestBody`                                                  | [shared.ProxyRequestBody](../../models/shared/proxyrequestbody.md)  | :heavy_check_mark:                                                  | The request body                                                    |
+| `xAccountId`                                                        | *string*                                                            | :heavy_check_mark:                                                  | The account identifier                                              |
+| `retries`                                                           | [utils.RetryConfig](../../models/utils/retryconfig.md)              | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| `config`                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)        | :heavy_minus_sign:                                                  | Available config options for making requests.                       |
 
 
 ### Response
