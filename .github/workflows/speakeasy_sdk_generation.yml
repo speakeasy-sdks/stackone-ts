@@ -23,7 +23,7 @@ jobs:
       mode: direct
       openapi_doc_auth_header: x-api-key
       openapi_docs: |
-        - ./openapi.yaml
+        - ./openapi.json
       speakeasy_version: latest
     secrets:
       github_access_token: ${{ secrets.GITHUB_TOKEN }}
