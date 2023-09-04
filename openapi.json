@@ -952,6 +952,7 @@
           "post":{
              "operationId":"ats_candidate_post",
              "summary":"Post Candidate (early access)",
+             "x-speakeasy-usage-example":"true",
              "parameters":[
                 {
                    "name":"x-account-id",
