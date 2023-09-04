@@ -945,9 +945,7 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "x-speakeasy-group":[
-                "ats.candidates"
-             ]
+             "x-speakeasy-group": "ats.candidates"
           },
           "post":{
              "operationId":"ats_candidate_post",
@@ -1004,9 +1002,7 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "x-speakeasy-group":[
-                "ats.candidates"
-             ]
+             "x-speakeasy-group": "ats.candidates"
           }
        },
        "/unified/ats/candidates/{id}":{
@@ -1120,9 +1116,7 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "x-speakeasy-group":[
-                "ats.candidates"
-             ]
+             "x-speakeasy-group": "ats.candidates"
           },
           "patch":{
              "operationId":"ats_candidate_patch",
@@ -1186,9 +1180,7 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "x-speakeasy-group":[
-                "ats.candidates"
-             ]
+             "x-speakeasy-group": "ats.candidates"
           }
        },
        "/unified/ats/departments":{
