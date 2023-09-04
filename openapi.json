@@ -945,8 +945,8 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "tags":[
-                "ATS_Candidates"
+             "x-speakeasy-group":[
+                "ats.candidates"
              ]
           },
           "post":{
@@ -1003,8 +1003,8 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "tags":[
-                "ATS_Candidates"
+             "x-speakeasy-group":[
+                "ats.candidates"
              ]
           }
        },
@@ -1119,8 +1119,8 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "tags":[
-                "ATS_Candidates"
+             "x-speakeasy-group":[
+                "ats.candidates"
              ]
           },
           "patch":{
@@ -1185,8 +1185,8 @@
                    "description":"This functionality is not implemented."
                 }
              },
-             "tags":[
-                "ATS_Candidates"
+             "x-speakeasy-group":[
+                "ats.candidates"
              ]
           }
        },
