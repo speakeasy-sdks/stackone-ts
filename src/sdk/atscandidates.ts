@@ -9,7 +9,7 @@ import * as shared from "./models/shared";
 import { SDKConfiguration } from "./sdk";
 import { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
 
-export class ATSCandidates {
+export class AtsCandidates {
     private sdkConfiguration: SDKConfiguration;
 
     constructor(sdkConfig: SDKConfiguration) {

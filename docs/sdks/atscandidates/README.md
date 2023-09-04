@@ -26,38 +26,26 @@ const sdk = new StackOne({
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "labore",
-    "labore",
-    "suscipit",
+    "maiores",
+    "incidunt",
+    "sed",
   ],
-  company: "Rohan - Keebler",
+  company: "Gerlach - Treutel",
   emails: [
     {
-      type: "aspernatur",
-      value: "architecto",
-    },
-    {
-      type: "magnam",
-      value: "et",
-    },
-    {
-      type: "excepturi",
-      value: "ullam",
-    },
-    {
-      type: "provident",
-      value: "quos",
+      type: "ea",
+      value: "occaecati",
     },
   ],
-  firstName: "Kiley",
-  lastName: "Bartoletti",
-  name: "Abel O'Hara",
-  phone: "913.249.8285",
+  firstName: "Katrina",
+  lastName: "Wolf",
+  name: "Rhonda Klocko",
+  phone: "385-732-3850",
   title: "Miss",
 };
-const xAccountId: string = "in";
+const xAccountId: string = "error";
 
-sdk.atsCandidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
+sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -96,15 +84,15 @@ const sdk = new StackOne({
   },
 });
 
-sdk.atsCandidates.get({
-  fields: "architecto",
-  id: "1e5b7fd2-ed02-4892-9cdd-c692601fb576",
-  page: "nam",
-  pageSize: "eaque",
+sdk.ats.candidates.get({
+  fields: "veniam",
+  id: "5efd20e4-57e1-4858-b6a8-9fbe3a5aa8e4",
+  page: "atque",
+  pageSize: "fugit",
   raw: false,
-  syncToken: "pariatur",
-  updatedAfter: "nemo",
-  xAccountId: "voluptatibus",
+  syncToken: "ut",
+  updatedAfter: "fugiat",
+  xAccountId: "voluptatem",
 }).then((res: AtsCandidatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -143,14 +131,14 @@ const sdk = new StackOne({
   },
 });
 
-sdk.atsCandidates.list({
-  fields: "perferendis",
-  page: "fugiat",
-  pageSize: "amet",
+sdk.ats.candidates.list({
+  fields: "culpa",
+  page: "expedita",
+  pageSize: "magnam",
   raw: false,
-  syncToken: "aut",
-  updatedAfter: "cumque",
-  xAccountId: "corporis",
+  syncToken: "consequatur",
+  updatedAfter: "esse",
+  xAccountId: "ipsam",
 }).then((res: AtsCandidatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -191,32 +179,25 @@ const sdk = new StackOne({
 });
 const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
   applicationIds: [
-    "libero",
-    "nobis",
-    "dolores",
-    "quis",
+    "voluptatum",
   ],
-  company: "Kuhn - Becker",
+  company: "Walker - Hessel",
   emails: [
     {
-      type: "nesciunt",
-      value: "eos",
-    },
-    {
-      type: "perferendis",
-      value: "dolores",
+      type: "blanditiis",
+      value: "ex",
     },
   ],
-  firstName: "Peggie",
-  lastName: "Kohler",
-  name: "Eula Hegmann",
-  phone: "(750) 815-6056 x2992",
-  title: "Miss",
+  firstName: "Candida",
+  lastName: "Bailey",
+  name: "Bernice Ullrich II",
+  phone: "361.252.6567 x93026",
+  title: "Ms.",
 };
-const id: string = "dolorum";
-const xAccountId: string = "deleniti";
+const id: string = "unde";
+const xAccountId: string = "reiciendis";
 
-sdk.atsCandidates.update(atsUpdateCandidatesRequestDto, id, xAccountId).then((res: AtsCandidatePatchResponse) => {
+sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId).then((res: AtsCandidatePatchResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }

@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.get({
-  fields: "corporis",
-  id: "96eb10fa-aa23-452c-9955-907aff1a3a2f",
-  page: "mollitia",
-  pageSize: "occaecati",
+  fields: "iure",
+  id: "eb10faaa-2352-4c59-9590-7aff1a3a2fa9",
+  page: "numquam",
+  pageSize: "commodi",
   raw: false,
-  syncToken: "numquam",
-  updatedAfter: "commodi",
-  xAccountId: "quam",
+  syncToken: "quam",
+  updatedAfter: "molestiae",
+  xAccountId: "velit",
 }).then((res: AtsRejectedReasonsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.list({
-  fields: "molestiae",
-  page: "velit",
-  pageSize: "error",
+  fields: "error",
+  page: "quia",
+  pageSize: "quis",
   raw: false,
-  syncToken: "quia",
-  updatedAfter: "quis",
-  xAccountId: "vitae",
+  syncToken: "vitae",
+  updatedAfter: "laborum",
+  xAccountId: "animi",
 }).then((res: AtsRejectedReasonsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
