@@ -26,31 +26,26 @@ const sdk = new StackOne({
 });
 const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
   accountIds: [
-    "inventore",
-    "nihil",
+    "iusto",
+    "eligendi",
+    "ducimus",
+    "alias",
   ],
-  companyName: "totam",
+  companyName: "officia",
   dealIds: [
-    "aliquam",
-    "odio",
-    "occaecati",
-    "commodi",
+    "ipsam",
+    "ea",
   ],
   emails: [
-    "dolores",
-    "deserunt",
-    "molestiae",
-    "accusantium",
+    "vel",
   ],
-  firstName: "Ottilie",
-  lastName: "Keeling",
+  firstName: "Reinhold",
+  lastName: "Gulgowski",
   phoneNumbers: [
-    "praesentium",
-    "consequuntur",
-    "deleniti",
+    "ex",
   ],
 };
-const xAccountId: string = "fugit";
+const xAccountId: string = "laudantium";
 
 sdk.contacts.create(crmCreateContactRequestDto, xAccountId).then((res: CrmContactPostResponse) => {
   if (res.statusCode == 200) {
@@ -92,14 +87,14 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.get({
-  fields: "fuga",
-  id: "a482562f-222e-4981-bee1-7cbe61e6b7b9",
-  page: "minima",
-  pageSize: "distinctio",
+  fields: "dicta",
+  id: "3f16d9f5-fce6-4c55-a146-c3e250fb008c",
+  page: "aliquam",
+  pageSize: "fugit",
   raw: false,
-  syncToken: "eligendi",
-  updatedAfter: "sit",
-  xAccountId: "culpa",
+  syncToken: "accusamus",
+  updatedAfter: "inventore",
+  xAccountId: "non",
 }).then((res: CrmContactsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -139,13 +134,13 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.list({
-  fields: "tempore",
-  page: "adipisci",
-  pageSize: "cumque",
+  fields: "et",
+  page: "dolorum",
+  pageSize: "laborum",
   raw: false,
-  syncToken: "consequuntur",
-  updatedAfter: "consequatur",
-  xAccountId: "minus",
+  syncToken: "placeat",
+  updatedAfter: "velit",
+  xAccountId: "eum",
 }).then((res: ContactsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -186,31 +181,29 @@ const sdk = new StackOne({
 });
 const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {
   accountIds: [
-    "sapiente",
-    "consectetur",
+    "nobis",
+    "quas",
   ],
-  companyName: "esse",
+  companyName: "assumenda",
   dealIds: [
-    "provident",
-    "a",
-    "nulla",
+    "voluptas",
+    "libero",
+    "quasi",
+    "tempora",
   ],
   emails: [
-    "esse",
-    "quasi",
-    "a",
+    "explicabo",
+    "provident",
   ],
-  firstName: "Lilly",
-  lastName: "Mayer",
+  firstName: "Amya",
+  lastName: "Kreiger",
   phoneNumbers: [
-    "possimus",
-    "quia",
-    "eveniet",
-    "asperiores",
+    "odio",
+    "eius",
   ],
 };
-const id: string = "facere";
-const xAccountId: string = "veritatis";
+const id: string = "esse";
+const xAccountId: string = "esse";
 
 sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId).then((res: CrmContactPatchResponse) => {
   if (res.statusCode == 200) {

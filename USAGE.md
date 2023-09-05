@@ -3,7 +3,8 @@
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsInterviewStagesGetResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePostRequest, AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -11,17 +12,40 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
+const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
+  applicationIds: [
+    "provident",
+    "distinctio",
+    "quibusdam",
+  ],
+  company: "Stiedemann - Little",
+  emails: [
+    {
+      type: "vel",
+      value: "error",
+    },
+    {
+      type: "deserunt",
+      value: "suscipit",
+    },
+    {
+      type: "iure",
+      value: "magnam",
+    },
+    {
+      type: "debitis",
+      value: "ipsa",
+    },
+  ],
+  firstName: "Vincenzo",
+  lastName: "Goldner",
+  name: "Minnie Schiller",
+  phone: "639.803.0603 x897",
+  title: "Mr.",
+};
+const xAccountId: string = "at";
 
-sdk.atsInterviewStages.get({
-  fields: "corrupti",
-  id: "9bd9d8d6-9a67-44e0-b467-cc8796ed151a",
-  page: "perferendis",
-  pageSize: "ipsam",
-  raw: false,
-  syncToken: "repellendus",
-  updatedAfter: "sapiente",
-  xAccountId: "quo",
-}).then((res: AtsInterviewStagesGetResponse) => {
+sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
