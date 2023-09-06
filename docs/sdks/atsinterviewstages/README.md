@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviewStages.get({
-  fields: "odit",
-  id: "ddf7cc78-ca1b-4a92-8fc8-16742cb73920",
-  page: "ad",
-  pageSize: "natus",
+  fields: "quis",
+  id: "1a05dfc2-ddf7-4cc7-8ca1-ba928fc81674",
+  page: "qui",
+  pageSize: "impedit",
   raw: false,
-  syncToken: "sed",
-  updatedAfter: "iste",
-  xAccountId: "dolor",
+  syncToken: "cum",
+  updatedAfter: "esse",
+  xAccountId: "ipsum",
 }).then((res: AtsInterviewStagesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviewStages.list({
-  fields: "natus",
-  page: "laboriosam",
-  pageSize: "hic",
+  fields: "excepturi",
+  page: "aspernatur",
+  pageSize: "perferendis",
   raw: false,
-  syncToken: "saepe",
-  updatedAfter: "fuga",
-  xAccountId: "in",
+  syncToken: "ad",
+  updatedAfter: "natus",
+  xAccountId: "sed",
 }).then((res: AtsInterviewStagesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

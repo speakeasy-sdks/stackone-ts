@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.campaigns.get({
-  fields: "assumenda",
-  id: "d6b14429-0747-4477-8a7b-d466d28c10ab",
-  page: "neque",
-  pageSize: "quo",
+  fields: "veritatis",
+  id: "b8b90f34-43a1-4108-a0ad-cf4b921879fc",
+  page: "vero",
+  pageSize: "omnis",
   raw: false,
-  syncToken: "illum",
-  updatedAfter: "quo",
-  xAccountId: "fuga",
+  syncToken: "quis",
+  updatedAfter: "ipsum",
+  xAccountId: "delectus",
 }).then((res: MarketingCampaignsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.campaigns.list({
-  fields: "eius",
-  page: "eos",
-  pageSize: "voluptas",
+  fields: "voluptate",
+  page: "consectetur",
+  pageSize: "vero",
   raw: false,
-  syncToken: "ab",
-  updatedAfter: "cupiditate",
-  xAccountId: "consequatur",
+  syncToken: "tenetur",
+  updatedAfter: "dignissimos",
+  xAccountId: "hic",
 }).then((res: MarketingCampaignsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

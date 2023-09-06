@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisCompanies.get({
-  fields: "consequuntur",
-  id: "1aa6f1e6-74bd-4b04-b157-56082d68ea19",
-  page: "tenetur",
-  pageSize: "quasi",
+  fields: "impedit",
+  id: "42e141aa-c366-4c8d-96b1-442907474778",
+  page: "fuga",
+  pageSize: "reprehenderit",
   raw: false,
-  syncToken: "at",
-  updatedAfter: "et",
-  xAccountId: "voluptate",
+  syncToken: "quidem",
+  updatedAfter: "fugiat",
+  xAccountId: "ut",
 }).then((res: HrisCompaniesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisCompanies.list({
-  fields: "ipsa",
-  page: "minima",
-  pageSize: "veritatis",
+  fields: "eum",
+  page: "suscipit",
+  pageSize: "assumenda",
   raw: false,
-  syncToken: "consectetur",
-  updatedAfter: "adipisci",
-  xAccountId: "iste",
+  syncToken: "eos",
+  updatedAfter: "praesentium",
+  xAccountId: "quisquam",
 }).then((res: HrisCompaniesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

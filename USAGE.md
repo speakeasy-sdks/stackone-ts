@@ -3,7 +3,8 @@
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsInterviewStagesGetResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePostRequest, AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
 const sdk = new StackOne({
   security: {
@@ -11,17 +12,26 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
+const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
+  applicationIds: [
+    "corrupti",
+  ],
+  company: "Rau - Sporer",
+  emails: [
+    {
+      type: "unde",
+      value: "nulla",
+    },
+  ],
+  firstName: "Karley",
+  lastName: "Stamm",
+  name: "Sabrina Oberbrunner",
+  phone: "909-434-7854 x539",
+  title: "Dr.",
+};
+const xAccountId: string = "ab";
 
-sdk.atsInterviewStages.get({
-  fields: "corrupti",
-  id: "9bd9d8d6-9a67-44e0-b467-cc8796ed151a",
-  page: "perferendis",
-  pageSize: "ipsam",
-  raw: false,
-  syncToken: "repellendus",
-  updatedAfter: "sapiente",
-  xAccountId: "quo",
-}).then((res: AtsInterviewStagesGetResponse) => {
+sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }

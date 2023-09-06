@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.get({
-  fields: "accusamus",
-  id: "453f870b-326b-45a7-b429-cdb1a8422bb6",
-  page: "quam",
-  pageSize: "molestias",
+  fields: "corporis",
+  id: "fbb25870-5320-42c7-bd5f-e9b90c28909b",
+  page: "adipisci",
+  pageSize: "asperiores",
   raw: false,
-  syncToken: "temporibus",
-  updatedAfter: "qui",
-  xAccountId: "neque",
+  syncToken: "earum",
+  updatedAfter: "modi",
+  xAccountId: "iste",
 }).then((res: AtsJobsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.list({
-  fields: "fugit",
-  page: "magni",
-  pageSize: "odio",
+  fields: "dolorum",
+  page: "deleniti",
+  pageSize: "pariatur",
   raw: false,
-  syncToken: "sunt",
-  updatedAfter: "ullam",
-  xAccountId: "nam",
+  syncToken: "provident",
+  updatedAfter: "nobis",
+  xAccountId: "libero",
 }).then((res: AtsJobsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

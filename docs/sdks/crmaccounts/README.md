@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.crmAccounts.get({
-  fields: "quasi",
-  id: "6d9f5fce-6c55-4614-ac3e-250fb008c42e",
-  page: "inventore",
-  pageSize: "non",
+  fields: "expedita",
+  id: "326b5a73-429c-4db1-a842-2bb679d23227",
+  page: "sunt",
+  pageSize: "ullam",
   raw: false,
-  syncToken: "et",
-  updatedAfter: "dolorum",
-  xAccountId: "laborum",
+  syncToken: "nam",
+  updatedAfter: "hic",
+  xAccountId: "voluptatem",
 }).then((res: CrmAccountsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.crmAccounts.list({
-  fields: "placeat",
-  page: "velit",
-  pageSize: "eum",
+  fields: "cumque",
+  page: "soluta",
+  pageSize: "nobis",
   raw: false,
-  syncToken: "autem",
-  updatedAfter: "nobis",
-  xAccountId: "quas",
+  syncToken: "et",
+  updatedAfter: "saepe",
+  xAccountId: "ipsum",
 }).then((res: CrmAccountsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
