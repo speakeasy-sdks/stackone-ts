@@ -1,7 +1,5 @@
 # EmploymentResult
 
-The Employment with the given identifier was retrieved.
-
 
 ## Fields
 

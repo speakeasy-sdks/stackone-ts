@@ -1,7 +1,5 @@
 # ConnectSession
 
-The details of the authenticated connect session.
-
 
 ## Fields
 

@@ -26,9 +26,6 @@ export enum ProxyRequestBodyMethod {
     Patch = "patch",
 }
 
-/**
- * The request body
- */
 export class ProxyRequestBody extends SpeakeasyBase {
     /**
      * The body of the request

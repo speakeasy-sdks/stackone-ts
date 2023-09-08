@@ -1,7 +1,5 @@
 # ApplicationsOffersPaginated
 
-The offers related to the application with the given identifier were retrieved.
-
 
 ## Fields
 

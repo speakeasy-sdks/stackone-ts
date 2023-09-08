@@ -1,7 +1,5 @@
 # CreateTemplateResult
 
-The email template was created successfully.
-
 
 ## Fields
 

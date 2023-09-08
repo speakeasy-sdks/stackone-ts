@@ -13,9 +13,6 @@ export enum ConnectSessionCategories {
     Common = "common",
 }
 
-/**
- * The details of the authenticated connect session.
- */
 export class ConnectSession extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "categories" })

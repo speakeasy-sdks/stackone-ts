@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Transform } from "class-transformer";
 
-/**
- * The email template was created successfully.
- */
 export class CreateTemplateResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "message" })

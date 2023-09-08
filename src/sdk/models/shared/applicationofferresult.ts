@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Offer } from "./offer";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The offer related to the application with the given identifiers was retrieved.
- */
 export class ApplicationOfferResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

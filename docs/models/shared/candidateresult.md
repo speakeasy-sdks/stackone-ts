@@ -1,7 +1,5 @@
 # CandidateResult
 
-The candidate was successfully created.
-
 
 ## Fields
 

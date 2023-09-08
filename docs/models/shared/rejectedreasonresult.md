@@ -1,7 +1,5 @@
 # RejectedReasonResult
 
-The rejected reason with the given identifier was retrieved.
-
 
 ## Fields
 

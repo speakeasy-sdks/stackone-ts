@@ -1,7 +1,5 @@
 # EmployeeResult
 
-The employee with the given identifier was retrieved.
-
 
 ## Fields
 

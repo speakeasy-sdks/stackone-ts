@@ -1,7 +1,5 @@
 # InterviewStagesPaginated
 
-The list of interview-stages was retrieved.
-
 
 ## Fields
 

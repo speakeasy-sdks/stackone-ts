@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Location } from "./location";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of locations was retrieved.
- */
 export class LocationsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Location })
     @Expose({ name: "data" })

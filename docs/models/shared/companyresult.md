@@ -1,7 +1,5 @@
 # CompanyResult
 
-The Company with the given identifier was retrieved.
-
 
 ## Fields
 

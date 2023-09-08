@@ -1,7 +1,5 @@
 # EmployeesPaginated
 
-The list of employees was retrieved.
-
 
 ## Fields
 

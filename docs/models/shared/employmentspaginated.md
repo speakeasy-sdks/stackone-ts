@@ -1,7 +1,5 @@
 # EmploymentsPaginated
 
-The list of Employments was retrieved.
-
 
 ## Fields
 

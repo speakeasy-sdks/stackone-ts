@@ -1,7 +1,5 @@
 # CampaignResult
 
-The campaign with the given identifier was retrieved.
-
 
 ## Fields
 

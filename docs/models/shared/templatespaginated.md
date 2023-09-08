@@ -1,7 +1,5 @@
 # TemplatesPaginated
 
-The list of email templates was retrieved.
-
 
 ## Fields
 

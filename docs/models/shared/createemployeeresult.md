@@ -1,7 +1,5 @@
 # CreateEmployeeResult
 
-The employee was created successfully.
-
 
 ## Fields
 

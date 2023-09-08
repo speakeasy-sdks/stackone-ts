@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Application } from "./application";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of applications was retrieved.
- */
 export class ApplicationsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Application })
     @Expose({ name: "data" })

@@ -1,7 +1,5 @@
 # UserResult
 
-The user with the given identifier was retrieved.
-
 
 ## Fields
 

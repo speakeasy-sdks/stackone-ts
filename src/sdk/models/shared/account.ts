@@ -7,9 +7,6 @@ import { Expose, Transform, Type } from "class-transformer";
 
 export class AccountCredentials extends SpeakeasyBase {}
 
-/**
- * The account with the given identifier was deleted.
- */
 export class Account extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "active" })

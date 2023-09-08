@@ -1,7 +1,5 @@
 # CandidatesPaginated
 
-The list of candidates was retrieved.
-
 
 ## Fields
 

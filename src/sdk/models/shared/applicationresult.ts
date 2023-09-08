@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Application } from "./application";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The application was created successfully.
- */
 export class ApplicationResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

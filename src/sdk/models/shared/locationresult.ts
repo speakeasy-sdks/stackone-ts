@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Location } from "./location";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The location with the given identifier was retrieved.
- */
 export class LocationResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

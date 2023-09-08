@@ -1,7 +1,5 @@
 # CampaignsPaginated
 
-The list of campaigns was retrieved.
-
 
 ## Fields
 

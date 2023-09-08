@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { InterviewStage } from "./interviewstage";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The interview-stage with the given identifier was retrieved.
- */
 export class InterviewStageResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

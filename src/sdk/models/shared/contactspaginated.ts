@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Contact } from "./contact";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of contacts was retrieved.
- */
 export class ContactsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Contact })
     @Expose({ name: "data" })

@@ -1,7 +1,5 @@
 # ConnectSessionToken
 
-The details of the connect session created with token.
-
 
 ## Fields
 

@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Contact } from "./contact";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The contact was successfully created.
- */
 export class ContactResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

@@ -1,7 +1,5 @@
 # InterviewsResult
 
-The interview with the given identifier was retrieved.
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # ContactsPaginated
 
-The list of contacts was retrieved.
-
 
 ## Fields
 

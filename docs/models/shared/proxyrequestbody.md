@@ -1,7 +1,5 @@
 # ProxyRequestBody
 
-The request body
-
 
 ## Fields
 

@@ -1,7 +1,5 @@
 # ContactResult
 
-The contact was successfully created.
-
 
 ## Fields
 

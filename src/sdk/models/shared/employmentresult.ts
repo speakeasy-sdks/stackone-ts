@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Employment } from "./employment";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The Employment with the given identifier was retrieved.
- */
 export class EmploymentResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

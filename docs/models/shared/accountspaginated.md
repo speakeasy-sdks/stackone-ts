@@ -1,7 +1,5 @@
 # AccountsPaginated
 
-The list of accounts was retrieved.
-
 
 ## Fields
 

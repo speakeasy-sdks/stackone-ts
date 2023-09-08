@@ -1,7 +1,5 @@
 # TemplateResult
 
-The email template with the given identifier was retrieved.
-
 
 ## Fields
 

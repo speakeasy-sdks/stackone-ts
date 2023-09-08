@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * The parameters to authenticate
- */
 export class ConnectSessionAuthenticate extends SpeakeasyBase {
     /**
      * The token to authenticate with

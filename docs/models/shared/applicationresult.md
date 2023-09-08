@@ -1,7 +1,5 @@
 # ApplicationResult
 
-The application was created successfully.
-
 
 ## Fields
 

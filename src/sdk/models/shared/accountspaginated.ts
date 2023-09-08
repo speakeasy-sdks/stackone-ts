@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Account } from "./account";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of accounts was retrieved.
- */
 export class AccountsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Account })
     @Expose({ name: "data" })

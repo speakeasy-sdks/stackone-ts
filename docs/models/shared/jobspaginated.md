@@ -1,7 +1,5 @@
 # JobsPaginated
 
-The list of jobs was retrieved.
-
 
 ## Fields
 
