@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Template } from "./template";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of email templates was retrieved.
- */
 export class TemplatesPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Template })
     @Expose({ name: "data" })

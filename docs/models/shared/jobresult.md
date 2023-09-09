@@ -1,7 +1,5 @@
 # JobResult
 
-The job with the given identifier was retrieved.
-
 
 ## Fields
 

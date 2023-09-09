@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Department } from "./department";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of departments was retrieved.
- */
 export class DepartmentsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Department })
     @Expose({ name: "data" })

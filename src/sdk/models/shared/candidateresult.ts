@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Candidate } from "./candidate";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The candidate was successfully created.
- */
 export class CandidateResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

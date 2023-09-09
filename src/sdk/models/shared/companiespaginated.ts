@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Company } from "./company";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of Companies was retrieved.
- */
 export class CompaniesPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Company })
     @Expose({ name: "data" })

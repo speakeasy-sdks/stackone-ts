@@ -1,7 +1,5 @@
 # ConnectSessionAuthenticate
 
-The parameters to authenticate
-
 
 ## Fields
 

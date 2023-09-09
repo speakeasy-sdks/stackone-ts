@@ -1,7 +1,5 @@
 # UsersPaginated
 
-The list of users was retrieved.
-
 
 ## Fields
 

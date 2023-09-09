@@ -1,7 +1,5 @@
 # RejectedReasonsPaginated
 
-The list of rejected reasons was retrieved.
-
 
 ## Fields
 

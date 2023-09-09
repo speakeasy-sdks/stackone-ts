@@ -1,7 +1,5 @@
 # LocationResult
 
-The location with the given identifier was retrieved.
-
 
 ## Fields
 

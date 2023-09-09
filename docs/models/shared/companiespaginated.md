@@ -1,7 +1,5 @@
 # CompaniesPaginated
 
-The list of Companies was retrieved.
-
 
 ## Fields
 

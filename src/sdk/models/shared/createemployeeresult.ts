@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Transform } from "class-transformer";
 
-/**
- * The employee was created successfully.
- */
 export class CreateEmployeeResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "message" })

@@ -1,7 +1,5 @@
 # DepartmentResult
 
-The department with the given identifier was retrieved.
-
 
 ## Fields
 

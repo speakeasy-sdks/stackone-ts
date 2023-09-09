@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Campaign } from "./campaign";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of campaigns was retrieved.
- */
 export class CampaignsPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: Campaign })
     @Expose({ name: "data" })

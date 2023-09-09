@@ -1,7 +1,5 @@
 # AccountResult
 
-The account with the given identifier was retrieved.
-
 
 ## Fields
 

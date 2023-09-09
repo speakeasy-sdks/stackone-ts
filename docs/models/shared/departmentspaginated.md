@@ -1,7 +1,5 @@
 # DepartmentsPaginated
 
-The list of departments was retrieved.
-
 
 ## Fields
 

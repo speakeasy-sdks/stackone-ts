@@ -1,7 +1,5 @@
 # ApplicationOfferResult
 
-The offer related to the application with the given identifiers was retrieved.
-
 
 ## Fields
 

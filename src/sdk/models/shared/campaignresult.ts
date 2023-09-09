@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Campaign } from "./campaign";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The campaign with the given identifier was retrieved.
- */
 export class CampaignResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

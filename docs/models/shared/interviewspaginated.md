@@ -1,7 +1,5 @@
 # InterviewsPaginated
 
-The list of interviews was retrieved.
-
 
 ## Fields
 

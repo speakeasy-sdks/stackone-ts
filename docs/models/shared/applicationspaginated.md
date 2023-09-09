@@ -1,7 +1,5 @@
 # ApplicationsPaginated
 
-The list of applications was retrieved.
-
 
 ## Fields
 

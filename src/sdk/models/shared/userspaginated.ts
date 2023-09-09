@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { User } from "./user";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of users was retrieved.
- */
 export class UsersPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: User })
     @Expose({ name: "data" })

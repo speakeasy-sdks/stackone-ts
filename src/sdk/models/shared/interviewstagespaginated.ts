@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { InterviewStage } from "./interviewstage";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The list of interview-stages was retrieved.
- */
 export class InterviewStagesPaginated extends SpeakeasyBase {
     @SpeakeasyMetadata({ elemType: InterviewStage })
     @Expose({ name: "data" })

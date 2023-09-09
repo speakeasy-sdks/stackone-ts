@@ -1,7 +1,5 @@
 # Account
 
-The account with the given identifier was deleted.
-
 
 ## Fields
 

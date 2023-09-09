@@ -1,7 +1,5 @@
 # InterviewStageResult
 
-The interview-stage with the given identifier was retrieved.
-
 
 ## Fields
 

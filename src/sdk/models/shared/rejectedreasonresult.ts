@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { RejectedReason } from "./rejectedreason";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The rejected reason with the given identifier was retrieved.
- */
 export class RejectedReasonResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })

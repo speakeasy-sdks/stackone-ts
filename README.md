@@ -179,7 +179,7 @@ sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: A
 * [create](docs/sdks/proxy/README.md#create) - Proxy Request
 
 
-### [atsCandidates](docs/sdks/atscandidates/README.md)
+### [Ats.Candidates](docs/sdks/atscandidates/README.md)
 
 * [create](docs/sdks/atscandidates/README.md#create) - Post Candidate (early access)
 * [get](docs/sdks/atscandidates/README.md#get) - Get Candidate

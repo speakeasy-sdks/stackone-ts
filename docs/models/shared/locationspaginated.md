@@ -1,7 +1,5 @@
 # LocationsPaginated
 
-The list of locations was retrieved.
-
 
 ## Fields
 

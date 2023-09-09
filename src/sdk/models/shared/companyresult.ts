@@ -6,9 +6,6 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Company } from "./company";
 import { Expose, Type } from "class-transformer";
 
-/**
- * The Company with the given identifier was retrieved.
- */
 export class CompanyResult extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "data" })
