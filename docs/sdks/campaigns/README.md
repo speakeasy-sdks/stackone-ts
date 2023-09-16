@@ -1,4 +1,4 @@
-# campaigns
+# Campaigns
 
 ### Available Operations
 

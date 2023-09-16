@@ -1,4 +1,4 @@
-# atsUsers
+# ATSUsers
 
 ### Available Operations
 

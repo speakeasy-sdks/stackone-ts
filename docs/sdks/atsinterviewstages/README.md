@@ -1,4 +1,4 @@
-# atsInterviewStages
+# ATSInterviewStages
 
 ### Available Operations
 

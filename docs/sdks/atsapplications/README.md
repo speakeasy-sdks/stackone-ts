@@ -1,4 +1,4 @@
-# atsApplications
+# ATSApplications
 
 ### Available Operations
 

@@ -1,4 +1,4 @@
-# atsRejectedReasons
+# ATSRejectedReasons
 
 ### Available Operations
 

@@ -1,4 +1,4 @@
-# atsDepartments
+# ATSDepartments
 
 ### Available Operations
 

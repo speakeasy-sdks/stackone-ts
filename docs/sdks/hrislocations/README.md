@@ -1,4 +1,4 @@
-# hrisLocations
+# HRISLocations
 
 ### Available Operations
 

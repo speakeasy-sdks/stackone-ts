@@ -1,4 +1,4 @@
-# hrisEmployees
+# HRISEmployees
 
 ### Available Operations
 

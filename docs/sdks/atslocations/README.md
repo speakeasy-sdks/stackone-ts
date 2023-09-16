@@ -1,4 +1,4 @@
-# atsLocations
+# ATSLocations
 
 ### Available Operations
 

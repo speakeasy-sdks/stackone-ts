@@ -1,4 +1,4 @@
-# hrisCompanies
+# HRISCompanies
 
 ### Available Operations
 
