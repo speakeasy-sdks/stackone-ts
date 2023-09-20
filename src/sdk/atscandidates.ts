@@ -35,7 +35,7 @@ export class AtsCandidates {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/unified/ats/candidates";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -63,8 +63,7 @@ export class AtsCandidates {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[
@@ -346,7 +345,7 @@ export class AtsCandidates {
         );
         const url: string = utils.generateURL(baseURL, "/unified/ats/candidates/{id}", req);
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -374,8 +373,7 @@ export class AtsCandidates {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[

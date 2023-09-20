@@ -35,7 +35,7 @@ export class HRISEmployees {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/unified/hris/employees";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -63,8 +63,7 @@ export class HRISEmployees {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[

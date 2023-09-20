@@ -35,7 +35,7 @@ export class MarketingTemplates {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/unified/marketing/templates/email";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -63,8 +63,7 @@ export class MarketingTemplates {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[
@@ -152,7 +151,7 @@ export class MarketingTemplates {
         const url: string =
             baseURL.replace(/\/$/, "") + "/unified/marketing/templates/omni_channel";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -180,8 +179,7 @@ export class MarketingTemplates {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[
@@ -268,7 +266,7 @@ export class MarketingTemplates {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/unified/marketing/templates/push";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -296,8 +294,7 @@ export class MarketingTemplates {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[

@@ -35,7 +35,7 @@ export class ATSApplications {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/unified/ats/applications";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -63,8 +63,7 @@ export class ATSApplications {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[
@@ -550,7 +549,7 @@ export class ATSApplications {
         );
         const url: string = utils.generateURL(baseURL, "/unified/ats/applications/{id}", req);
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -578,8 +577,7 @@ export class ATSApplications {
             ...config?.headers,
             ...properties.headers,
         };
-        if (reqBody == null || Object.keys(reqBody).length === 0)
-            throw new Error("request body is required");
+        if (reqBody == null) throw new Error("request body is required");
         headers["Accept"] = "application/json";
 
         headers[
