@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.get({
-  fields: "in",
-  id: "11e5b7fd-2ed0-4289-a1cd-dc692601fb57",
-  page: "autem",
-  pageSize: "nam",
+  fields: "voluptate",
+  id: "6b0d5f0d-30c5-4fbb-a587-053202c73d5f",
+  page: "recusandae",
+  pageSize: "omnis",
   raw: false,
-  syncToken: "eaque",
-  updatedAfter: "pariatur",
-  xAccountId: "nemo",
+  syncToken: "facilis",
+  updatedAfter: "perspiciatis",
+  xAccountId: "voluptatem",
 }).then((res: AtsInterviewsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.list({
-  fields: "voluptatibus",
-  page: "perferendis",
-  pageSize: "fugiat",
+  fields: "porro",
+  page: "consequuntur",
+  pageSize: "blanditiis",
   raw: false,
-  syncToken: "amet",
-  updatedAfter: "aut",
-  xAccountId: "cumque",
+  syncToken: "error",
+  updatedAfter: "eaque",
+  xAccountId: "occaecati",
 }).then((res: AtsInterviewsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

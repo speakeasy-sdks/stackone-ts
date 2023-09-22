@@ -24,8 +24,6 @@ yarn add https://github.com/speakeasy-sdks/stackone-ts
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { StackOne } from "StackOne";
 import { AtsCandidatePostRequest, AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
@@ -39,22 +37,22 @@ const sdk = new StackOne({
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "corrupti",
+    "quis",
   ],
-  company: "Rau - Sporer",
+  company: "O'Connell Inc",
   emails: [
     {
-      type: "unde",
-      value: "nulla",
+      type: "ipsam",
+      value: "repellendus",
     },
   ],
-  firstName: "Karley",
-  lastName: "Stamm",
-  name: "Sabrina Oberbrunner",
-  phone: "909-434-7854 x539",
-  title: "Dr.",
+  firstName: "Verner",
+  lastName: "Satterfield",
+  name: "Teri Strosin",
+  phone: "845-861-7651 x59751",
+  title: "Ms.",
 };
-const xAccountId: string = "ab";
+const xAccountId: string = "molestiae";
 
 sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
@@ -186,6 +184,32 @@ sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: A
 * [list](docs/sdks/atscandidates/README.md#list) - List Candidates
 * [update](docs/sdks/atscandidates/README.md#update) - Patch Candidate (early access)
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

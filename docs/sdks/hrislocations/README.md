@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisLocations.get({
-  fields: "blanditiis",
-  id: "9fd871f9-9dd2-4efd-921a-a6f1e674bdb0",
-  page: "aliquam",
-  pageSize: "sapiente",
+  fields: "accusantium",
+  id: "4f157560-82d6-48ea-99f1-d17051339d08",
+  page: "aut",
+  pageSize: "laudantium",
   raw: false,
-  syncToken: "dicta",
-  updatedAfter: "ullam",
-  xAccountId: "reprehenderit",
+  syncToken: "eum",
+  updatedAfter: "mollitia",
+  xAccountId: "ab",
 }).then((res: HrisLocationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisLocations.list({
-  fields: "ullam",
-  page: "nisi",
-  pageSize: "aut",
+  fields: "corrupti",
+  page: "non",
+  pageSize: "voluptatem",
   raw: false,
-  syncToken: "voluptatum",
-  updatedAfter: "qui",
-  xAccountId: "quibusdam",
+  syncToken: "dolor",
+  updatedAfter: "occaecati",
+  xAccountId: "numquam",
 }).then((res: HrisLocationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

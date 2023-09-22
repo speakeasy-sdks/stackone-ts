@@ -23,7 +23,7 @@ const sdk = new StackOne({
 });
 
 sdk.connectSessions.connectSessionsAuthenticate({
-  token: "distinctio",
+  token: "possimus",
 }).then((res: ConnectSessionsAuthenticateResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -65,14 +65,14 @@ const sdk = new StackOne({
 
 sdk.connectSessions.connectSessionsCreate({
   categories: [
-    ConnectSessionCreateCategories.Marketing,
+    ConnectSessionCreateCategories.Hris,
   ],
-  expiresIn: 4861.6,
+  expiresIn: 1898.48,
   metadata: {},
-  originOwnerId: "similique",
-  originOwnerName: "facilis",
-  originUsername: "vero",
-  provider: "ducimus",
+  originOwnerId: "ex",
+  originOwnerName: "laudantium",
+  originUsername: "dicta",
+  provider: "dolor",
 }).then((res: ConnectSessionsCreateResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -38,17 +38,17 @@ const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   dateOfBirth: "1990-01-01",
   department: "Physics",
   displayName: "Sir Issac Newton",
-  employmentStatus: HrisCreateEmployeeRequestDtoEmploymentStatus.Active,
-  employmentType: HrisCreateEmployeeRequestDtoEmploymentType.FullTime,
-  ethnicity: HrisCreateEmployeeRequestDtoEthnicity.TwoOrMoreRaces,
+  employmentStatus: HrisCreateEmployeeRequestDtoEmploymentStatus.Pending,
+  employmentType: HrisCreateEmployeeRequestDtoEmploymentType.Temporary,
+  ethnicity: HrisCreateEmployeeRequestDtoEthnicity.NativeHawaiianOrPacificIslander,
   firstName: "Issac",
-  gender: HrisCreateEmployeeRequestDtoGender.NotDisclosed,
+  gender: HrisCreateEmployeeRequestDtoGender.NonBinary,
   hireDate: "2022-01-01",
   id: "1687-3",
   jobTitle: "Physicist",
   lastName: "Newton",
   managerId: "67890",
-  maritalStatus: HrisCreateEmployeeRequestDtoMaritalStatus.CommonLaw,
+  maritalStatus: HrisCreateEmployeeRequestDtoMaritalStatus.UnmappedValue,
   name: "Issac Newton",
   personalEmail: "isaac.newton@example.com",
   personalPhoneNumber: "+1234567890",
@@ -59,7 +59,7 @@ const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   workEmail: "newton@example.com",
   workPhoneNumber: "+1234567890",
 };
-const xAccountId: string = "quo";
+const xAccountId: string = "dolores";
 
 sdk.hrisEmployees.create(hrisCreateEmployeeRequestDto, xAccountId).then((res: EmployeePostResponse) => {
   if (res.statusCode == 200) {
@@ -101,15 +101,15 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployees.get({
-  expand: "illum",
-  fields: "quo",
-  id: "a4251904-e523-4c7e-8bc7-178e4796f2a7",
-  page: "accusantium",
-  pageSize: "porro",
+  expand: "deserunt",
+  fields: "molestiae",
+  id: "0c688282-aa48-4256-af22-2e9817ee17cb",
+  page: "vero",
+  pageSize: "aliquid",
   raw: false,
-  syncToken: "eum",
-  updatedAfter: "quas",
-  xAccountId: "praesentium",
+  syncToken: "quasi",
+  updatedAfter: "saepe",
+  xAccountId: "vel",
 }).then((res: HrisEmployeesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -149,14 +149,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployees.list({
-  expand: "consequuntur",
-  fields: "deleniti",
-  page: "fugit",
-  pageSize: "fuga",
+  expand: "harum",
+  fields: "molestiae",
+  page: "rerum",
+  pageSize: "occaecati",
   raw: false,
-  syncToken: "mollitia",
-  updatedAfter: "incidunt",
-  xAccountId: "atque",
+  syncToken: "minima",
+  updatedAfter: "distinctio",
+  xAccountId: "eligendi",
 }).then((res: HrisEmployeesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

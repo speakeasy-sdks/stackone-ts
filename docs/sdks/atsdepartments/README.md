@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsDepartments.get({
-  fields: "vel",
-  id: "997074ba-4469-4b6e-a141-959890afa563",
-  page: "necessitatibus",
-  pageSize: "odit",
+  fields: "dolor",
+  id: "e2516fe4-c8b7-411e-9b7f-d2ed028921cd",
+  page: "pariatur",
+  pageSize: "maxime",
   raw: false,
-  syncToken: "nemo",
-  updatedAfter: "quasi",
-  xAccountId: "iure",
+  syncToken: "ea",
+  updatedAfter: "excepturi",
+  xAccountId: "odit",
 }).then((res: AtsDepartmentsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsDepartments.list({
-  fields: "doloribus",
-  page: "debitis",
-  pageSize: "eius",
+  fields: "ea",
+  page: "accusantium",
+  pageSize: "ab",
   raw: false,
-  syncToken: "maxime",
-  updatedAfter: "deleniti",
-  xAccountId: "facilis",
+  syncToken: "maiores",
+  updatedAfter: "quidem",
+  xAccountId: "ipsam",
 }).then((res: AtsDepartmentsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

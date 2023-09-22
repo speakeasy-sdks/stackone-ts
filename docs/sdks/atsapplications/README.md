@@ -32,15 +32,15 @@ const sdk = new StackOne({
 });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "commodi",
+    sourceValue: "omnis",
     value: ApplicationStatusEnumValue.Hired,
   },
-  candidateId: "molestiae",
-  interviewStageId: "velit",
-  jobId: "error",
-  locationId: "quia",
+  candidateId: "cum",
+  interviewStageId: "perferendis",
+  jobId: "doloremque",
+  locationId: "reprehenderit",
 };
-const xAccountId: string = "quis";
+const xAccountId: string = "ut";
 
 sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId).then((res: ApplicationPostResponse) => {
   if (res.statusCode == 200) {
@@ -82,14 +82,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.get({
-  fields: "vitae",
-  id: "aa52c3f5-ad01-49da-9ffe-78f097b0074f",
-  page: "dicta",
-  pageSize: "corporis",
+  fields: "maiores",
+  id: "15471b5e-6e13-4b99-9488-e1e91e450ad2",
+  page: "deserunt",
+  pageSize: "distinctio",
   raw: false,
-  syncToken: "dolore",
-  updatedAfter: "iusto",
-  xAccountId: "dicta",
+  syncToken: "quibusdam",
+  updatedAfter: "labore",
+  xAccountId: "modi",
 }).then((res: ApplicationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -129,15 +129,15 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.getOffers({
-  fields: "harum",
-  id: "5e6e13b9-9d48-48e1-a91e-450ad2abd442",
-  page: "aliquid",
-  pageSize: "cupiditate",
+  fields: "qui",
+  id: "69802d50-2a94-4bb4-b63c-969e9a3efa77",
+  page: "illum",
+  pageSize: "maiores",
   raw: false,
-  subResourceId: "quos",
-  syncToken: "perferendis",
-  updatedAfter: "magni",
-  xAccountId: "assumenda",
+  subResourceId: "rerum",
+  syncToken: "dicta",
+  updatedAfter: "magnam",
+  xAccountId: "cumque",
 }).then((res: ApplicationsOffersGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -177,13 +177,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.list({
-  fields: "ipsam",
-  page: "alias",
-  pageSize: "fugit",
+  fields: "facere",
+  page: "ea",
+  pageSize: "aliquid",
   raw: false,
-  syncToken: "dolorum",
-  updatedAfter: "excepturi",
-  xAccountId: "tempora",
+  syncToken: "laborum",
+  updatedAfter: "accusamus",
+  xAccountId: "non",
 }).then((res: ApplicationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -223,13 +223,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.listOffers({
-  fields: "facilis",
-  id: "b4f63c96-9e9a-43ef-a77d-fb14cd66ae39",
-  page: "enim",
-  pageSize: "accusamus",
+  fields: "occaecati",
+  id: "5efb9ba8-8f3a-4669-9707-4ba4469b6e21",
+  page: "magnam",
+  pageSize: "et",
   raw: false,
-  syncToken: "delectus",
-  updatedAfter: "quidem",
+  syncToken: "excepturi",
+  updatedAfter: "ullam",
   xAccountId: "provident",
 }).then((res: ApplicationsOffersListResponse) => {
   if (res.statusCode == 200) {
@@ -275,16 +275,16 @@ const sdk = new StackOne({
 });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "nam",
+    sourceValue: "quos",
     value: ApplicationStatusEnumValue.Lead,
   },
-  candidateId: "blanditiis",
-  interviewStageId: "deleniti",
-  jobId: "sapiente",
-  locationId: "amet",
+  candidateId: "accusantium",
+  interviewStageId: "mollitia",
+  jobId: "reiciendis",
+  locationId: "mollitia",
 };
-const id: string = "deserunt";
-const xAccountId: string = "nisi";
+const id: string = "ad";
+const xAccountId: string = "eum";
 
 sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId).then((res: ApplicationPatchResponse) => {
   if (res.statusCode == 200) {

@@ -36,10 +36,10 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "ex",
+    "impedit",
   ],
 };
-const xAccountId: string = "deleniti";
+const xAccountId: string = "explicabo";
 
 sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingEmailTemplateCreateResponse) => {
   if (res.statusCode == 200) {
@@ -89,10 +89,10 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "itaque",
+    "voluptas",
   ],
 };
-const xAccountId: string = "dolorum";
+const xAccountId: string = "aut";
 
 sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingOmniChannelTemplateCreateResponse) => {
   if (res.statusCode == 200) {
@@ -139,10 +139,10 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "architecto",
+    "dignissimos",
   ],
 };
-const xAccountId: string = "omnis";
+const xAccountId: string = "dicta";
 
 sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingPushTemplateCreateResponse) => {
   if (res.statusCode == 200) {
@@ -184,14 +184,14 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.getEmail({
-  fields: "tenetur",
-  id: "1d170513-39d0-4808-aa18-40394c26071f",
-  page: "natus",
-  pageSize: "velit",
+  fields: "maiores",
+  id: "93f5f064-2dac-47af-915c-c413aa63aae8",
+  page: "fugiat",
+  pageSize: "vel",
   raw: false,
-  syncToken: "voluptatibus",
-  updatedAfter: "voluptas",
-  xAccountId: "asperiores",
+  syncToken: "ducimus",
+  updatedAfter: "quos",
+  xAccountId: "vel",
 }).then((res: MarketingEmailTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -231,14 +231,14 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.getOmnichannel({
-  fields: "aperiam",
-  id: "642dac7a-f515-4cc4-93aa-63aae8d67864",
-  page: "possimus",
-  pageSize: "facilis",
+  fields: "labore",
+  id: "dbb675fd-5e60-4b37-9ed4-f6fbee41f333",
+  page: "beatae",
+  pageSize: "dignissimos",
   raw: false,
-  syncToken: "cum",
-  updatedAfter: "commodi",
-  xAccountId: "in",
+  syncToken: "a",
+  updatedAfter: "debitis",
+  xAccountId: "consectetur",
 }).then((res: MarketingOmniChannelTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -279,13 +279,13 @@ const sdk = new StackOne({
 
 sdk.marketingTemplates.getPush({
   fields: "corporis",
-  id: "fd5e60b3-75ed-44f6-bbee-41f33317fe35",
-  page: "harum",
-  pageSize: "laboriosam",
+  id: "b60eb1ea-4265-455b-a3c2-8744ed53b88f",
+  page: "nesciunt",
+  pageSize: "culpa",
   raw: false,
-  syncToken: "ipsa",
-  updatedAfter: "voluptates",
-  xAccountId: "libero",
+  syncToken: "corrupti",
+  updatedAfter: "pariatur",
+  xAccountId: "totam",
 }).then((res: MarketingPushTemplatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -323,7 +323,7 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
-const xAccountId: string = "vitae";
+const xAccountId: string = "hic";
 
 sdk.marketingTemplates.list(xAccountId).then((res: MarketingTemplatesListResponse) => {
   if (res.statusCode == 200) {
@@ -364,13 +364,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listEmail({
-  fields: "accusamus",
-  page: "similique",
-  pageSize: "tempora",
+  fields: "exercitationem",
+  page: "nobis",
+  pageSize: "sit",
   raw: false,
-  syncToken: "aspernatur",
-  updatedAfter: "voluptas",
-  xAccountId: "voluptas",
+  syncToken: "rerum",
+  updatedAfter: "sed",
+  xAccountId: "reiciendis",
 }).then((res: MarketingEmailTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -410,13 +410,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listOmnichannel({
-  fields: "voluptas",
-  page: "minima",
-  pageSize: "nobis",
+  fields: "explicabo",
+  page: "asperiores",
+  pageSize: "facilis",
   raw: false,
-  syncToken: "dolorum",
-  updatedAfter: "adipisci",
-  xAccountId: "minus",
+  syncToken: "voluptate",
+  updatedAfter: "expedita",
+  xAccountId: "ab",
 }).then((res: MarketingOmniChannelTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -456,13 +456,13 @@ const sdk = new StackOne({
 });
 
 sdk.marketingTemplates.listPush({
-  fields: "dolores",
-  page: "blanditiis",
-  pageSize: "in",
+  fields: "iste",
+  page: "dolore",
+  pageSize: "laborum",
   raw: false,
-  syncToken: "dolore",
-  updatedAfter: "aliquam",
-  xAccountId: "officiis",
+  syncToken: "sed",
+  updatedAfter: "in",
+  xAccountId: "commodi",
 }).then((res: MarketingPushTemplatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

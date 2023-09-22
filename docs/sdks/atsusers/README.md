@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.get({
-  fields: "asperiores",
-  id: "737ae420-3ce5-4e6a-95d8-a0d446ce2af7",
-  page: "harum",
-  pageSize: "iusto",
+  fields: "esse",
+  id: "a73cf3be-453f-4870-b326-b5a73429cdb1",
+  page: "laborum",
+  pageSize: "totam",
   raw: false,
-  syncToken: "ipsum",
-  updatedAfter: "quisquam",
-  xAccountId: "tenetur",
+  syncToken: "incidunt",
+  updatedAfter: "aspernatur",
+  xAccountId: "dolores",
 }).then((res: AtsUsersGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.list({
-  fields: "amet",
-  page: "tempore",
-  pageSize: "accusamus",
+  fields: "distinctio",
+  page: "facilis",
+  pageSize: "aliquid",
   raw: false,
-  syncToken: "numquam",
-  updatedAfter: "enim",
-  xAccountId: "dolorem",
+  syncToken: "quam",
+  updatedAfter: "molestias",
+  xAccountId: "temporibus",
 }).then((res: AtsUsersListResponse) => {
   if (res.statusCode == 200) {
     // handle response

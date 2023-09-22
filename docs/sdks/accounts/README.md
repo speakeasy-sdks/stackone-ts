@@ -22,7 +22,7 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
-const id: string = "sapiente";
+const id: string = "qui";
 
 sdk.accounts.delete(id).then((res: AccountsDeleteResponse) => {
   if (res.statusCode == 200) {
@@ -61,7 +61,7 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
-const id: string = "totam";
+const id: string = "neque";
 
 sdk.accounts.get(id).then((res: AccountsGetResponse) => {
   if (res.statusCode == 200) {
@@ -100,8 +100,8 @@ const sdk = new StackOne({
     username: "YOUR_USERNAME",
   },
 });
-const originOwnerId: string = "nihil";
-const provider: string = "sit";
+const originOwnerId: string = "fugit";
+const provider: string = "magni";
 
 sdk.accounts.list(originOwnerId, provider).then((res: AccountsListResponse) => {
   if (res.statusCode == 200) {

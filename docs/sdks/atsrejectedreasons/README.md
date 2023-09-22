@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.get({
-  fields: "iste",
-  id: "396fea75-96eb-410f-aaa2-352c5955907a",
-  page: "doloribus",
-  pageSize: "sapiente",
+  fields: "culpa",
+  id: "ff1a3a2f-a946-4773-9251-aa52c3f5ad01",
+  page: "error",
+  pageSize: "temporibus",
   raw: false,
-  syncToken: "architecto",
-  updatedAfter: "mollitia",
-  xAccountId: "dolorem",
+  syncToken: "laborum",
+  updatedAfter: "quasi",
+  xAccountId: "reiciendis",
 }).then((res: AtsRejectedReasonsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.list({
-  fields: "culpa",
-  page: "consequuntur",
-  pageSize: "repellat",
+  fields: "voluptatibus",
+  page: "vero",
+  pageSize: "nihil",
   raw: false,
-  syncToken: "mollitia",
-  updatedAfter: "occaecati",
-  xAccountId: "numquam",
+  syncToken: "praesentium",
+  updatedAfter: "voluptatibus",
+  xAccountId: "ipsa",
 }).then((res: AtsRejectedReasonsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

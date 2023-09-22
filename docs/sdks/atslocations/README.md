@@ -23,14 +23,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.get({
-  fields: "delectus",
-  id: "48633323-f9b7-47f3-a410-0674ebf69280",
-  page: "fugiat",
-  pageSize: "ab",
+  fields: "sit",
+  id: "d1ba77a8-9ebf-4737-ae42-03ce5e6a95d8",
+  page: "similique",
+  pageSize: "alias",
   raw: false,
-  syncToken: "soluta",
-  updatedAfter: "dolorum",
-  xAccountId: "iusto",
+  syncToken: "at",
+  updatedAfter: "quaerat",
+  xAccountId: "tempora",
 }).then((res: AtsLocationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,13 +70,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.list({
-  fields: "voluptate",
-  page: "dolorum",
-  pageSize: "deleniti",
+  fields: "vel",
+  page: "quod",
+  pageSize: "officiis",
   raw: false,
-  syncToken: "omnis",
-  updatedAfter: "necessitatibus",
-  xAccountId: "distinctio",
+  syncToken: "qui",
+  updatedAfter: "dolorum",
+  xAccountId: "a",
 }).then((res: AtsLocationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

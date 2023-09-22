@@ -29,11 +29,11 @@ const sdk = new StackOne({
 const proxyRequestBody: ProxyRequestBody = {
   body: {},
   headers: {},
-  method: ProxyRequestBodyMethod.Patch,
+  method: ProxyRequestBodyMethod.Delete,
   path: "/employees/directory",
   url: "https://api.sample-integration.com/v1",
 };
-const xAccountId: string = "ullam";
+const xAccountId: string = "explicabo";
 
 sdk.proxy.create(proxyRequestBody, xAccountId).then((res: ProxyRequestPostResponse) => {
   if (res.statusCode == 200) {
