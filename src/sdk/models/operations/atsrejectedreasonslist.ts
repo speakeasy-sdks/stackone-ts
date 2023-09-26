@@ -51,6 +51,9 @@ export class AtsRejectedReasonsListRequest extends SpeakeasyBase {
 }
 
 export class AtsRejectedReasonsListResponse extends SpeakeasyBase {
+    /**
+     * HTTP response content type for this operation
+     */
     @SpeakeasyMetadata()
     contentType: string;
 
@@ -60,9 +63,15 @@ export class AtsRejectedReasonsListResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     rejectedReasonsPaginated?: shared.RejectedReasonsPaginated;
 
+    /**
+     * HTTP response status code for this operation
+     */
     @SpeakeasyMetadata()
     statusCode: number;
 
+    /**
+     * Raw HTTP response; suitable for custom response parsing
+     */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
 }

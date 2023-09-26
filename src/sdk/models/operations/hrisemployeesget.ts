@@ -60,6 +60,9 @@ export class HrisEmployeesGetRequest extends SpeakeasyBase {
 }
 
 export class HrisEmployeesGetResponse extends SpeakeasyBase {
+    /**
+     * HTTP response content type for this operation
+     */
     @SpeakeasyMetadata()
     contentType: string;
 
@@ -69,9 +72,15 @@ export class HrisEmployeesGetResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     employeeResult?: shared.EmployeeResult;
 
+    /**
+     * HTTP response status code for this operation
+     */
     @SpeakeasyMetadata()
     statusCode: number;
 
+    /**
+     * Raw HTTP response; suitable for custom response parsing
+     */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
 }

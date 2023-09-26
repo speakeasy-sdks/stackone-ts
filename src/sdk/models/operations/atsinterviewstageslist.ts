@@ -51,6 +51,9 @@ export class AtsInterviewStagesListRequest extends SpeakeasyBase {
 }
 
 export class AtsInterviewStagesListResponse extends SpeakeasyBase {
+    /**
+     * HTTP response content type for this operation
+     */
     @SpeakeasyMetadata()
     contentType: string;
 
@@ -60,9 +63,15 @@ export class AtsInterviewStagesListResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     interviewStagesPaginated?: shared.InterviewStagesPaginated;
 
+    /**
+     * HTTP response status code for this operation
+     */
     @SpeakeasyMetadata()
     statusCode: number;
 
+    /**
+     * Raw HTTP response; suitable for custom response parsing
+     */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
 }
