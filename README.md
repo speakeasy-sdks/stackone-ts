@@ -66,17 +66,17 @@ sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: A
 ## Available Resources and Operations
 
 
-### [ATSInterviewStages](docs/sdks/atsinterviewstages/README.md)
+### [atsInterviewStages](docs/sdks/atsinterviewstages/README.md)
 
 * [get](docs/sdks/atsinterviewstages/README.md#get) - Get Interview Stage
 * [list](docs/sdks/atsinterviewstages/README.md#list) - List Interview Stages
 
-### [ATSRejectedReasons](docs/sdks/atsrejectedreasons/README.md)
+### [atsRejectedReasons](docs/sdks/atsrejectedreasons/README.md)
 
 * [get](docs/sdks/atsrejectedreasons/README.md#get) - Get Rejected Reason
 * [list](docs/sdks/atsrejectedreasons/README.md#list) - List Rejected Reasons
 
-### [ATSApplications](docs/sdks/atsapplications/README.md)
+### [atsApplications](docs/sdks/atsapplications/README.md)
 
 * [create](docs/sdks/atsapplications/README.md#create) - Post Application (early access)
 * [get](docs/sdks/atsapplications/README.md#get) - Get Application
@@ -85,81 +85,81 @@ sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: A
 * [listOffers](docs/sdks/atsapplications/README.md#listoffers) - List Application Offers
 * [update](docs/sdks/atsapplications/README.md#update) - Patch Application (early access)
 
-### [ATSDepartments](docs/sdks/atsdepartments/README.md)
+### [atsDepartments](docs/sdks/atsdepartments/README.md)
 
 * [get](docs/sdks/atsdepartments/README.md#get) - Get Department
 * [list](docs/sdks/atsdepartments/README.md#list) - List Departments
 
-### [ATSInterviews](docs/sdks/atsinterviews/README.md)
+### [atsInterviews](docs/sdks/atsinterviews/README.md)
 
 * [get](docs/sdks/atsinterviews/README.md#get) - Get Interview
 * [list](docs/sdks/atsinterviews/README.md#list) - List Interviews
 
-### [ATSJobs](docs/sdks/atsjobs/README.md)
+### [atsJobs](docs/sdks/atsjobs/README.md)
 
 * [get](docs/sdks/atsjobs/README.md#get) - Get Job
 * [list](docs/sdks/atsjobs/README.md#list) - List Jobs
 
-### [ATSLocations](docs/sdks/atslocations/README.md)
+### [atsLocations](docs/sdks/atslocations/README.md)
 
 * [get](docs/sdks/atslocations/README.md#get) - Get Location
 * [list](docs/sdks/atslocations/README.md#list) - List locations
 
-### [ATSUsers](docs/sdks/atsusers/README.md)
+### [atsUsers](docs/sdks/atsusers/README.md)
 
 * [get](docs/sdks/atsusers/README.md#get) - Get User
 * [list](docs/sdks/atsusers/README.md#list) - List Users
 
-### [Accounts](docs/sdks/accounts/README.md)
+### [accounts](docs/sdks/accounts/README.md)
 
 * [delete](docs/sdks/accounts/README.md#delete) - Delete Account
 * [get](docs/sdks/accounts/README.md#get) - Get Account
 * [list](docs/sdks/accounts/README.md#list) - List Accounts
 
-### [CRMAccounts](docs/sdks/crmaccounts/README.md)
+### [crmAccounts](docs/sdks/crmaccounts/README.md)
 
 * [get](docs/sdks/crmaccounts/README.md#get) - Get Account
 * [list](docs/sdks/crmaccounts/README.md#list) - List Accounts
 
-### [Campaigns](docs/sdks/campaigns/README.md)
+### [campaigns](docs/sdks/campaigns/README.md)
 
 * [get](docs/sdks/campaigns/README.md#get) - Get campaign
 * [list](docs/sdks/campaigns/README.md#list) - List campaigns
 
-### [ConnectSessions](docs/sdks/connectsessions/README.md)
+### [connectSessions](docs/sdks/connectsessions/README.md)
 
 * [connectSessionsAuthenticate](docs/sdks/connectsessions/README.md#connectsessionsauthenticate) - Authenticate Session
 * [connectSessionsCreate](docs/sdks/connectsessions/README.md#connectsessionscreate) - Create Session
 
-### [Contacts](docs/sdks/contacts/README.md)
+### [contacts](docs/sdks/contacts/README.md)
 
 * [create](docs/sdks/contacts/README.md#create) - Post Contact (early access)
 * [get](docs/sdks/contacts/README.md#get) - Get Contact
 * [list](docs/sdks/contacts/README.md#list) - List Contacts
 * [update](docs/sdks/contacts/README.md#update) - Patch Contact (early access)
 
-### [HRISCompanies](docs/sdks/hriscompanies/README.md)
+### [hrisCompanies](docs/sdks/hriscompanies/README.md)
 
 * [get](docs/sdks/hriscompanies/README.md#get) - Get Company
 * [list](docs/sdks/hriscompanies/README.md#list) - List Companies
 
-### [HRISEmployees](docs/sdks/hrisemployees/README.md)
+### [hrisEmployees](docs/sdks/hrisemployees/README.md)
 
 * [create](docs/sdks/hrisemployees/README.md#create) - Creates an employee
 * [get](docs/sdks/hrisemployees/README.md#get) - Get Employee
 * [list](docs/sdks/hrisemployees/README.md#list) - List Employees
 
-### [HRISEmployments](docs/sdks/hrisemployments/README.md)
+### [hrisEmployments](docs/sdks/hrisemployments/README.md)
 
 * [get](docs/sdks/hrisemployments/README.md#get) - Get Employment
 * [list](docs/sdks/hrisemployments/README.md#list) - List Employments
 
-### [HRISLocations](docs/sdks/hrislocations/README.md)
+### [hrisLocations](docs/sdks/hrislocations/README.md)
 
 * [get](docs/sdks/hrislocations/README.md#get) - Get location
 * [list](docs/sdks/hrislocations/README.md#list) - List locations
 
-### [MarketingTemplates](docs/sdks/marketingtemplates/README.md)
+### [marketingTemplates](docs/sdks/marketingtemplates/README.md)
 
 * [createEmail](docs/sdks/marketingtemplates/README.md#createemail) - Creates an email template
 * [createOmnichannel](docs/sdks/marketingtemplates/README.md#createomnichannel) - Creates an omni-channel template
@@ -172,12 +172,12 @@ sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: A
 * [listOmnichannel](docs/sdks/marketingtemplates/README.md#listomnichannel) - List omni-channel templates
 * [listPush](docs/sdks/marketingtemplates/README.md#listpush) - List push templates
 
-### [Proxy](docs/sdks/proxy/README.md)
+### [proxy](docs/sdks/proxy/README.md)
 
 * [create](docs/sdks/proxy/README.md#create) - Proxy Request
 
 
-### [Ats.Candidates](docs/sdks/atscandidates/README.md)
+### [ats.candidates](docs/sdks/atscandidates/README.md)
 
 * [create](docs/sdks/atscandidates/README.md#create) - Post Candidate (early access)
 * [get](docs/sdks/atscandidates/README.md#get) - Get Candidate
