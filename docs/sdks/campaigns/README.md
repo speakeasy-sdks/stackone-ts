@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.campaigns.get({
-  fields: "quisquam",
-  id: "e953f73e-f7fb-4c7a-bd74-dd39c0f5d2cf",
-  page: "doloribus",
-  pageSize: "iusto",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "eligendi",
-  updatedAfter: "ducimus",
-  xAccountId: "alias",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: MarketingCampaignsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.campaigns.list({
-  fields: "officia",
-  page: "tempora",
-  pageSize: "ipsam",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "ea",
-  updatedAfter: "aspernatur",
-  xAccountId: "vel",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: MarketingCampaignsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

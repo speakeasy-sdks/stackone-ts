@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsDepartments.get({
-  fields: "dolor",
-  id: "e2516fe4-c8b7-411e-9b7f-d2ed028921cd",
-  page: "pariatur",
-  pageSize: "maxime",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "ea",
-  updatedAfter: "excepturi",
-  xAccountId: "odit",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsDepartmentsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsDepartments.list({
-  fields: "ea",
-  page: "accusantium",
-  pageSize: "ab",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "maiores",
-  updatedAfter: "quidem",
-  xAccountId: "ipsam",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsDepartmentsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

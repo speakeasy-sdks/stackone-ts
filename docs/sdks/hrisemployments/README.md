@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployments.get({
-  fields: "sit",
-  id: "ab3c20c4-f378-49fd-871f-99dd2efd121a",
-  page: "culpa",
-  pageSize: "aliquid",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "tenetur",
-  updatedAfter: "quae",
-  xAccountId: "earum",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: HrisEmploymentsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisEmployments.list({
-  fields: "vel",
-  page: "in",
-  pageSize: "eius",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "libero",
-  updatedAfter: "illum",
-  xAccountId: "soluta",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: HrisEmploymentsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

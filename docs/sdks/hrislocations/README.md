@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisLocations.get({
-  fields: "accusantium",
-  id: "4f157560-82d6-48ea-99f1-d17051339d08",
-  page: "aut",
-  pageSize: "laudantium",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "eum",
-  updatedAfter: "mollitia",
-  xAccountId: "ab",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: HrisLocationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisLocations.list({
-  fields: "corrupti",
-  page: "non",
-  pageSize: "voluptatem",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "dolor",
-  updatedAfter: "occaecati",
-  xAccountId: "numquam",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: HrisLocationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

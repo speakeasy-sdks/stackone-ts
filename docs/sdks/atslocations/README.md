@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.get({
-  fields: "sit",
-  id: "d1ba77a8-9ebf-4737-ae42-03ce5e6a95d8",
-  page: "similique",
-  pageSize: "alias",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "at",
-  updatedAfter: "quaerat",
-  xAccountId: "tempora",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsLocationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsLocations.list({
-  fields: "vel",
-  page: "quod",
-  pageSize: "officiis",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "qui",
-  updatedAfter: "dolorum",
-  xAccountId: "a",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsLocationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

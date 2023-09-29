@@ -24,7 +24,7 @@ const sdk = new StackOne({
 });
 
 sdk.connectSessions.connectSessionsAuthenticate({
-  token: "possimus",
+  token: "asperiores technologies",
 }).then((res: ConnectSessionsAuthenticateResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -66,14 +66,14 @@ const sdk = new StackOne({
 
 sdk.connectSessions.connectSessionsCreate({
   categories: [
-    ConnectSessionCreateCategories.Hris,
+    ConnectSessionCreateCategories.Crm,
   ],
-  expiresIn: 1898.48,
+  expiresIn: 6768.52,
   metadata: {},
-  originOwnerId: "ex",
-  originOwnerName: "laudantium",
-  originUsername: "dicta",
-  provider: "dolor",
+  originOwnerId: "bandwidth Gasoline dedicated",
+  originOwnerName: "Officer",
+  originUsername: "Hybrid Bugatti",
+  provider: "Health lumen ack",
 }).then((res: ConnectSessionsCreateResponse) => {
   if (res.statusCode == 200) {
     // handle response

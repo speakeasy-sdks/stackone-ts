@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.crmAccounts.get({
-  fields: "odio",
-  id: "15bf0cbb-1e31-4b8b-90f3-443a1108e0ad",
-  page: "porro",
-  pageSize: "doloribus",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "ut",
-  updatedAfter: "facilis",
-  xAccountId: "cupiditate",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: CrmAccountsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.crmAccounts.list({
-  fields: "qui",
-  page: "quae",
-  pageSize: "laudantium",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "odio",
-  updatedAfter: "occaecati",
-  xAccountId: "voluptatibus",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: CrmAccountsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

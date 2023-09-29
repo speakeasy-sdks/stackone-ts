@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.get({
-  fields: "voluptate",
-  id: "6b0d5f0d-30c5-4fbb-a587-053202c73d5f",
-  page: "recusandae",
-  pageSize: "omnis",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "facilis",
-  updatedAfter: "perspiciatis",
-  xAccountId: "voluptatem",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsInterviewsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviews.list({
-  fields: "porro",
-  page: "consequuntur",
-  pageSize: "blanditiis",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "error",
-  updatedAfter: "eaque",
-  xAccountId: "occaecati",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsInterviewsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

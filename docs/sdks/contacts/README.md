@@ -27,22 +27,22 @@ const sdk = new StackOne({
 });
 const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
   accountIds: [
-    "maiores",
+    "online",
   ],
-  companyName: "quasi",
+  companyName: "Stokes - Johnson",
   dealIds: [
-    "ex",
+    "innovative",
   ],
   emails: [
-    "nulla",
+    "blue",
   ],
-  firstName: "Keven",
-  lastName: "Wiza",
+  firstName: "Zetta",
+  lastName: "Schinner",
   phoneNumbers: [
-    "nostrum",
+    "abnormally",
   ],
 };
-const xAccountId: string = "sapiente";
+const xAccountId: string = "deposit";
 
 sdk.contacts.create(crmCreateContactRequestDto, xAccountId).then((res: CrmContactPostResponse) => {
   if (res.statusCode == 200) {
@@ -84,14 +84,14 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.get({
-  fields: "quisquam",
-  id: "e6c55614-6c3e-4250-bb00-8c42e141aac3",
-  page: "eum",
-  pageSize: "autem",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "nobis",
-  updatedAfter: "quas",
-  xAccountId: "assumenda",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: CrmContactsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -131,13 +131,13 @@ const sdk = new StackOne({
 });
 
 sdk.contacts.list({
-  fields: "nulla",
-  page: "voluptas",
-  pageSize: "libero",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "quasi",
-  updatedAfter: "tempora",
-  xAccountId: "numquam",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: ContactsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -178,23 +178,23 @@ const sdk = new StackOne({
 });
 const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {
   accountIds: [
-    "explicabo",
+    "Van",
   ],
-  companyName: "provident",
+  companyName: "Hegmann LLC",
   dealIds: [
-    "ipsa",
+    "dock",
   ],
   emails: [
-    "molestiae",
+    "Quality",
   ],
-  firstName: "Elisha",
-  lastName: "Kuhlman",
+  firstName: "Jeffry",
+  lastName: "Kihn",
   phoneNumbers: [
-    "eius",
+    "cheater",
   ],
 };
-const id: string = "esse";
-const xAccountId: string = "esse";
+const id: string = "Islands";
+const xAccountId: string = "online";
 
 sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId).then((res: CrmContactPatchResponse) => {
   if (res.statusCode == 200) {

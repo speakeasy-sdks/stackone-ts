@@ -14,22 +14,22 @@ const sdk = new StackOne({
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "corrupti",
+    "online",
   ],
-  company: "Rau - Sporer",
+  company: "Stokes - Johnson",
   emails: [
     {
-      type: "unde",
-      value: "nulla",
+      type: "South",
+      value: "grey technology East",
     },
   ],
-  firstName: "Karley",
-  lastName: "Stamm",
-  name: "Sabrina Oberbrunner",
-  phone: "909-434-7854 x539",
-  title: "Dr.",
+  firstName: "Cecelia",
+  lastName: "Gutkowski",
+  name: "male",
+  phone: "(855) 874-9630 x29052",
+  title: "Fish",
 };
-const xAccountId: string = "ab";
+const xAccountId: string = "Buckinghamshire";
 
 sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {

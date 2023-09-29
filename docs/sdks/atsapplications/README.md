@@ -33,15 +33,15 @@ const sdk = new StackOne({
 });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "omnis",
-    value: ApplicationStatusEnumValue.Hired,
+    sourceValue: "bluetooth Extended",
+    value: ApplicationStatusEnumValue.Active,
   },
-  candidateId: "cum",
-  interviewStageId: "perferendis",
-  jobId: "doloremque",
-  locationId: "reprehenderit",
+  candidateId: "Cambridgeshire grey technology",
+  interviewStageId: "deposit",
+  jobId: "Northwest",
+  locationId: "SUV quantify Polestar",
 };
-const xAccountId: string = "ut";
+const xAccountId: string = "mobile";
 
 sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId).then((res: ApplicationPostResponse) => {
   if (res.statusCode == 200) {
@@ -83,14 +83,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.get({
-  fields: "maiores",
-  id: "15471b5e-6e13-4b99-9488-e1e91e450ad2",
-  page: "deserunt",
-  pageSize: "distinctio",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "quibusdam",
-  updatedAfter: "labore",
-  xAccountId: "modi",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: ApplicationsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -130,15 +130,15 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.getOffers({
-  fields: "qui",
-  id: "69802d50-2a94-4bb4-b63c-969e9a3efa77",
-  page: "illum",
-  pageSize: "maiores",
+  fields: "transmit Architect",
+  id: "<ID>",
+  page: "oatmeal",
+  pageSize: "up violet",
   raw: false,
-  subResourceId: "rerum",
-  syncToken: "dicta",
-  updatedAfter: "magnam",
-  xAccountId: "cumque",
+  subResourceId: "navigate",
+  syncToken: "weary South generating",
+  updatedAfter: "male",
+  xAccountId: "Solutions",
 }).then((res: ApplicationsOffersGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -178,13 +178,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.list({
-  fields: "facere",
-  page: "ea",
-  pageSize: "aliquid",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "laborum",
-  updatedAfter: "accusamus",
-  xAccountId: "non",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: ApplicationsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -224,14 +224,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsApplications.listOffers({
-  fields: "occaecati",
-  id: "5efb9ba8-8f3a-4669-9707-4ba4469b6e21",
-  page: "magnam",
-  pageSize: "et",
+  fields: "Northeast deposit Southeast",
+  id: "<ID>",
+  page: "open busily upbeat",
+  pageSize: "Investment Electronic East",
   raw: false,
-  syncToken: "excepturi",
-  updatedAfter: "ullam",
-  xAccountId: "provident",
+  syncToken: "Rubber",
+  updatedAfter: "payment Internal heuristic",
+  xAccountId: "Toys East",
 }).then((res: ApplicationsOffersListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -276,16 +276,16 @@ const sdk = new StackOne({
 });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "quos",
+    sourceValue: "New Reactive dock",
     value: ApplicationStatusEnumValue.Lead,
   },
-  candidateId: "accusantium",
-  interviewStageId: "mollitia",
-  jobId: "reiciendis",
-  locationId: "mollitia",
+  candidateId: "redundant cheater Islands",
+  interviewStageId: "withdrawal extend",
+  jobId: "bifurcated",
+  locationId: "silver immediately",
 };
-const id: string = "ad";
-const xAccountId: string = "eum";
+const id: string = "implement";
+const xAccountId: string = "JBOD";
 
 sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId).then((res: ApplicationPatchResponse) => {
   if (res.statusCode == 200) {

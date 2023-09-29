@@ -30,11 +30,11 @@ const sdk = new StackOne({
 const proxyRequestBody: ProxyRequestBody = {
   body: {},
   headers: {},
-  method: ProxyRequestBodyMethod.Delete,
+  method: ProxyRequestBodyMethod.Put,
   path: "/employees/directory",
   url: "https://api.sample-integration.com/v1",
 };
-const xAccountId: string = "explicabo";
+const xAccountId: string = "bluetooth";
 
 sdk.proxy.create(proxyRequestBody, xAccountId).then((res: ProxyRequestPostResponse) => {
   if (res.statusCode == 200) {

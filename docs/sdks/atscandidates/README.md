@@ -27,22 +27,22 @@ const sdk = new StackOne({
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "voluptas",
+    "online",
   ],
-  company: "Bradtke - Hoppe",
+  company: "Stokes - Johnson",
   emails: [
     {
-      type: "sapiente",
-      value: "debitis",
+      type: "South",
+      value: "grey technology East",
     },
   ],
-  firstName: "Antonina",
-  lastName: "Wisoky",
-  name: "Naomi Wuckert",
-  phone: "(482) 555-9224 x9402",
-  title: "Dr.",
+  firstName: "Cecelia",
+  lastName: "Gutkowski",
+  name: "male",
+  phone: "(855) 874-9630 x29052",
+  title: "Fish",
 };
-const xAccountId: string = "praesentium";
+const xAccountId: string = "Buckinghamshire";
 
 sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {
@@ -84,14 +84,14 @@ const sdk = new StackOne({
 });
 
 sdk.ats.candidates.get({
-  fields: "facilis",
-  id: "445e80ca-55ef-4d20-a457-e1858b6a89fb",
-  page: "debitis",
-  pageSize: "neque",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "dolorum",
-  updatedAfter: "nostrum",
-  xAccountId: "officia",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsCandidatesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -131,13 +131,13 @@ const sdk = new StackOne({
 });
 
 sdk.ats.candidates.list({
-  fields: "dolorum",
-  page: "corrupti",
-  pageSize: "accusamus",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "tempora",
-  updatedAfter: "atque",
-  xAccountId: "fugit",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsCandidatesListResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -178,23 +178,23 @@ const sdk = new StackOne({
 });
 const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
   applicationIds: [
-    "ut",
+    "Van",
   ],
-  company: "Bartell, Nicolas and Quitzon",
+  company: "Hegmann LLC",
   emails: [
     {
-      type: "magnam",
-      value: "consequatur",
+      type: "Metal cheater Islands",
+      value: "withdrawal extend",
     },
   ],
-  firstName: "Jaiden",
-  lastName: "Hintz",
-  name: "Nora Lynch",
-  phone: "(641) 243-9602",
-  title: "Dr.",
+  firstName: "Delphia",
+  lastName: "Hilll",
+  name: "Forward",
+  phone: "933.244.7669 x45037",
+  title: "Gasoline Lev",
 };
-const id: string = "dolorem";
-const xAccountId: string = "harum";
+const id: string = "Wooden";
+const xAccountId: string = "Internal";
 
 sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId).then((res: AtsCandidatePatchResponse) => {
   if (res.statusCode == 200) {

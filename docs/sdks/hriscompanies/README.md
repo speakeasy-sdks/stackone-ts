@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.hrisCompanies.get({
-  fields: "rem",
-  id: "a7bd466d-28c1-40ab-bcdc-a4251904e523",
-  page: "quo",
-  pageSize: "esse",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "recusandae",
-  updatedAfter: "aperiam",
-  xAccountId: "distinctio",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: HrisCompaniesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.hrisCompanies.list({
-  fields: "quod",
-  page: "dignissimos",
-  pageSize: "inventore",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "nihil",
-  updatedAfter: "totam",
-  xAccountId: "accusamus",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: HrisCompaniesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

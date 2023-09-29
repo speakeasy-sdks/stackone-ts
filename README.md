@@ -37,22 +37,22 @@ const sdk = new StackOne({
 });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "quis",
+    "online",
   ],
-  company: "O'Connell Inc",
+  company: "Stokes - Johnson",
   emails: [
     {
-      type: "ipsam",
-      value: "repellendus",
+      type: "South",
+      value: "grey technology East",
     },
   ],
-  firstName: "Verner",
-  lastName: "Satterfield",
-  name: "Teri Strosin",
-  phone: "845-861-7651 x59751",
-  title: "Ms.",
+  firstName: "Cecelia",
+  lastName: "Gutkowski",
+  name: "male",
+  phone: "(855) 874-9630 x29052",
+  title: "Fish",
 };
-const xAccountId: string = "molestiae";
+const xAccountId: string = "Buckinghamshire";
 
 sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
   if (res.statusCode == 200) {

@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.get({
-  fields: "esse",
-  id: "a73cf3be-453f-4870-b326-b5a73429cdb1",
-  page: "laborum",
-  pageSize: "totam",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "incidunt",
-  updatedAfter: "aspernatur",
-  xAccountId: "dolores",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsUsersGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsUsers.list({
-  fields: "distinctio",
-  page: "facilis",
-  pageSize: "aliquid",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "quam",
-  updatedAfter: "molestias",
-  xAccountId: "temporibus",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsUsersListResponse) => {
   if (res.statusCode == 200) {
     // handle response

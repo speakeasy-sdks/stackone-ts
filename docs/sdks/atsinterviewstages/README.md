@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviewStages.get({
-  fields: "modi",
-  id: "2cb73920-5929-4396-bea7-596eb10faaa2",
-  page: "dolorem",
-  pageSize: "corporis",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "explicabo",
-  updatedAfter: "nobis",
-  xAccountId: "enim",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsInterviewStagesGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsInterviewStages.list({
-  fields: "omnis",
-  page: "nemo",
-  pageSize: "minima",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "excepturi",
-  updatedAfter: "accusantium",
-  xAccountId: "iure",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsInterviewStagesListResponse) => {
   if (res.statusCode == 200) {
     // handle response

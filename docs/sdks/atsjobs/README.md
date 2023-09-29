@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.get({
-  fields: "rerum",
-  id: "3fe49a8d-9cbf-4486-b332-3f9b77f3a410",
-  page: "ipsa",
-  pageSize: "iure",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "odio",
-  updatedAfter: "quaerat",
-  xAccountId: "accusamus",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsJobsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsJobs.list({
-  fields: "quidem",
-  page: "voluptatibus",
-  pageSize: "voluptas",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "natus",
-  updatedAfter: "eos",
-  xAccountId: "atque",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsJobsListResponse) => {
   if (res.statusCode == 200) {
     // handle response

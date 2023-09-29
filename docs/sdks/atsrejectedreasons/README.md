@@ -24,14 +24,14 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.get({
-  fields: "culpa",
-  id: "ff1a3a2f-a946-4773-9251-aa52c3f5ad01",
-  page: "error",
-  pageSize: "temporibus",
+  fields: "Northeast Hatchback Kia",
+  id: "<ID>",
+  page: "towards",
+  pageSize: "Xenon Account",
   raw: false,
-  syncToken: "laborum",
-  updatedAfter: "quasi",
-  xAccountId: "reiciendis",
+  syncToken: "Cambridgeshire",
+  updatedAfter: "Rupiah",
+  xAccountId: "Neon aside Dollar",
 }).then((res: AtsRejectedReasonsGetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -71,13 +71,13 @@ const sdk = new StackOne({
 });
 
 sdk.atsRejectedReasons.list({
-  fields: "voluptatibus",
-  page: "vero",
-  pageSize: "nihil",
+  fields: "Northeast Metal Canada",
+  page: "Data Response West",
+  pageSize: "boil primary synthesize",
   raw: false,
-  syncToken: "praesentium",
-  updatedAfter: "voluptatibus",
-  xAccountId: "ipsa",
+  syncToken: "hacking Paradigm",
+  updatedAfter: "backing",
+  xAccountId: "optimize itaque",
 }).then((res: AtsRejectedReasonsListResponse) => {
   if (res.statusCode == 200) {
     // handle response
