@@ -14,29 +14,24 @@ Get Company
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisCompaniesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisCompanies.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: HrisCompaniesGetResponse) => {
+  const res = await sdk.hrisCompanies.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -61,28 +56,23 @@ List Companies
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisCompaniesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisCompanies.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: HrisCompaniesListResponse) => {
+  const res = await sdk.hrisCompanies.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

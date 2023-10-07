@@ -14,22 +14,23 @@ Authenticate Session
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ConnectSessionsAuthenticateResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.connectSessions.connectSessionsAuthenticate({
-  token: "asperiores technologies",
-}).then((res: ConnectSessionsAuthenticateResponse) => {
+  const res = await sdk.connectSessions.connectSessionsAuthenticate({
+    token: "asperiores technologies",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -54,31 +55,33 @@ Create Session
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ConnectSessionsCreateResponse } from "StackOne/dist/sdk/models/operations";
 import { ConnectSessionCreateCategories } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.connectSessions.connectSessionsCreate({
-  categories: [
-    ConnectSessionCreateCategories.Crm,
-  ],
-  expiresIn: 6768.52,
-  metadata: {},
-  originOwnerId: "bandwidth Gasoline dedicated",
-  originOwnerName: "Officer",
-  originUsername: "Hybrid Bugatti",
-  provider: "Health lumen ack",
-}).then((res: ConnectSessionsCreateResponse) => {
+  const res = await sdk.connectSessions.connectSessionsCreate({
+    categories: [
+      ConnectSessionCreateCategories.Ats,
+      ConnectSessionCreateCategories.Hris,
+      ConnectSessionCreateCategories.Crm,
+      ConnectSessionCreateCategories.Marketing,
+      ConnectSessionCreateCategories.Common,
+    ],
+    metadata: {},
+    originOwnerId: "Executive Country",
+    originOwnerName: "Petaluma",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

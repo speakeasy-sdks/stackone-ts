@@ -15,21 +15,23 @@ Delete Account
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AccountsDeleteRequest, AccountsDeleteResponse } from "StackOne/dist/sdk/models/operations";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const id: string = "program";
 
-sdk.accounts.delete(id).then((res: AccountsDeleteResponse) => {
+  const res = await sdk.accounts.delete(id);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -54,21 +56,23 @@ Get Account
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AccountsGetRequest, AccountsGetResponse } from "StackOne/dist/sdk/models/operations";
+import { AccountsGetRequest } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const id: string = "female";
 
-sdk.accounts.get(id).then((res: AccountsGetResponse) => {
+  const res = await sdk.accounts.get(id);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -93,22 +97,24 @@ List Accounts
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AccountsListRequest, AccountsListResponse } from "StackOne/dist/sdk/models/operations";
+import { AccountsListRequest } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const originOwnerId: string = "Bicycle";
 const provider: string = "Metal";
 
-sdk.accounts.list(originOwnerId, provider).then((res: AccountsListResponse) => {
+  const res = await sdk.accounts.list(originOwnerId, provider);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

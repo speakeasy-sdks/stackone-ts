@@ -15,7 +15,7 @@ Creates an employee
 
 ```typescript
 import { StackOne } from "StackOne";
-import { EmployeePostRequest, EmployeePostResponse } from "StackOne/dist/sdk/models/operations";
+import { EmployeePostRequest } from "StackOne/dist/sdk/models/operations";
 import {
   HrisCreateEmployeeRequestDto,
   HrisCreateEmployeeRequestDtoEmploymentStatus,
@@ -25,12 +25,13 @@ import {
   HrisCreateEmployeeRequestDtoMaritalStatus,
 } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   avatar: "https://example.com/avatar.png",
   avatarUrl: "https://example.com/avatar.png",
@@ -39,17 +40,12 @@ const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   dateOfBirth: "1990-01-01",
   department: "Physics",
   displayName: "Sir Issac Newton",
-  employmentStatus: HrisCreateEmployeeRequestDtoEmploymentStatus.Terminated,
-  employmentType: HrisCreateEmployeeRequestDtoEmploymentType.Temporary,
-  ethnicity: HrisCreateEmployeeRequestDtoEthnicity.TwoOrMoreRaces,
   firstName: "Issac",
-  gender: HrisCreateEmployeeRequestDtoGender.UnmappedValue,
   hireDate: "2022-01-01",
   id: "1687-3",
   jobTitle: "Physicist",
   lastName: "Newton",
   managerId: "67890",
-  maritalStatus: HrisCreateEmployeeRequestDtoMaritalStatus.Widowed,
   name: "Issac Newton",
   personalEmail: "isaac.newton@example.com",
   personalPhoneNumber: "+1234567890",
@@ -60,13 +56,14 @@ const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   workEmail: "newton@example.com",
   workPhoneNumber: "+1234567890",
 };
-const xAccountId: string = "innovative";
+const xAccountId: string = "online";
 
-sdk.hrisEmployees.create(hrisCreateEmployeeRequestDto, xAccountId).then((res: EmployeePostResponse) => {
+  const res = await sdk.hrisEmployees.create(hrisCreateEmployeeRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -92,30 +89,24 @@ Get Employee
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisEmployeesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisEmployees.get({
-  expand: "Northeast Hatchback Kia",
-  fields: "towards",
-  id: "<ID>",
-  page: "Xenon Account",
-  pageSize: "Cambridgeshire",
-  raw: false,
-  syncToken: "Rupiah",
-  updatedAfter: "Neon aside Dollar",
-  xAccountId: "Optional",
-}).then((res: HrisEmployeesGetResponse) => {
+  const res = await sdk.hrisEmployees.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -140,29 +131,23 @@ List Employees
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisEmployeesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisEmployees.list({
-  expand: "Northeast Metal Canada",
-  fields: "Data Response West",
-  page: "boil primary synthesize",
-  pageSize: "hacking Paradigm",
-  raw: false,
-  syncToken: "backing",
-  updatedAfter: "optimize itaque",
-  xAccountId: "accusantium defensive",
-}).then((res: HrisEmployeesListResponse) => {
+  const res = await sdk.hrisEmployees.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

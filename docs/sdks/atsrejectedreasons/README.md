@@ -14,29 +14,24 @@ Get Rejected Reason
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsRejectedReasonsGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsRejectedReasons.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: AtsRejectedReasonsGetResponse) => {
+  const res = await sdk.atsRejectedReasons.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -61,28 +56,23 @@ List Rejected Reasons
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsRejectedReasonsListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsRejectedReasons.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: AtsRejectedReasonsListResponse) => {
+  const res = await sdk.atsRejectedReasons.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

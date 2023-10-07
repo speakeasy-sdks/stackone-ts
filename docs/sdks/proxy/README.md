@@ -13,7 +13,7 @@ Proxy Request
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ProxyRequestPostRequest, ProxyRequestPostResponse } from "StackOne/dist/sdk/models/operations";
+import { ProxyRequestPostRequest } from "StackOne/dist/sdk/models/operations";
 import {
   ProxyRequestBody,
   ProxyRequestBodyBody,
@@ -21,26 +21,27 @@ import {
   ProxyRequestBodyMethod,
 } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const proxyRequestBody: ProxyRequestBody = {
   body: {},
   headers: {},
-  method: ProxyRequestBodyMethod.Put,
   path: "/employees/directory",
   url: "https://api.sample-integration.com/v1",
 };
-const xAccountId: string = "bluetooth";
+const xAccountId: string = "online";
 
-sdk.proxy.create(proxyRequestBody, xAccountId).then((res: ProxyRequestPostResponse) => {
+  const res = await sdk.proxy.create(proxyRequestBody, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

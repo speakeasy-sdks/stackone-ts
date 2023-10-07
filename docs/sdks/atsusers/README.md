@@ -14,29 +14,24 @@ Get User
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsUsersGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsUsers.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: AtsUsersGetResponse) => {
+  const res = await sdk.atsUsers.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -61,28 +56,23 @@ List Users
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsUsersListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsUsers.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: AtsUsersListResponse) => {
+  const res = await sdk.atsUsers.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

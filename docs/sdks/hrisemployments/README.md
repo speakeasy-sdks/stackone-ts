@@ -14,29 +14,24 @@ Get Employment
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisEmploymentsGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisEmployments.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: HrisEmploymentsGetResponse) => {
+  const res = await sdk.hrisEmployments.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -61,28 +56,23 @@ List Employments
 
 ```typescript
 import { StackOne } from "StackOne";
-import { HrisEmploymentsListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.hrisEmployments.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: HrisEmploymentsListResponse) => {
+  const res = await sdk.hrisEmployments.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

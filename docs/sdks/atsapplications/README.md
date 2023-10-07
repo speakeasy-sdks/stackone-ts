@@ -18,19 +18,20 @@ Post Application (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationPostRequest, ApplicationPostResponse } from "StackOne/dist/sdk/models/operations";
+import { ApplicationPostRequest } from "StackOne/dist/sdk/models/operations";
 import {
   ApplicationStatusEnum,
   ApplicationStatusEnumValue,
   AtsCreateApplicationRequestDto,
 } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
     sourceValue: "bluetooth Extended",
@@ -43,11 +44,12 @@ const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
 };
 const xAccountId: string = "mobile";
 
-sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId).then((res: ApplicationPostResponse) => {
+  const res = await sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -73,29 +75,24 @@ Get Application
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationsGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsApplications.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: ApplicationsGetResponse) => {
+  const res = await sdk.atsApplications.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -120,30 +117,25 @@ Get Application Offer
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationsOffersGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsApplications.getOffers({
-  fields: "transmit Architect",
-  id: "<ID>",
-  page: "oatmeal",
-  pageSize: "up violet",
-  raw: false,
-  subResourceId: "navigate",
-  syncToken: "weary South generating",
-  updatedAfter: "male",
-  xAccountId: "Solutions",
-}).then((res: ApplicationsOffersGetResponse) => {
+  const res = await sdk.atsApplications.getOffers({
+    id: "<ID>",
+    subResourceId: "transmit Architect",
+    xAccountId: "oatmeal",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -168,28 +160,23 @@ List Applications
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationsListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsApplications.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: ApplicationsListResponse) => {
+  const res = await sdk.atsApplications.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -214,29 +201,24 @@ List Application Offers
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationsOffersListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.atsApplications.listOffers({
-  fields: "Northeast deposit Southeast",
-  id: "<ID>",
-  page: "open busily upbeat",
-  pageSize: "Investment Electronic East",
-  raw: false,
-  syncToken: "Rubber",
-  updatedAfter: "payment Internal heuristic",
-  xAccountId: "Toys East",
-}).then((res: ApplicationsOffersListResponse) => {
+  const res = await sdk.atsApplications.listOffers({
+    id: "<ID>",
+    xAccountId: "Northeast deposit Southeast",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -261,37 +243,35 @@ Patch Application (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ApplicationPatchRequest, ApplicationPatchResponse } from "StackOne/dist/sdk/models/operations";
+import { ApplicationPatchRequest } from "StackOne/dist/sdk/models/operations";
 import {
   ApplicationStatusEnum,
   ApplicationStatusEnumValue,
   AtsUpdateApplicationRequestDto,
 } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
     sourceValue: "New Reactive dock",
     value: ApplicationStatusEnumValue.Lead,
   },
-  candidateId: "redundant cheater Islands",
-  interviewStageId: "withdrawal extend",
-  jobId: "bifurcated",
-  locationId: "silver immediately",
 };
-const id: string = "implement";
-const xAccountId: string = "JBOD";
+const id: string = "Analyst";
+const xAccountId: string = "invoice";
 
-sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId).then((res: ApplicationPatchResponse) => {
+  const res = await sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

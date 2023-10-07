@@ -16,39 +16,39 @@ Post Candidate (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatePostRequest, AtsCandidatePostResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePostRequest } from "StackOne/dist/sdk/models/operations";
 import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
     "online",
   ],
-  company: "Stokes - Johnson",
   emails: [
     {
-      type: "South",
+      type: "Extended South",
       value: "grey technology East",
     },
   ],
   firstName: "Cecelia",
   lastName: "Gutkowski",
   name: "male",
-  phone: "(855) 874-9630 x29052",
-  title: "Fish",
+  title: "Gasoline Screen mobile",
 };
-const xAccountId: string = "Buckinghamshire";
+const xAccountId: string = "National";
 
-sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId).then((res: AtsCandidatePostResponse) => {
+  const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -74,29 +74,24 @@ Get Candidate
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.ats.candidates.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: AtsCandidatesGetResponse) => {
+  const res = await sdk.ats.candidates.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -121,28 +116,23 @@ List Candidates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.ats.candidates.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: AtsCandidatesListResponse) => {
+  const res = await sdk.ats.candidates.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -167,40 +157,36 @@ Patch Candidate (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { AtsCandidatePatchRequest, AtsCandidatePatchResponse } from "StackOne/dist/sdk/models/operations";
+import { AtsCandidatePatchRequest } from "StackOne/dist/sdk/models/operations";
 import { AtsUpdateCandidatesRequestDto, CandidateEmail } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
   applicationIds: [
     "Van",
   ],
-  company: "Hegmann LLC",
   emails: [
     {
-      type: "Metal cheater Islands",
-      value: "withdrawal extend",
+      type: "Reactive",
+      value: "Metal cheater Islands",
     },
   ],
-  firstName: "Delphia",
-  lastName: "Hilll",
-  name: "Forward",
-  phone: "933.244.7669 x45037",
-  title: "Gasoline Lev",
 };
-const id: string = "Wooden";
-const xAccountId: string = "Internal";
+const id: string = "online";
+const xAccountId: string = "dynamic";
 
-sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId).then((res: AtsCandidatePatchResponse) => {
+  const res = await sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

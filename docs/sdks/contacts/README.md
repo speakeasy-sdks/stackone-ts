@@ -16,39 +16,40 @@ Post Contact (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { CrmContactPostRequest, CrmContactPostResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmContactPostRequest } from "StackOne/dist/sdk/models/operations";
 import { CrmCreateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
   accountIds: [
     "online",
   ],
-  companyName: "Stokes - Johnson",
   dealIds: [
-    "innovative",
+    "Configuration",
   ],
   emails: [
-    "blue",
+    "Money",
   ],
-  firstName: "Zetta",
-  lastName: "Schinner",
+  firstName: "Pamela",
+  lastName: "Bernhard",
   phoneNumbers: [
-    "abnormally",
+    "shred",
   ],
 };
-const xAccountId: string = "deposit";
+const xAccountId: string = "abnormally";
 
-sdk.contacts.create(crmCreateContactRequestDto, xAccountId).then((res: CrmContactPostResponse) => {
+  const res = await sdk.contacts.create(crmCreateContactRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -74,29 +75,24 @@ Get Contact
 
 ```typescript
 import { StackOne } from "StackOne";
-import { CrmContactsGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.contacts.get({
-  fields: "Northeast Hatchback Kia",
-  id: "<ID>",
-  page: "towards",
-  pageSize: "Xenon Account",
-  raw: false,
-  syncToken: "Cambridgeshire",
-  updatedAfter: "Rupiah",
-  xAccountId: "Neon aside Dollar",
-}).then((res: CrmContactsGetResponse) => {
+  const res = await sdk.contacts.get({
+    id: "<ID>",
+    xAccountId: "Northeast Hatchback Kia",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -121,28 +117,23 @@ List Contacts
 
 ```typescript
 import { StackOne } from "StackOne";
-import { ContactsListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.contacts.list({
-  fields: "Northeast Metal Canada",
-  page: "Data Response West",
-  pageSize: "boil primary synthesize",
-  raw: false,
-  syncToken: "hacking Paradigm",
-  updatedAfter: "backing",
-  xAccountId: "optimize itaque",
-}).then((res: ContactsListResponse) => {
+  const res = await sdk.contacts.list({
+    xAccountId: "Northeast Metal Canada",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -167,40 +158,39 @@ Patch Contact (early access)
 
 ```typescript
 import { StackOne } from "StackOne";
-import { CrmContactPatchRequest, CrmContactPatchResponse } from "StackOne/dist/sdk/models/operations";
+import { CrmContactPatchRequest } from "StackOne/dist/sdk/models/operations";
 import { CrmUpdateContactRequestDto } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {
   accountIds: [
     "Van",
   ],
-  companyName: "Hegmann LLC",
   dealIds: [
-    "dock",
+    "East",
   ],
   emails: [
-    "Quality",
+    "male",
   ],
-  firstName: "Jeffry",
-  lastName: "Kihn",
   phoneNumbers: [
-    "cheater",
+    "Metal",
   ],
 };
-const id: string = "Islands";
-const xAccountId: string = "online";
+const id: string = "cheater";
+const xAccountId: string = "Islands";
 
-sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId).then((res: CrmContactPatchResponse) => {
+  const res = await sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

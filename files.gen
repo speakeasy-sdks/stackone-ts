@@ -140,9 +140,6 @@ src/sdk/models/shared/accountspaginated.ts
 src/sdk/models/shared/campaignresult.ts
 src/sdk/models/shared/campaign.ts
 src/sdk/models/shared/message.ts
-src/sdk/models/shared/smsmessagecontents.ts
-src/sdk/models/shared/emailmessagecontents.ts
-src/sdk/models/shared/pushmessagecontents.ts
 src/sdk/models/shared/campaignspaginated.ts
 src/sdk/models/shared/connectsession.ts
 src/sdk/models/shared/connectsessionauthenticate.ts
@@ -349,9 +346,6 @@ docs/models/shared/campaignchannels.md
 docs/models/shared/campaign.md
 docs/models/shared/messagemessagetype.md
 docs/models/shared/message.md
-docs/models/shared/smsmessagecontents.md
-docs/models/shared/emailmessagecontents.md
-docs/models/shared/pushmessagecontents.md
 docs/models/shared/campaignspaginated.md
 docs/models/shared/connectsessioncategories.md
 docs/models/shared/connectsession.md

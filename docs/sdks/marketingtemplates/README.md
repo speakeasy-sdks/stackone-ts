@@ -22,31 +22,56 @@ Creates an email template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingEmailTemplateCreateRequest, MarketingEmailTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingEmailTemplateCreateRequest } from "StackOne/dist/sdk/models/operations";
 import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   body: "<html><body>My template</body></html>",
   name: "My template",
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "Grocery",
+    "[",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "1",
+    "\"",
+    ",",
+    " ",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "2",
+    "\"",
+    "]",
   ],
 };
-const xAccountId: string = "Einsteinium";
+const xAccountId: string = "Grocery";
 
-sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingEmailTemplateCreateResponse) => {
+  const res = await sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -72,34 +97,56 @@ Creates an omni-channel template
 
 ```typescript
 import { StackOne } from "StackOne";
-import {
-  MarketingOmniChannelTemplateCreateRequest,
-  MarketingOmniChannelTemplateCreateResponse,
-} from "StackOne/dist/sdk/models/operations";
+import { MarketingOmniChannelTemplateCreateRequest } from "StackOne/dist/sdk/models/operations";
 import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   body: "<html><body>My template</body></html>",
   name: "My template",
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "Southeast",
+    "[",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "1",
+    "\"",
+    ",",
+    " ",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "2",
+    "\"",
+    "]",
   ],
 };
-const xAccountId: string = "Soap";
+const xAccountId: string = "Southeast";
 
-sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingOmniChannelTemplateCreateResponse) => {
+  const res = await sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -125,31 +172,56 @@ Creates an push template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingPushTemplateCreateRequest, MarketingPushTemplateCreateResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingPushTemplateCreateRequest } from "StackOne/dist/sdk/models/operations";
 import { MarketingCreateTemplateRequestDto } from "StackOne/dist/sdk/models/shared";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
   body: "<html><body>My template</body></html>",
   name: "My template",
   preheader: "My template preheader",
   subject: "My template subject",
   tags: [
-    "teal",
+    "[",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "1",
+    "\"",
+    ",",
+    " ",
+    "\"",
+    "M",
+    "y",
+    " ",
+    "T",
+    "a",
+    "g",
+    " ",
+    "2",
+    "\"",
+    "]",
   ],
 };
-const xAccountId: string = "reinvent";
+const xAccountId: string = "teal";
 
-sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId).then((res: MarketingPushTemplateCreateResponse) => {
+  const res = await sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -175,29 +247,24 @@ Get email template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingEmailTemplatesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.getEmail({
-  fields: "less feed",
-  id: "<ID>",
-  page: "up",
-  pageSize: "Avon API Southeast",
-  raw: false,
-  syncToken: "Male Licensed",
-  updatedAfter: "Wooden",
-  xAccountId: "Baby",
-}).then((res: MarketingEmailTemplatesGetResponse) => {
+  const res = await sdk.marketingTemplates.getEmail({
+    id: "<ID>",
+    xAccountId: "less feed",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -222,29 +289,24 @@ Get omni-channel template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingOmniChannelTemplatesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.getOmnichannel({
-  fields: "Goodwin",
-  id: "<ID>",
-  page: "Alaska deposit Naperville",
-  pageSize: "boo Gasoline",
-  raw: false,
-  syncToken: "or",
-  updatedAfter: "Facilitator",
-  xAccountId: "Islands",
-}).then((res: MarketingOmniChannelTemplatesGetResponse) => {
+  const res = await sdk.marketingTemplates.getOmnichannel({
+    id: "<ID>",
+    xAccountId: "Goodwin",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -269,29 +331,24 @@ Get push template
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingPushTemplatesGetResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.getPush({
-  fields: "transmitter South Chief",
-  id: "<ID>",
-  page: "Focused",
-  pageSize: "engage alarm North",
-  raw: false,
-  syncToken: "primary",
-  updatedAfter: "policy",
-  xAccountId: "Scandium Optimized Electric",
-}).then((res: MarketingPushTemplatesGetResponse) => {
+  const res = await sdk.marketingTemplates.getPush({
+    id: "<ID>",
+    xAccountId: "transmitter South Chief",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -316,21 +373,23 @@ List templates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingTemplatesListRequest, MarketingTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
+import { MarketingTemplatesListRequest } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 const xAccountId: string = "Bicycle";
 
-sdk.marketingTemplates.list(xAccountId).then((res: MarketingTemplatesListResponse) => {
+  const res = await sdk.marketingTemplates.list(xAccountId);
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -355,28 +414,23 @@ List email templates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingEmailTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.listEmail({
-  fields: "minor Ethiopian",
-  page: "Hatchback",
-  pageSize: "Electric Northeast",
-  raw: false,
-  syncToken: "Heights New phooey",
-  updatedAfter: "Designer",
-  xAccountId: "Gadolinium",
-}).then((res: MarketingEmailTemplatesListResponse) => {
+  const res = await sdk.marketingTemplates.listEmail({
+    xAccountId: "minor Ethiopian",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -401,28 +455,23 @@ List omni-channel templates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingOmniChannelTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.listOmnichannel({
-  fields: "Unbranded",
-  page: "synthesize Savings Southeast",
-  pageSize: "optical computer",
-  raw: false,
-  syncToken: "Bicycle",
-  updatedAfter: "poised",
-  xAccountId: "brag",
-}).then((res: MarketingOmniChannelTemplatesListResponse) => {
+  const res = await sdk.marketingTemplates.listOmnichannel({
+    xAccountId: "Unbranded",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -447,28 +496,23 @@ List push templates
 
 ```typescript
 import { StackOne } from "StackOne";
-import { MarketingPushTemplatesListResponse } from "StackOne/dist/sdk/models/operations";
 
-const sdk = new StackOne({
-  security: {
-    password: "BASE_64_ENCODED(API_KEY)",
-    username: "YOUR_USERNAME",
-  },
-});
+(async() => {
+  const sdk = new StackOne({
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
 
-sdk.marketingTemplates.listPush({
-  fields: "Forward",
-  page: "Maryland Licensed Latin",
-  pageSize: "daily quod implementation",
-  raw: false,
-  syncToken: "Bechtelar Country",
-  updatedAfter: "Lead Indiana withdrawal",
-  xAccountId: "turquoise invoice Moldovan",
-}).then((res: MarketingPushTemplatesListResponse) => {
+  const res = await sdk.marketingTemplates.listPush({
+    xAccountId: "Forward",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
