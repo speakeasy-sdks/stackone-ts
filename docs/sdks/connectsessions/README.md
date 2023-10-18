@@ -24,7 +24,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.connectSessions.connectSessionsAuthenticate({
-    token: "asperiores technologies",
+    token: "Account",
   });
 
   if (res.statusCode == 200) {
@@ -74,8 +74,8 @@ import { ConnectSessionCreateCategories } from "StackOne/dist/sdk/models/shared"
       ConnectSessionCreateCategories.Common,
     ],
     metadata: {},
-    originOwnerId: "Executive Country",
-    originOwnerName: "Petaluma",
+    originOwnerId: "dolorum",
+    originOwnerName: "Europium",
   });
 
   if (res.statusCode == 200) {

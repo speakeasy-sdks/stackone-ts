@@ -25,7 +25,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsUsers.get({
     id: "<ID>",
-    xAccountId: "Northeast Hatchback Kia",
+    xAccountId: "female",
   });
 
   if (res.statusCode == 200) {
@@ -66,7 +66,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.atsUsers.list({
-    xAccountId: "Northeast Metal Canada",
+    xAccountId: "Bicycle",
   });
 
   if (res.statusCode == 200) {

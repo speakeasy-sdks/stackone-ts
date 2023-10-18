@@ -100,7 +100,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.hrisEmployees.get({
     id: "<ID>",
-    xAccountId: "Northeast Hatchback Kia",
+    xAccountId: "female",
   });
 
   if (res.statusCode == 200) {
@@ -141,7 +141,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.hrisEmployees.list({
-    xAccountId: "Northeast Metal Canada",
+    xAccountId: "Bicycle",
   });
 
   if (res.statusCode == 200) {

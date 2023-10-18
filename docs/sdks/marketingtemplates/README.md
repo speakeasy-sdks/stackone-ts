@@ -258,7 +258,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getEmail({
     id: "<ID>",
-    xAccountId: "less feed",
+    xAccountId: "Transgender",
   });
 
   if (res.statusCode == 200) {
@@ -300,7 +300,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getOmnichannel({
     id: "<ID>",
-    xAccountId: "Goodwin",
+    xAccountId: "East",
   });
 
   if (res.statusCode == 200) {
@@ -342,7 +342,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getPush({
     id: "<ID>",
-    xAccountId: "transmitter South Chief",
+    xAccountId: "misty",
   });
 
   if (res.statusCode == 200) {
@@ -424,7 +424,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listEmail({
-    xAccountId: "minor Ethiopian",
+    xAccountId: "Blues",
   });
 
   if (res.statusCode == 200) {
@@ -465,7 +465,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listOmnichannel({
-    xAccountId: "Unbranded",
+    xAccountId: "Spurs",
   });
 
   if (res.statusCode == 200) {
@@ -506,7 +506,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listPush({
-    xAccountId: "Forward",
+    xAccountId: "infomediaries",
   });
 
   if (res.statusCode == 200) {

@@ -34,15 +34,15 @@ import {
   });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "bluetooth Extended",
-    value: ApplicationStatusEnumValue.Active,
+    sourceValue: "online",
+    value: ApplicationStatusEnumValue.Lead,
   },
-  candidateId: "Cambridgeshire grey technology",
-  interviewStageId: "deposit",
-  jobId: "Northwest",
-  locationId: "SUV quantify Polestar",
+  candidateId: "Extended",
+  interviewStageId: "South",
+  jobId: "shred",
+  locationId: "abnormally",
 };
-const xAccountId: string = "mobile";
+const xAccountId: string = "deposit";
 
   const res = await sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId);
 
@@ -86,7 +86,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.get({
     id: "<ID>",
-    xAccountId: "Northeast Hatchback Kia",
+    xAccountId: "female",
   });
 
   if (res.statusCode == 200) {
@@ -128,8 +128,8 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.getOffers({
     id: "<ID>",
-    subResourceId: "transmit Architect",
-    xAccountId: "oatmeal",
+    subResourceId: "Optional",
+    xAccountId: "magenta",
   });
 
   if (res.statusCode == 200) {
@@ -170,7 +170,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.atsApplications.list({
-    xAccountId: "Northeast Metal Canada",
+    xAccountId: "Bicycle",
   });
 
   if (res.statusCode == 200) {
@@ -212,7 +212,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.listOffers({
     id: "<ID>",
-    xAccountId: "Northeast deposit Southeast",
+    xAccountId: "Bicycle",
   });
 
   if (res.statusCode == 200) {
@@ -259,12 +259,12 @@ import {
   });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "New Reactive dock",
-    value: ApplicationStatusEnumValue.Lead,
+    sourceValue: "Van",
+    value: ApplicationStatusEnumValue.Active,
   },
 };
-const id: string = "Analyst";
-const xAccountId: string = "invoice";
+const id: string = "Reactive";
+const xAccountId: string = "dock";
 
   const res = await sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId);
 

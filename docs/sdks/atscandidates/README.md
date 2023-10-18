@@ -32,16 +32,16 @@ const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   ],
   emails: [
     {
-      type: "Extended South",
-      value: "grey technology East",
+      type: "Configuration",
+      value: "Money",
     },
   ],
-  firstName: "Cecelia",
-  lastName: "Gutkowski",
-  name: "male",
-  title: "Gasoline Screen mobile",
+  firstName: "Pamela",
+  lastName: "Bernhard",
+  name: "shred",
+  title: "abnormally",
 };
-const xAccountId: string = "National";
+const xAccountId: string = "deposit";
 
   const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
 
@@ -85,7 +85,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.ats.candidates.get({
     id: "<ID>",
-    xAccountId: "Northeast Hatchback Kia",
+    xAccountId: "female",
   });
 
   if (res.statusCode == 200) {
@@ -126,7 +126,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.ats.candidates.list({
-    xAccountId: "Northeast Metal Canada",
+    xAccountId: "Bicycle",
   });
 
   if (res.statusCode == 200) {
@@ -173,13 +173,13 @@ const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
   ],
   emails: [
     {
-      type: "Reactive",
-      value: "Metal cheater Islands",
+      type: "East",
+      value: "male",
     },
   ],
 };
-const id: string = "online";
-const xAccountId: string = "dynamic";
+const id: string = "Metal";
+const xAccountId: string = "cheater";
 
   const res = await sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId);
 
