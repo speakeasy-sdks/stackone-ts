@@ -28,21 +28,21 @@ import { CrmCreateContactRequestDto } from "StackOne/dist/sdk/models/shared";
   });
 const crmCreateContactRequestDto: CrmCreateContactRequestDto = {
   accountIds: [
-    "online",
+    "string",
   ],
   dealIds: [
-    "Configuration",
+    "string",
   ],
   emails: [
-    "Money",
+    "string",
   ],
-  firstName: "Pamela",
-  lastName: "Bernhard",
+  firstName: "Jed",
+  lastName: "Kuhn",
   phoneNumbers: [
-    "shred",
+    "string",
   ],
 };
-const xAccountId: string = "abnormally";
+const xAccountId: string = "string";
 
   const res = await sdk.contacts.create(crmCreateContactRequestDto, xAccountId);
 
@@ -86,7 +86,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.contacts.get({
     id: "<ID>",
-    xAccountId: "female",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -127,7 +127,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.contacts.list({
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -170,20 +170,20 @@ import { CrmUpdateContactRequestDto } from "StackOne/dist/sdk/models/shared";
   });
 const crmUpdateContactRequestDto: CrmUpdateContactRequestDto = {
   accountIds: [
-    "Van",
+    "string",
   ],
   dealIds: [
-    "East",
+    "string",
   ],
   emails: [
-    "male",
+    "string",
   ],
   phoneNumbers: [
-    "Metal",
+    "string",
   ],
 };
-const id: string = "cheater";
-const xAccountId: string = "Islands";
+const id: string = "string";
+const xAccountId: string = "string";
 
   const res = await sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId);
 

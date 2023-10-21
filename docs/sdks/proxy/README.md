@@ -34,7 +34,7 @@ const proxyRequestBody: ProxyRequestBody = {
   path: "/employees/directory",
   url: "https://api.sample-integration.com/v1",
 };
-const xAccountId: string = "online";
+const xAccountId: string = "string";
 
   const res = await sdk.proxy.create(proxyRequestBody, xAccountId);
 

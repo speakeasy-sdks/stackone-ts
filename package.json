@@ -1,6 +1,6 @@
 {
   "name": "StackOne",
-  "version": "1.16.1",
+  "version": "1.17.0",
   "author": "stackone",
   "scripts": {
     "prepare": "tsc --build",

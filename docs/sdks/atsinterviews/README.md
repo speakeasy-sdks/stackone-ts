@@ -25,7 +25,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsInterviews.get({
     id: "<ID>",
-    xAccountId: "female",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -66,7 +66,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.atsInterviews.list({
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {

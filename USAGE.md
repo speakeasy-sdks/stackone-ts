@@ -14,19 +14,19 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
         },
     });
     const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
-        applicationIds: ["online"],
+        applicationIds: ["string"],
         emails: [
             {
-                type: "Configuration",
-                value: "Money",
+                type: "string",
+                value: "string",
             },
         ],
-        firstName: "Pamela",
-        lastName: "Bernhard",
-        name: "shred",
-        title: "abnormally",
+        firstName: "Jed",
+        lastName: "Kuhn",
+        name: "string",
+        title: "string",
     };
-    const xAccountId: string = "deposit";
+    const xAccountId: string = "string";
 
     const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
 

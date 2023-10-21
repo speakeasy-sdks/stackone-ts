@@ -56,7 +56,7 @@ const hrisCreateEmployeeRequestDto: HrisCreateEmployeeRequestDto = {
   workEmail: "newton@example.com",
   workPhoneNumber: "+1234567890",
 };
-const xAccountId: string = "online";
+const xAccountId: string = "string";
 
   const res = await sdk.hrisEmployees.create(hrisCreateEmployeeRequestDto, xAccountId);
 
@@ -100,7 +100,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.hrisEmployees.get({
     id: "<ID>",
-    xAccountId: "female",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -141,7 +141,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.hrisEmployees.list({
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {

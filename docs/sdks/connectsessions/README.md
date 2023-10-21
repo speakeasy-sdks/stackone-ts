@@ -24,7 +24,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.connectSessions.connectSessionsAuthenticate({
-    token: "Account",
+    token: "string",
   });
 
   if (res.statusCode == 200) {
@@ -74,8 +74,8 @@ import { ConnectSessionCreateCategories } from "StackOne/dist/sdk/models/shared"
       ConnectSessionCreateCategories.Common,
     ],
     metadata: {},
-    originOwnerId: "dolorum",
-    originOwnerName: "Europium",
+    originOwnerId: "string",
+    originOwnerName: "string",
   });
 
   if (res.statusCode == 200) {

@@ -64,7 +64,7 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
     "]",
   ],
 };
-const xAccountId: string = "Grocery";
+const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId);
 
@@ -139,7 +139,7 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
     "]",
   ],
 };
-const xAccountId: string = "Southeast";
+const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId);
 
@@ -214,7 +214,7 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
     "]",
   ],
 };
-const xAccountId: string = "teal";
+const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId);
 
@@ -258,7 +258,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getEmail({
     id: "<ID>",
-    xAccountId: "Transgender",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -300,7 +300,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getOmnichannel({
     id: "<ID>",
-    xAccountId: "East",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -342,7 +342,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.marketingTemplates.getPush({
     id: "<ID>",
-    xAccountId: "misty",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -382,7 +382,7 @@ import { MarketingTemplatesListRequest } from "StackOne/dist/sdk/models/operatio
       username: "YOUR_USERNAME",
     },
   });
-const xAccountId: string = "Bicycle";
+const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.list(xAccountId);
 
@@ -424,7 +424,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listEmail({
-    xAccountId: "Blues",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -465,7 +465,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listOmnichannel({
-    xAccountId: "Spurs",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -506,7 +506,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.marketingTemplates.listPush({
-    xAccountId: "infomediaries",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {

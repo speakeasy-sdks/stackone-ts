@@ -24,7 +24,7 @@ import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
       username: "YOUR_USERNAME",
     },
   });
-const id: string = "program";
+const id: string = "string";
 
   const res = await sdk.accounts.delete(id);
 
@@ -65,7 +65,7 @@ import { AccountsGetRequest } from "StackOne/dist/sdk/models/operations";
       username: "YOUR_USERNAME",
     },
   });
-const id: string = "female";
+const id: string = "string";
 
   const res = await sdk.accounts.get(id);
 
@@ -106,8 +106,8 @@ import { AccountsListRequest } from "StackOne/dist/sdk/models/operations";
       username: "YOUR_USERNAME",
     },
   });
-const originOwnerId: string = "Bicycle";
-const provider: string = "Metal";
+const originOwnerId: string = "string";
+const provider: string = "string";
 
   const res = await sdk.accounts.list(originOwnerId, provider);
 

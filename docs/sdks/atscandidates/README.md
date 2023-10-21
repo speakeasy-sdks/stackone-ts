@@ -28,20 +28,20 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
   });
 const atsCreateCandidateRequestDto: AtsCreateCandidateRequestDto = {
   applicationIds: [
-    "online",
+    "string",
   ],
   emails: [
     {
-      type: "Configuration",
-      value: "Money",
+      type: "string",
+      value: "string",
     },
   ],
-  firstName: "Pamela",
-  lastName: "Bernhard",
-  name: "shred",
-  title: "abnormally",
+  firstName: "Jed",
+  lastName: "Kuhn",
+  name: "string",
+  title: "string",
 };
-const xAccountId: string = "deposit";
+const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
 
@@ -85,7 +85,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.ats.candidates.get({
     id: "<ID>",
-    xAccountId: "female",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -126,7 +126,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.ats.candidates.list({
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -169,17 +169,17 @@ import { AtsUpdateCandidatesRequestDto, CandidateEmail } from "StackOne/dist/sdk
   });
 const atsUpdateCandidatesRequestDto: AtsUpdateCandidatesRequestDto = {
   applicationIds: [
-    "Van",
+    "string",
   ],
   emails: [
     {
-      type: "East",
-      value: "male",
+      type: "string",
+      value: "string",
     },
   ],
 };
-const id: string = "Metal";
-const xAccountId: string = "cheater";
+const id: string = "string";
+const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId);
 

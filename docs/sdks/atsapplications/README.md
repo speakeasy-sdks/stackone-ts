@@ -34,15 +34,15 @@ import {
   });
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "online",
-    value: ApplicationStatusEnumValue.Lead,
+    sourceValue: "string",
+    value: ApplicationStatusEnumValue.Hired,
   },
-  candidateId: "Extended",
-  interviewStageId: "South",
-  jobId: "shred",
-  locationId: "abnormally",
+  candidateId: "string",
+  interviewStageId: "string",
+  jobId: "string",
+  locationId: "string",
 };
-const xAccountId: string = "deposit";
+const xAccountId: string = "string";
 
   const res = await sdk.atsApplications.create(atsCreateApplicationRequestDto, xAccountId);
 
@@ -86,7 +86,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.get({
     id: "<ID>",
-    xAccountId: "female",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -128,8 +128,8 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.getOffers({
     id: "<ID>",
-    subResourceId: "Optional",
-    xAccountId: "magenta",
+    subResourceId: "string",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -170,7 +170,7 @@ import { StackOne } from "StackOne";
   });
 
   const res = await sdk.atsApplications.list({
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -212,7 +212,7 @@ import { StackOne } from "StackOne";
 
   const res = await sdk.atsApplications.listOffers({
     id: "<ID>",
-    xAccountId: "Bicycle",
+    xAccountId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -259,12 +259,12 @@ import {
   });
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
-    sourceValue: "Van",
-    value: ApplicationStatusEnumValue.Active,
+    sourceValue: "string",
+    value: ApplicationStatusEnumValue.UnmappedValue,
   },
 };
-const id: string = "Reactive";
-const xAccountId: string = "dock";
+const id: string = "string";
+const xAccountId: string = "string";
 
   const res = await sdk.atsApplications.update(atsUpdateApplicationRequestDto, id, xAccountId);
 
