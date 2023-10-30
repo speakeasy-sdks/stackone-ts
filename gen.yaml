@@ -26,7 +26,7 @@ features:
 typescript:
   version: 1.18.0
   author: stackone
-  flattenGlobalSecurity: false
+  flattenGlobalSecurity: true
   installationURL: https://github.com/speakeasy-sdks/stackone-ts
   maxMethodParams: 4
   packageName: StackOne
