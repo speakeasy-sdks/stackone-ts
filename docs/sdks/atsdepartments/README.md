@@ -28,6 +28,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -68,6 +69,7 @@ import { StackOne } from "StackOne";
   const res = await sdk.atsDepartments.list({
     xAccountId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

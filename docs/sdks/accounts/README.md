@@ -28,6 +28,7 @@ const id: string = "string";
 
   const res = await sdk.accounts.delete(id);
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -68,6 +69,7 @@ import { AccountsGetRequest } from "StackOne/dist/sdk/models/operations";
 const id: string = "string";
 
   const res = await sdk.accounts.get(id);
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -110,6 +112,7 @@ const originOwnerId: string = "string";
 const provider: string = "string";
 
   const res = await sdk.accounts.list(originOwnerId, provider);
+
 
   if (res.statusCode == 200) {
     // handle response

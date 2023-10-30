@@ -46,6 +46,7 @@ const xAccountId: string = "string";
 
   const res = await sdk.contacts.create(crmCreateContactRequestDto, xAccountId);
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -89,6 +90,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -129,6 +131,7 @@ import { StackOne } from "StackOne";
   const res = await sdk.contacts.list({
     xAccountId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -186,6 +189,7 @@ const id: string = "string";
 const xAccountId: string = "string";
 
   const res = await sdk.contacts.update(crmUpdateContactRequestDto, id, xAccountId);
+
 
   if (res.statusCode == 200) {
     // handle response

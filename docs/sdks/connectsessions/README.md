@@ -27,6 +27,7 @@ import { StackOne } from "StackOne";
     token: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -77,6 +78,7 @@ import { ConnectSessionCreateCategories } from "StackOne/dist/sdk/models/shared"
     originOwnerId: "string",
     originOwnerName: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

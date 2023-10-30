@@ -38,6 +38,7 @@ const xAccountId: string = "string";
 
   const res = await sdk.proxy.create(proxyRequestBody, xAccountId);
 
+
   if (res.statusCode == 200) {
     // handle response
   }

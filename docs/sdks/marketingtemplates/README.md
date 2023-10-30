@@ -68,6 +68,7 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId);
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -142,6 +143,7 @@ const marketingCreateTemplateRequestDto: MarketingCreateTemplateRequestDto = {
 const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId);
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -218,6 +220,7 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId);
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -261,6 +264,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -302,6 +306,7 @@ import { StackOne } from "StackOne";
     id: "<ID>",
     xAccountId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -345,6 +350,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -385,6 +391,7 @@ import { MarketingTemplatesListRequest } from "StackOne/dist/sdk/models/operatio
 const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.list(xAccountId);
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -427,6 +434,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -468,6 +476,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -508,6 +517,7 @@ import { StackOne } from "StackOne";
   const res = await sdk.marketingTemplates.listPush({
     xAccountId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

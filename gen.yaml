@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: e77f226f321fb0ac7a96a5349eec64ed
   docVersion: 1.0.0
-  speakeasyVersion: 1.107.0
-  generationVersion: 2.171.0
+  speakeasyVersion: 1.109.0
+  generationVersion: 2.173.0
 generation:
   comments:
     disableComments: false
@@ -24,7 +24,7 @@ features:
     nameOverrides: 2.81.1
     retries: 2.82.1
 typescript:
-  version: 1.18.0
+  version: 1.19.0
   author: stackone
   flattenGlobalSecurity: true
   installationURL: https://github.com/speakeasy-sdks/stackone-ts

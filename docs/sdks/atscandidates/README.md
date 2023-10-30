@@ -45,6 +45,7 @@ const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -88,6 +89,7 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -128,6 +130,7 @@ import { StackOne } from "StackOne";
   const res = await sdk.ats.candidates.list({
     xAccountId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -182,6 +185,7 @@ const id: string = "string";
 const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId);
+
 
   if (res.statusCode == 200) {
     // handle response
