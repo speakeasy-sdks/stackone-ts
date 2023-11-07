@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class AccountsListRequest extends SpeakeasyBase {
@@ -22,12 +22,6 @@ export class AccountsListRequest extends SpeakeasyBase {
 
 export class AccountsListResponse extends SpeakeasyBase {
     /**
-     * The list of accounts was retrieved.
-     */
-    @SpeakeasyMetadata({ elemType: shared.Account })
-    accounts?: shared.Account[];
-
-    /**
      * HTTP response content type for this operation
      */
     @SpeakeasyMetadata()
@@ -44,4 +38,10 @@ export class AccountsListResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * The list of accounts was retrieved.
+     */
+    @SpeakeasyMetadata({ elemType: shared.Account })
+    classes?: shared.Account[];
 }

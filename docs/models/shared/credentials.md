@@ -1,6 +1,4 @@
-# ConnectSessionCreateMetadata
-
-The metadata for the connection
+# Credentials
 
 
 ## Fields

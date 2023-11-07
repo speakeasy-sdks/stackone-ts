@@ -1,5 +1,5 @@
 # Campaigns
-(*campaigns*)
+(*.campaigns*)
 
 ### Available Operations
 

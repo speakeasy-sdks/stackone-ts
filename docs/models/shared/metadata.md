@@ -1,6 +1,6 @@
-# ProxyRequestBodyBody
+# Metadata
 
-The body of the request
+The metadata for the connection
 
 
 ## Fields

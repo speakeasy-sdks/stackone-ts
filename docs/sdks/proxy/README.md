@@ -1,5 +1,5 @@
 # Proxy
-(*proxy*)
+(*.proxy*)
 
 ### Available Operations
 
@@ -14,12 +14,7 @@ Proxy Request
 ```typescript
 import { StackOne } from "StackOne";
 import { ProxyRequestPostRequest } from "StackOne/dist/sdk/models/operations";
-import {
-  ProxyRequestBody,
-  ProxyRequestBodyBody,
-  ProxyRequestBodyHeaders,
-  ProxyRequestBodyMethod,
-} from "StackOne/dist/sdk/models/shared";
+import { Body, Headers, Method, ProxyRequestBody } from "StackOne/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new StackOne({

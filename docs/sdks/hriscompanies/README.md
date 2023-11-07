@@ -1,5 +1,5 @@
 # HRISCompanies
-(*hrisCompanies*)
+(*.hrisCompanies*)
 
 ### Available Operations
 

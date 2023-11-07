@@ -1,5 +1,5 @@
 # ATSDepartments
-(*atsDepartments*)
+(*.atsDepartments*)
 
 ### Available Operations
 

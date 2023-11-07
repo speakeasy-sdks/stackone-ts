@@ -1,5 +1,5 @@
 # ATSUsers
-(*atsUsers*)
+(*.atsUsers*)
 
 ### Available Operations
 

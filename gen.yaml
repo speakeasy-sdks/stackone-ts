@@ -2,20 +2,15 @@ configVersion: 1.0.0
 management:
   docChecksum: e77f226f321fb0ac7a96a5349eec64ed
   docVersion: 1.0.0
-  speakeasyVersion: 1.109.0
-  generationVersion: 2.173.0
+  speakeasyVersion: 1.114.1
+  generationVersion: 2.181.1
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
-  repoURL: https://github.com/speakeasy-sdks/stackone-ts.git
+  comments: {}
   sdkClassName: StackOne
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks/stackone-ts.git
 features:
   typescript:
-    core: 2.94.0
+    core: 3.1.0
     examples: 2.81.3
     flattening: 2.81.1
     globalSecurity: 2.82.0
@@ -24,9 +19,18 @@ features:
     nameOverrides: 2.81.1
     retries: 2.82.1
 typescript:
-  version: 1.19.0
+  version: 2.0.0
   author: stackone
+  clientServerStatusCodesAsErrors: false
   flattenGlobalSecurity: true
+  imports:
+    option: openapi
+    paths:
+      callbacks: sdk/models/callbacks
+      errors: sdk/models/errors
+      operations: sdk/models/operations
+      shared: sdk/models/shared
+      webhooks: sdk/models/webhooks
   installationURL: https://github.com/speakeasy-sdks/stackone-ts
   maxMethodParams: 4
   packageName: StackOne

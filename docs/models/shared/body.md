@@ -1,4 +1,6 @@
-# AccountCredentials
+# Body
+
+The body of the request
 
 
 ## Fields

@@ -1,5 +1,5 @@
 # ATSInterviewStages
-(*atsInterviewStages*)
+(*.atsInterviewStages*)
 
 ### Available Operations
 

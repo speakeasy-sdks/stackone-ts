@@ -1,5 +1,5 @@
-# AtsCandidates
-(*ats.candidates*)
+# Candidates
+(*.ats.candidates*)
 
 ### Available Operations
 

@@ -1,5 +1,5 @@
 # ATSInterviews
-(*atsInterviews*)
+(*.atsInterviews*)
 
 ### Available Operations
 

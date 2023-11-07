@@ -1,4 +1,4 @@
-# ProxyRequestBodyMethod
+# Method
 
 The method of the request
 

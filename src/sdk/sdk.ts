@@ -3,6 +3,7 @@
  */
 
 import * as utils from "../internal/utils";
+import * as shared from "../sdk/models/shared";
 import { Accounts } from "./accounts";
 import { Ats } from "./ats";
 import { ATSApplications } from "./atsapplications";
@@ -22,7 +23,6 @@ import { HRISEmployees } from "./hrisemployees";
 import { HRISEmployments } from "./hrisemployments";
 import { HRISLocations } from "./hrislocations";
 import { MarketingTemplates } from "./marketingtemplates";
-import * as shared from "./models/shared";
 import { Proxy } from "./proxy";
 import axios from "axios";
 import { AxiosInstance } from "axios";
@@ -68,9 +68,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "1.19.0";
-    genVersion = "2.173.0";
-    userAgent = "speakeasy-sdk/typescript 1.19.0 2.173.0 1.0.0 StackOne";
+    sdkVersion = "2.0.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 2.0.0 2.181.1 1.0.0 StackOne";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -81,26 +81,26 @@ export class SDKConfiguration {
  * StackOne Unified API: The documentation for the StackOne Unified API
  */
 export class StackOne {
-    public atsInterviewStages: ATSInterviewStages;
-    public atsRejectedReasons: ATSRejectedReasons;
+    public accounts: Accounts;
+    public connectSessions: ConnectSessions;
     public atsApplications: ATSApplications;
+    public ats: Ats;
     public atsDepartments: ATSDepartments;
+    public atsInterviewStages: ATSInterviewStages;
     public atsInterviews: ATSInterviews;
     public atsJobs: ATSJobs;
     public atsLocations: ATSLocations;
+    public atsRejectedReasons: ATSRejectedReasons;
     public atsUsers: ATSUsers;
-    public accounts: Accounts;
     public crmAccounts: CRMAccounts;
-    public campaigns: Campaigns;
-    public connectSessions: ConnectSessions;
     public contacts: Contacts;
     public hrisCompanies: HRISCompanies;
     public hrisEmployees: HRISEmployees;
     public hrisEmployments: HRISEmployments;
     public hrisLocations: HRISLocations;
+    public campaigns: Campaigns;
     public marketingTemplates: MarketingTemplates;
     public proxy: Proxy;
-    public ats: Ats;
 
     private sdkConfiguration: SDKConfiguration;
 
@@ -120,25 +120,25 @@ export class StackOne {
             retryConfig: props?.retryConfig,
         });
 
-        this.atsInterviewStages = new ATSInterviewStages(this.sdkConfiguration);
-        this.atsRejectedReasons = new ATSRejectedReasons(this.sdkConfiguration);
+        this.accounts = new Accounts(this.sdkConfiguration);
+        this.connectSessions = new ConnectSessions(this.sdkConfiguration);
         this.atsApplications = new ATSApplications(this.sdkConfiguration);
+        this.ats = new Ats(this.sdkConfiguration);
         this.atsDepartments = new ATSDepartments(this.sdkConfiguration);
+        this.atsInterviewStages = new ATSInterviewStages(this.sdkConfiguration);
         this.atsInterviews = new ATSInterviews(this.sdkConfiguration);
         this.atsJobs = new ATSJobs(this.sdkConfiguration);
         this.atsLocations = new ATSLocations(this.sdkConfiguration);
+        this.atsRejectedReasons = new ATSRejectedReasons(this.sdkConfiguration);
         this.atsUsers = new ATSUsers(this.sdkConfiguration);
-        this.accounts = new Accounts(this.sdkConfiguration);
         this.crmAccounts = new CRMAccounts(this.sdkConfiguration);
-        this.campaigns = new Campaigns(this.sdkConfiguration);
-        this.connectSessions = new ConnectSessions(this.sdkConfiguration);
         this.contacts = new Contacts(this.sdkConfiguration);
         this.hrisCompanies = new HRISCompanies(this.sdkConfiguration);
         this.hrisEmployees = new HRISEmployees(this.sdkConfiguration);
         this.hrisEmployments = new HRISEmployments(this.sdkConfiguration);
         this.hrisLocations = new HRISLocations(this.sdkConfiguration);
+        this.campaigns = new Campaigns(this.sdkConfiguration);
         this.marketingTemplates = new MarketingTemplates(this.sdkConfiguration);
         this.proxy = new Proxy(this.sdkConfiguration);
-        this.ats = new Ats(this.sdkConfiguration);
     }
 }

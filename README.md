@@ -65,17 +65,18 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
 ## Available Resources and Operations
 
 
-### [atsInterviewStages](docs/sdks/atsinterviewstages/README.md)
+### [.accounts](docs/sdks/accounts/README.md)
 
-* [get](docs/sdks/atsinterviewstages/README.md#get) - Get Interview Stage
-* [list](docs/sdks/atsinterviewstages/README.md#list) - List Interview Stages
+* [delete](docs/sdks/accounts/README.md#delete) - Delete Account
+* [get](docs/sdks/accounts/README.md#get) - Get Account
+* [list](docs/sdks/accounts/README.md#list) - List Accounts
 
-### [atsRejectedReasons](docs/sdks/atsrejectedreasons/README.md)
+### [.connectSessions](docs/sdks/connectsessions/README.md)
 
-* [get](docs/sdks/atsrejectedreasons/README.md#get) - Get Rejected Reason
-* [list](docs/sdks/atsrejectedreasons/README.md#list) - List Rejected Reasons
+* [connectSessionsAuthenticate](docs/sdks/connectsessions/README.md#connectsessionsauthenticate) - Authenticate Session
+* [connectSessionsCreate](docs/sdks/connectsessions/README.md#connectsessionscreate) - Create Session
 
-### [atsApplications](docs/sdks/atsapplications/README.md)
+### [.atsApplications](docs/sdks/atsapplications/README.md)
 
 * [create](docs/sdks/atsapplications/README.md#create) - Post Application (early access)
 * [get](docs/sdks/atsapplications/README.md#get) - Get Application
@@ -84,81 +85,88 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
 * [listOffers](docs/sdks/atsapplications/README.md#listoffers) - List Application Offers
 * [update](docs/sdks/atsapplications/README.md#update) - Patch Application (early access)
 
-### [atsDepartments](docs/sdks/atsdepartments/README.md)
+
+### [.ats.candidates](docs/sdks/candidates/README.md)
+
+* [create](docs/sdks/candidates/README.md#create) - Post Candidate (early access)
+* [get](docs/sdks/candidates/README.md#get) - Get Candidate
+* [list](docs/sdks/candidates/README.md#list) - List Candidates
+* [update](docs/sdks/candidates/README.md#update) - Patch Candidate (early access)
+
+### [.atsDepartments](docs/sdks/atsdepartments/README.md)
 
 * [get](docs/sdks/atsdepartments/README.md#get) - Get Department
 * [list](docs/sdks/atsdepartments/README.md#list) - List Departments
 
-### [atsInterviews](docs/sdks/atsinterviews/README.md)
+### [.atsInterviewStages](docs/sdks/atsinterviewstages/README.md)
+
+* [get](docs/sdks/atsinterviewstages/README.md#get) - Get Interview Stage
+* [list](docs/sdks/atsinterviewstages/README.md#list) - List Interview Stages
+
+### [.atsInterviews](docs/sdks/atsinterviews/README.md)
 
 * [get](docs/sdks/atsinterviews/README.md#get) - Get Interview
 * [list](docs/sdks/atsinterviews/README.md#list) - List Interviews
 
-### [atsJobs](docs/sdks/atsjobs/README.md)
+### [.atsJobs](docs/sdks/atsjobs/README.md)
 
 * [get](docs/sdks/atsjobs/README.md#get) - Get Job
 * [list](docs/sdks/atsjobs/README.md#list) - List Jobs
 
-### [atsLocations](docs/sdks/atslocations/README.md)
+### [.atsLocations](docs/sdks/atslocations/README.md)
 
 * [get](docs/sdks/atslocations/README.md#get) - Get Location
 * [list](docs/sdks/atslocations/README.md#list) - List locations
 
-### [atsUsers](docs/sdks/atsusers/README.md)
+### [.atsRejectedReasons](docs/sdks/atsrejectedreasons/README.md)
+
+* [get](docs/sdks/atsrejectedreasons/README.md#get) - Get Rejected Reason
+* [list](docs/sdks/atsrejectedreasons/README.md#list) - List Rejected Reasons
+
+### [.atsUsers](docs/sdks/atsusers/README.md)
 
 * [get](docs/sdks/atsusers/README.md#get) - Get User
 * [list](docs/sdks/atsusers/README.md#list) - List Users
 
-### [accounts](docs/sdks/accounts/README.md)
-
-* [delete](docs/sdks/accounts/README.md#delete) - Delete Account
-* [get](docs/sdks/accounts/README.md#get) - Get Account
-* [list](docs/sdks/accounts/README.md#list) - List Accounts
-
-### [crmAccounts](docs/sdks/crmaccounts/README.md)
+### [.crmAccounts](docs/sdks/crmaccounts/README.md)
 
 * [get](docs/sdks/crmaccounts/README.md#get) - Get Account
 * [list](docs/sdks/crmaccounts/README.md#list) - List Accounts
 
-### [campaigns](docs/sdks/campaigns/README.md)
-
-* [get](docs/sdks/campaigns/README.md#get) - Get campaign
-* [list](docs/sdks/campaigns/README.md#list) - List campaigns
-
-### [connectSessions](docs/sdks/connectsessions/README.md)
-
-* [connectSessionsAuthenticate](docs/sdks/connectsessions/README.md#connectsessionsauthenticate) - Authenticate Session
-* [connectSessionsCreate](docs/sdks/connectsessions/README.md#connectsessionscreate) - Create Session
-
-### [contacts](docs/sdks/contacts/README.md)
+### [.contacts](docs/sdks/contacts/README.md)
 
 * [create](docs/sdks/contacts/README.md#create) - Post Contact (early access)
 * [get](docs/sdks/contacts/README.md#get) - Get Contact
 * [list](docs/sdks/contacts/README.md#list) - List Contacts
 * [update](docs/sdks/contacts/README.md#update) - Patch Contact (early access)
 
-### [hrisCompanies](docs/sdks/hriscompanies/README.md)
+### [.hrisCompanies](docs/sdks/hriscompanies/README.md)
 
 * [get](docs/sdks/hriscompanies/README.md#get) - Get Company
 * [list](docs/sdks/hriscompanies/README.md#list) - List Companies
 
-### [hrisEmployees](docs/sdks/hrisemployees/README.md)
+### [.hrisEmployees](docs/sdks/hrisemployees/README.md)
 
 * [create](docs/sdks/hrisemployees/README.md#create) - Creates an employee
 * [get](docs/sdks/hrisemployees/README.md#get) - Get Employee
 * [list](docs/sdks/hrisemployees/README.md#list) - List Employees
 
-### [hrisEmployments](docs/sdks/hrisemployments/README.md)
+### [.hrisEmployments](docs/sdks/hrisemployments/README.md)
 
 * [get](docs/sdks/hrisemployments/README.md#get) - Get Employment
 * [list](docs/sdks/hrisemployments/README.md#list) - List Employments
 
-### [hrisLocations](docs/sdks/hrislocations/README.md)
+### [.hrisLocations](docs/sdks/hrislocations/README.md)
 
 * [get](docs/sdks/hrislocations/README.md#get) - Get location
 * [list](docs/sdks/hrislocations/README.md#list) - List locations
 
-### [marketingTemplates](docs/sdks/marketingtemplates/README.md)
+### [.campaigns](docs/sdks/campaigns/README.md)
+
+* [get](docs/sdks/campaigns/README.md#get) - Get campaign
+* [list](docs/sdks/campaigns/README.md#list) - List campaigns
+
+### [.marketingTemplates](docs/sdks/marketingtemplates/README.md)
 
 * [createEmail](docs/sdks/marketingtemplates/README.md#createemail) - Creates an email template
 * [createOmnichannel](docs/sdks/marketingtemplates/README.md#createomnichannel) - Creates an omni-channel template
@@ -171,17 +179,9 @@ import { AtsCreateCandidateRequestDto, CandidateEmail } from "StackOne/dist/sdk/
 * [listOmnichannel](docs/sdks/marketingtemplates/README.md#listomnichannel) - List omni-channel templates
 * [listPush](docs/sdks/marketingtemplates/README.md#listpush) - List push templates
 
-### [proxy](docs/sdks/proxy/README.md)
+### [.proxy](docs/sdks/proxy/README.md)
 
 * [create](docs/sdks/proxy/README.md#create) - Proxy Request
-
-
-### [ats.candidates](docs/sdks/atscandidates/README.md)
-
-* [create](docs/sdks/atscandidates/README.md#create) - Post Candidate (early access)
-* [get](docs/sdks/atscandidates/README.md#get) - Get Candidate
-* [list](docs/sdks/atscandidates/README.md#list) - List Candidates
-* [update](docs/sdks/atscandidates/README.md#update) - Patch Candidate (early access)
 <!-- End SDK Available Operations -->
 
 
@@ -208,8 +208,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
-
-
 <!-- End Error Handling -->
 
 
@@ -227,23 +225,21 @@ You can override the default server globally by passing a server index to the `s
 
 For example:
 
-
 ```typescript
 import { StackOne } from "StackOne";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
 
 (async () => {
     const sdk = new StackOne({
+        serverIdx: 0,
         security: {
             password: "BASE_64_ENCODED(API_KEY)",
             username: "YOUR_USERNAME",
         },
-        serverIdx: 0,
     });
+    const id: string = "string";
 
-    const res = await sdk.atsInterviewStages.get({
-        id: "<ID>",
-        xAccountId: "string",
-    });
+    const res = await sdk.accounts.delete(id);
 
     if (res.statusCode == 200) {
         // handle response
@@ -257,23 +253,21 @@ import { StackOne } from "StackOne";
 
 The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
 
-
 ```typescript
 import { StackOne } from "StackOne";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
 
 (async () => {
     const sdk = new StackOne({
+        serverURL: "https://api.stackone.com",
         security: {
             password: "BASE_64_ENCODED(API_KEY)",
             username: "YOUR_USERNAME",
         },
-        serverURL: "https://api.stackone.com",
     });
+    const id: string = "string";
 
-    const res = await sdk.atsInterviewStages.get({
-        id: "<ID>",
-        xAccountId: "string",
-    });
+    const res = await sdk.accounts.delete(id);
 
     if (res.statusCode == 200) {
         // handle response
@@ -304,9 +298,130 @@ const httpClient = axios.create({
 
 const sdk = new StackOne({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
+
+
+
+<!-- Start Retries -->
+# Retries
+
+Some of the endpoints in this SDK support retries.  If you use the SDK without any configuration, it will fall back to the default retry strategy provided by the API.  However, the default retry strategy can be overridden on a per-operation basis, or across the entire SDK.
+
+To change the default retry strategy for a single API call, simply provide a retryConfig object to the call:
+
+
+## Example
+
+```typescript
+import { StackOne } from "StackOne";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
+
+(async () => {
+    const sdk = new StackOne({
+        security: {
+            password: "BASE_64_ENCODED(API_KEY)",
+            username: "YOUR_USERNAME",
+        },
+    });
+    const id: string = "string";
+
+    const res = await sdk.accounts.delete(id, {
+        strategy: "backoff",
+        backoff: {
+            initialInterval: 1,
+            maxInterval: 50,
+            exponent: 1.1,
+            maxElapsedTime: 100,
+        },
+        retryConnectionErrors: false,
+    });
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
+
+If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
+
+
+## Example
+
+```typescript
+import { StackOne } from "StackOne";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
+
+(async() => {
+  const sdk = new StackOne({
+    retry_config: {
+        strategy: "backoff",
+        backoff: {
+          initialInterval: 1,
+          maxInterval: 50,
+          exponent: 1.1,
+          maxElapsedTime: 100,
+        },
+        retryConnectionErrors: false,
+      }
+    security: {
+      password: "BASE_64_ENCODED(API_KEY)",
+      username: "YOUR_USERNAME",
+    },
+  });
+const id: string = "string";
+
+  const res = await sdk.accounts.delete(id);
+
+
+  if (res.statusCode == 200) {
+    // handle response
+  }
+})();
+```
+
+
+<!-- End Retries -->
+
+
+
+<!-- Start Authentication -->
+
+# Authentication
+
+## Per-Client Security Schemes
+
+Your SDK supports the following security schemes globally:
+
+| Name       | Type       | Scheme     |
+| ---------- | ---------- | ---------- |
+| `password` | http       | HTTP Basic |
+| `username` | http       | HTTP Basic |
+
+You can set the security parameters through the `security` optional parameter when initializing the SDK client instance. The selected scheme will be used by default to authenticate with the API for all operations that support it. For example:
+
+```typescript
+import { StackOne } from "StackOne";
+import { AccountsDeleteRequest } from "StackOne/dist/sdk/models/operations";
+
+(async () => {
+    const sdk = new StackOne({
+        security: {
+            password: "BASE_64_ENCODED(API_KEY)",
+            username: "YOUR_USERNAME",
+        },
+    });
+    const id: string = "string";
+
+    const res = await sdk.accounts.delete(id);
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
+<!-- End Authentication -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

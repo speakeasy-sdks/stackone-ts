@@ -1,5 +1,5 @@
 # CRMAccounts
-(*crmAccounts*)
+(*.crmAccounts*)
 
 ### Available Operations
 

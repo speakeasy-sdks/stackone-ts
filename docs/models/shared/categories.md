@@ -1,4 +1,4 @@
-# ConnectSessionCategories
+# Categories
 
 
 ## Values

@@ -1,5 +1,5 @@
 # MarketingTemplates
-(*marketingTemplates*)
+(*.marketingTemplates*)
 
 ### Available Operations
 

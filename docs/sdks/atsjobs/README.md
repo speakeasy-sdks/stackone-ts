@@ -1,5 +1,5 @@
 # ATSJobs
-(*atsJobs*)
+(*.atsJobs*)
 
 ### Available Operations
 

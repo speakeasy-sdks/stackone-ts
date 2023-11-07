@@ -1,5 +1,5 @@
 # HRISEmployments
-(*hrisEmployments*)
+(*.hrisEmployments*)
 
 ### Available Operations
 

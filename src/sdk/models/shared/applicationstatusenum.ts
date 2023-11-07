@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-export enum ApplicationStatusEnumValue {
+export enum Value {
     Active = "active",
     Converted = "converted",
     Hired = "hired",
@@ -21,5 +21,5 @@ export class ApplicationStatusEnum extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: ApplicationStatusEnumValue;
+    value: Value;
 }

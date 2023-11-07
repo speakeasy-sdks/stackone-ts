@@ -1,4 +1,4 @@
-# ProxyRequestBodyHeaders
+# Headers
 
 The headers to send in the request
 

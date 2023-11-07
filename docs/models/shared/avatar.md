@@ -1,4 +1,4 @@
-# EmployeeAvatar
+# Avatar
 
 The employee avatar
 

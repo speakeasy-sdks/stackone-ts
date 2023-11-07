@@ -10,7 +10,7 @@ import { Expose, Type } from "class-transformer";
 /**
  * The employee avatar
  */
-export class EmployeeAvatar extends SpeakeasyBase {
+export class Avatar extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "base64" })
     base64?: string;
@@ -20,7 +20,7 @@ export class EmployeeAvatar extends SpeakeasyBase {
     url?: string;
 }
 
-export enum EmployeeEmploymentStatusValue {
+export enum EmployeeValue {
     Active = "active",
     Pending = "pending",
     Terminated = "terminated",
@@ -31,17 +31,17 @@ export enum EmployeeEmploymentStatusValue {
 /**
  * The employee employment status
  */
-export class EmployeeEmploymentStatus extends SpeakeasyBase {
+export class EmploymentStatus extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "source_value" })
     sourceValue: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: EmployeeEmploymentStatusValue;
+    value: EmployeeValue;
 }
 
-export enum EmployeeEmploymentTypeValue {
+export enum EmployeeSchemasValue {
     FullTime = "full_time",
     PartTime = "part_time",
     Contractor = "contractor",
@@ -60,17 +60,17 @@ export enum EmployeeEmploymentTypeValue {
 /**
  * The employee employment type
  */
-export class EmployeeEmploymentType extends SpeakeasyBase {
+export class EmploymentType extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "source_value" })
     sourceValue: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: EmployeeEmploymentTypeValue;
+    value: EmployeeSchemasValue;
 }
 
-export enum EmployeeEthnicityValue {
+export enum EmployeeSchemasEthnicityValue {
     White = "white",
     BlackOrAfricanAmerican = "black_or_african_american",
     Asian = "asian",
@@ -86,17 +86,17 @@ export enum EmployeeEthnicityValue {
 /**
  * The employee ethnicity
  */
-export class EmployeeEthnicity extends SpeakeasyBase {
+export class Ethnicity extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "source_value" })
     sourceValue: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: EmployeeEthnicityValue;
+    value: EmployeeSchemasEthnicityValue;
 }
 
-export enum EmployeeGenderValue {
+export enum EmployeeSchemasGenderValue {
     Male = "male",
     Female = "female",
     NonBinary = "non_binary",
@@ -109,17 +109,17 @@ export enum EmployeeGenderValue {
 /**
  * The employee gender
  */
-export class EmployeeGender extends SpeakeasyBase {
+export class Gender extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "source_value" })
     sourceValue: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: EmployeeGenderValue;
+    value: EmployeeSchemasGenderValue;
 }
 
-export enum EmployeeMaritalStatusValue {
+export enum EmployeeSchemasMaritalStatusValue {
     Single = "single",
     Married = "married",
     CommonLaw = "common_law",
@@ -135,14 +135,14 @@ export enum EmployeeMaritalStatusValue {
 /**
  * The employee marital status
  */
-export class EmployeeMaritalStatus extends SpeakeasyBase {
+export class MaritalStatus extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "source_value" })
     sourceValue: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "value" })
-    value: EmployeeMaritalStatusValue;
+    value: EmployeeSchemasMaritalStatusValue;
 }
 
 export class Employee extends SpeakeasyBase {
@@ -151,8 +151,8 @@ export class Employee extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "avatar" })
-    @Type(() => EmployeeAvatar)
-    avatar?: EmployeeAvatar;
+    @Type(() => Avatar)
+    avatar?: Avatar;
 
     /**
      * The employee avatar Url
@@ -208,16 +208,16 @@ export class Employee extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "employment_status" })
-    @Type(() => EmployeeEmploymentStatus)
-    employmentStatus?: EmployeeEmploymentStatus;
+    @Type(() => EmploymentStatus)
+    employmentStatus?: EmploymentStatus;
 
     /**
      * The employee employment type
      */
     @SpeakeasyMetadata()
     @Expose({ name: "employment_type" })
-    @Type(() => EmployeeEmploymentType)
-    employmentType?: EmployeeEmploymentType;
+    @Type(() => EmploymentType)
+    employmentType?: EmploymentType;
 
     /**
      * The employee employments
@@ -232,8 +232,8 @@ export class Employee extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "ethnicity" })
-    @Type(() => EmployeeEthnicity)
-    ethnicity?: EmployeeEthnicity;
+    @Type(() => Ethnicity)
+    ethnicity?: Ethnicity;
 
     /**
      * The employee first name
@@ -247,8 +247,8 @@ export class Employee extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "gender" })
-    @Type(() => EmployeeGender)
-    gender: EmployeeGender;
+    @Type(() => Gender)
+    gender: Gender;
 
     /**
      * The employee hire date
@@ -298,8 +298,8 @@ export class Employee extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "marital_status" })
-    @Type(() => EmployeeMaritalStatus)
-    maritalStatus?: EmployeeMaritalStatus;
+    @Type(() => MaritalStatus)
+    maritalStatus?: MaritalStatus;
 
     /**
      * The employee name

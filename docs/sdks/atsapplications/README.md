@@ -1,5 +1,5 @@
 # ATSApplications
-(*atsApplications*)
+(*.atsApplications*)
 
 ### Available Operations
 
@@ -19,11 +19,7 @@ Post Application (early access)
 ```typescript
 import { StackOne } from "StackOne";
 import { ApplicationPostRequest } from "StackOne/dist/sdk/models/operations";
-import {
-  ApplicationStatusEnum,
-  ApplicationStatusEnumValue,
-  AtsCreateApplicationRequestDto,
-} from "StackOne/dist/sdk/models/shared";
+import { ApplicationStatusEnum, AtsCreateApplicationRequestDto, Value } from "StackOne/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new StackOne({
@@ -35,7 +31,7 @@ import {
 const atsCreateApplicationRequestDto: AtsCreateApplicationRequestDto = {
   applicationStatus: {
     sourceValue: "string",
-    value: ApplicationStatusEnumValue.Hired,
+    value: Value.Hired,
   },
   candidateId: "string",
   interviewStageId: "string",
@@ -249,11 +245,7 @@ Patch Application (early access)
 ```typescript
 import { StackOne } from "StackOne";
 import { ApplicationPatchRequest } from "StackOne/dist/sdk/models/operations";
-import {
-  ApplicationStatusEnum,
-  ApplicationStatusEnumValue,
-  AtsUpdateApplicationRequestDto,
-} from "StackOne/dist/sdk/models/shared";
+import { ApplicationStatusEnum, AtsUpdateApplicationRequestDto, Value } from "StackOne/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new StackOne({
@@ -265,7 +257,7 @@ import {
 const atsUpdateApplicationRequestDto: AtsUpdateApplicationRequestDto = {
   applicationStatus: {
     sourceValue: "string",
-    value: ApplicationStatusEnumValue.UnmappedValue,
+    value: Value.UnmappedValue,
   },
 };
 const id: string = "string";

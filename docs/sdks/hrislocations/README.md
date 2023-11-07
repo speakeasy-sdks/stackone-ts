@@ -1,5 +1,5 @@
 # HRISLocations
-(*hrisLocations*)
+(*.hrisLocations*)
 
 ### Available Operations
 

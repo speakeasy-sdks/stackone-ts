@@ -1,5 +1,5 @@
 # ATSLocations
-(*atsLocations*)
+(*.atsLocations*)
 
 ### Available Operations
 
