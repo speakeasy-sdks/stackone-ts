@@ -32,7 +32,11 @@ export class Campaigns {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/unified/marketing/campaigns/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/unified/marketing/campaigns/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -68,7 +72,7 @@ export class Campaigns {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -128,7 +132,7 @@ export class Campaigns {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/marketing/campaigns";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/marketing/campaigns";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -164,7 +168,7 @@ export class Campaigns {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",

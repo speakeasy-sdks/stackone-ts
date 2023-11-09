@@ -1,5 +1,5 @@
 # MarketingTemplates
-(*.marketingTemplates*)
+(*marketingTemplates*)
 
 ### Available Operations
 
@@ -68,7 +68,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createEmail(marketingCreateTemplateRequestDto, xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -77,18 +76,22 @@ const xAccountId: string = "string";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
-| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
-| `retries`                                                                                            | [utils.RetryConfig](../../models/utils/retryconfig.md)                                               | :heavy_minus_sign:                                                                                   | Configuration to override the default retry behavior of the client.                                  |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                         | [shared.MarketingCreateTemplateRequestDto](../../../sdk/models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `xAccountId`                                                                                                | *string*                                                                                                    | :heavy_check_mark:                                                                                          | The account identifier                                                                                      |
+| `retries`                                                                                                   | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                    | :heavy_minus_sign:                                                                                          | Configuration to override the default retry behavior of the client.                                         |
+| `config`                                                                                                    | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                | :heavy_minus_sign:                                                                                          | Available config options for making requests.                                                               |
 
 
 ### Response
 
-**Promise<[operations.MarketingEmailTemplateCreateResponse](../../models/operations/marketingemailtemplatecreateresponse.md)>**
+**Promise<[operations.MarketingEmailTemplateCreateResponse](../../sdk/models/operations/marketingemailtemplatecreateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## createOmnichannel
 
@@ -144,7 +147,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createOmnichannel(marketingCreateTemplateRequestDto, xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -153,18 +155,22 @@ const xAccountId: string = "string";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
-| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
-| `retries`                                                                                            | [utils.RetryConfig](../../models/utils/retryconfig.md)                                               | :heavy_minus_sign:                                                                                   | Configuration to override the default retry behavior of the client.                                  |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                         | [shared.MarketingCreateTemplateRequestDto](../../../sdk/models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `xAccountId`                                                                                                | *string*                                                                                                    | :heavy_check_mark:                                                                                          | The account identifier                                                                                      |
+| `retries`                                                                                                   | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                    | :heavy_minus_sign:                                                                                          | Configuration to override the default retry behavior of the client.                                         |
+| `config`                                                                                                    | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                | :heavy_minus_sign:                                                                                          | Available config options for making requests.                                                               |
 
 
 ### Response
 
-**Promise<[operations.MarketingOmniChannelTemplateCreateResponse](../../models/operations/marketingomnichanneltemplatecreateresponse.md)>**
+**Promise<[operations.MarketingOmniChannelTemplateCreateResponse](../../sdk/models/operations/marketingomnichanneltemplatecreateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## createPush
 
@@ -220,7 +226,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.createPush(marketingCreateTemplateRequestDto, xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -229,18 +234,22 @@ const xAccountId: string = "string";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `marketingCreateTemplateRequestDto`                                                                  | [shared.MarketingCreateTemplateRequestDto](../../models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                   | N/A                                                                                                  |
-| `xAccountId`                                                                                         | *string*                                                                                             | :heavy_check_mark:                                                                                   | The account identifier                                                                               |
-| `retries`                                                                                            | [utils.RetryConfig](../../models/utils/retryconfig.md)                                               | :heavy_minus_sign:                                                                                   | Configuration to override the default retry behavior of the client.                                  |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                   | Type                                                                                                        | Required                                                                                                    | Description                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `marketingCreateTemplateRequestDto`                                                                         | [shared.MarketingCreateTemplateRequestDto](../../../sdk/models/shared/marketingcreatetemplaterequestdto.md) | :heavy_check_mark:                                                                                          | N/A                                                                                                         |
+| `xAccountId`                                                                                                | *string*                                                                                                    | :heavy_check_mark:                                                                                          | The account identifier                                                                                      |
+| `retries`                                                                                                   | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                    | :heavy_minus_sign:                                                                                          | Configuration to override the default retry behavior of the client.                                         |
+| `config`                                                                                                    | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                | :heavy_minus_sign:                                                                                          | Available config options for making requests.                                                               |
 
 
 ### Response
 
-**Promise<[operations.MarketingPushTemplateCreateResponse](../../models/operations/marketingpushtemplatecreateresponse.md)>**
+**Promise<[operations.MarketingPushTemplateCreateResponse](../../sdk/models/operations/marketingpushtemplatecreateresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getEmail
 
@@ -264,7 +273,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -273,17 +281,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                    | Type                                                                                                         | Required                                                                                                     | Description                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                    | [operations.MarketingEmailTemplatesGetRequest](../../models/operations/marketingemailtemplatesgetrequest.md) | :heavy_check_mark:                                                                                           | The request object to use for the request.                                                                   |
-| `retries`                                                                                                    | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                       | :heavy_minus_sign:                                                                                           | Configuration to override the default retry behavior of the client.                                          |
-| `config`                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                 | :heavy_minus_sign:                                                                                           | Available config options for making requests.                                                                |
+| Parameter                                                                                                        | Type                                                                                                             | Required                                                                                                         | Description                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                        | [operations.MarketingEmailTemplatesGetRequest](../../sdk/models/operations/marketingemailtemplatesgetrequest.md) | :heavy_check_mark:                                                                                               | The request object to use for the request.                                                                       |
+| `retries`                                                                                                        | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                         | :heavy_minus_sign:                                                                                               | Configuration to override the default retry behavior of the client.                                              |
+| `config`                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                     | :heavy_minus_sign:                                                                                               | Available config options for making requests.                                                                    |
 
 
 ### Response
 
-**Promise<[operations.MarketingEmailTemplatesGetResponse](../../models/operations/marketingemailtemplatesgetresponse.md)>**
+**Promise<[operations.MarketingEmailTemplatesGetResponse](../../sdk/models/operations/marketingemailtemplatesgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getOmnichannel
 
@@ -307,7 +319,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -316,17 +327,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                                | Type                                                                                                                     | Required                                                                                                                 | Description                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                                | [operations.MarketingOmniChannelTemplatesGetRequest](../../models/operations/marketingomnichanneltemplatesgetrequest.md) | :heavy_check_mark:                                                                                                       | The request object to use for the request.                                                                               |
-| `retries`                                                                                                                | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                                   | :heavy_minus_sign:                                                                                                       | Configuration to override the default retry behavior of the client.                                                      |
-| `config`                                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                             | :heavy_minus_sign:                                                                                                       | Available config options for making requests.                                                                            |
+| Parameter                                                                                                                    | Type                                                                                                                         | Required                                                                                                                     | Description                                                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                    | [operations.MarketingOmniChannelTemplatesGetRequest](../../sdk/models/operations/marketingomnichanneltemplatesgetrequest.md) | :heavy_check_mark:                                                                                                           | The request object to use for the request.                                                                                   |
+| `retries`                                                                                                                    | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                                     | :heavy_minus_sign:                                                                                                           | Configuration to override the default retry behavior of the client.                                                          |
+| `config`                                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                 | :heavy_minus_sign:                                                                                                           | Available config options for making requests.                                                                                |
 
 
 ### Response
 
-**Promise<[operations.MarketingOmniChannelTemplatesGetResponse](../../models/operations/marketingomnichanneltemplatesgetresponse.md)>**
+**Promise<[operations.MarketingOmniChannelTemplatesGetResponse](../../sdk/models/operations/marketingomnichanneltemplatesgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getPush
 
@@ -350,7 +365,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -359,17 +373,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                  | Type                                                                                                       | Required                                                                                                   | Description                                                                                                |
-| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                  | [operations.MarketingPushTemplatesGetRequest](../../models/operations/marketingpushtemplatesgetrequest.md) | :heavy_check_mark:                                                                                         | The request object to use for the request.                                                                 |
-| `retries`                                                                                                  | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                     | :heavy_minus_sign:                                                                                         | Configuration to override the default retry behavior of the client.                                        |
-| `config`                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                               | :heavy_minus_sign:                                                                                         | Available config options for making requests.                                                              |
+| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                      | [operations.MarketingPushTemplatesGetRequest](../../sdk/models/operations/marketingpushtemplatesgetrequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
+| `retries`                                                                                                      | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                       | :heavy_minus_sign:                                                                                             | Configuration to override the default retry behavior of the client.                                            |
+| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
 
 
 ### Response
 
-**Promise<[operations.MarketingPushTemplatesGetResponse](../../models/operations/marketingpushtemplatesgetresponse.md)>**
+**Promise<[operations.MarketingPushTemplatesGetResponse](../../sdk/models/operations/marketingpushtemplatesgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## list
 
@@ -392,7 +410,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.marketingTemplates.list(xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -404,14 +421,18 @@ const xAccountId: string = "string";
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `xAccountId`                                                        | *string*                                                            | :heavy_check_mark:                                                  | The account identifier                                              |
-| `retries`                                                           | [utils.RetryConfig](../../models/utils/retryconfig.md)              | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| `retries`                                                           | [utils.RetryConfig](../../internal/utils/retryconfig.md)            | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 | `config`                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)        | :heavy_minus_sign:                                                  | Available config options for making requests.                       |
 
 
 ### Response
 
-**Promise<[operations.MarketingTemplatesListResponse](../../models/operations/marketingtemplateslistresponse.md)>**
+**Promise<[operations.MarketingTemplatesListResponse](../../sdk/models/operations/marketingtemplateslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listEmail
 
@@ -434,7 +455,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -443,17 +463,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                      | [operations.MarketingEmailTemplatesListRequest](../../models/operations/marketingemailtemplateslistrequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
-| `retries`                                                                                                      | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                         | :heavy_minus_sign:                                                                                             | Configuration to override the default retry behavior of the client.                                            |
-| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
+| Parameter                                                                                                          | Type                                                                                                               | Required                                                                                                           | Description                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                          | [operations.MarketingEmailTemplatesListRequest](../../sdk/models/operations/marketingemailtemplateslistrequest.md) | :heavy_check_mark:                                                                                                 | The request object to use for the request.                                                                         |
+| `retries`                                                                                                          | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                           | :heavy_minus_sign:                                                                                                 | Configuration to override the default retry behavior of the client.                                                |
+| `config`                                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                       | :heavy_minus_sign:                                                                                                 | Available config options for making requests.                                                                      |
 
 
 ### Response
 
-**Promise<[operations.MarketingEmailTemplatesListResponse](../../models/operations/marketingemailtemplateslistresponse.md)>**
+**Promise<[operations.MarketingEmailTemplatesListResponse](../../sdk/models/operations/marketingemailtemplateslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listOmnichannel
 
@@ -476,7 +500,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -485,17 +508,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                                  | Type                                                                                                                       | Required                                                                                                                   | Description                                                                                                                |
-| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                                  | [operations.MarketingOmniChannelTemplatesListRequest](../../models/operations/marketingomnichanneltemplateslistrequest.md) | :heavy_check_mark:                                                                                                         | The request object to use for the request.                                                                                 |
-| `retries`                                                                                                                  | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                                     | :heavy_minus_sign:                                                                                                         | Configuration to override the default retry behavior of the client.                                                        |
-| `config`                                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                               | :heavy_minus_sign:                                                                                                         | Available config options for making requests.                                                                              |
+| Parameter                                                                                                                      | Type                                                                                                                           | Required                                                                                                                       | Description                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                                                      | [operations.MarketingOmniChannelTemplatesListRequest](../../sdk/models/operations/marketingomnichanneltemplateslistrequest.md) | :heavy_check_mark:                                                                                                             | The request object to use for the request.                                                                                     |
+| `retries`                                                                                                                      | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                                       | :heavy_minus_sign:                                                                                                             | Configuration to override the default retry behavior of the client.                                                            |
+| `config`                                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                                   | :heavy_minus_sign:                                                                                                             | Available config options for making requests.                                                                                  |
 
 
 ### Response
 
-**Promise<[operations.MarketingOmniChannelTemplatesListResponse](../../models/operations/marketingomnichanneltemplateslistresponse.md)>**
+**Promise<[operations.MarketingOmniChannelTemplatesListResponse](../../sdk/models/operations/marketingomnichanneltemplateslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listPush
 
@@ -518,7 +545,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -527,14 +553,18 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                                    | Type                                                                                                         | Required                                                                                                     | Description                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| `request`                                                                                                    | [operations.MarketingPushTemplatesListRequest](../../models/operations/marketingpushtemplateslistrequest.md) | :heavy_check_mark:                                                                                           | The request object to use for the request.                                                                   |
-| `retries`                                                                                                    | [utils.RetryConfig](../../models/utils/retryconfig.md)                                                       | :heavy_minus_sign:                                                                                           | Configuration to override the default retry behavior of the client.                                          |
-| `config`                                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                 | :heavy_minus_sign:                                                                                           | Available config options for making requests.                                                                |
+| Parameter                                                                                                        | Type                                                                                                             | Required                                                                                                         | Description                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                        | [operations.MarketingPushTemplatesListRequest](../../sdk/models/operations/marketingpushtemplateslistrequest.md) | :heavy_check_mark:                                                                                               | The request object to use for the request.                                                                       |
+| `retries`                                                                                                        | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                                         | :heavy_minus_sign:                                                                                               | Configuration to override the default retry behavior of the client.                                              |
+| `config`                                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                     | :heavy_minus_sign:                                                                                               | Available config options for making requests.                                                                    |
 
 
 ### Response
 
-**Promise<[operations.MarketingPushTemplatesListResponse](../../models/operations/marketingpushtemplateslistresponse.md)>**
+**Promise<[operations.MarketingPushTemplatesListResponse](../../sdk/models/operations/marketingpushtemplateslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

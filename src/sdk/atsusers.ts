@@ -32,7 +32,7 @@ export class ATSUsers {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/unified/ats/users/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/unified/ats/users/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -68,7 +68,7 @@ export class ATSUsers {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -124,7 +124,7 @@ export class ATSUsers {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/ats/users";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/ats/users";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -160,7 +160,7 @@ export class ATSUsers {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",

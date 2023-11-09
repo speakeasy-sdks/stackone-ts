@@ -33,7 +33,7 @@ export class HRISEmployees {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/hris/employees";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/hris/employees";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -84,7 +84,7 @@ export class HRISEmployees {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "post",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -144,7 +144,11 @@ export class HRISEmployees {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/unified/hris/employees/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/unified/hris/employees/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -180,7 +184,7 @@ export class HRISEmployees {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -239,7 +243,7 @@ export class HRISEmployees {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/hris/employees";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/hris/employees";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -275,7 +279,7 @@ export class HRISEmployees {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",

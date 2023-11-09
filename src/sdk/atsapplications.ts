@@ -33,7 +33,7 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/ats/applications";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/ats/applications";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -84,7 +84,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "post",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -144,7 +144,11 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/unified/ats/applications/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/unified/ats/applications/{id}",
+            req
+        );
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -180,7 +184,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -239,7 +243,7 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/unified/ats/applications/{id}/offers/{subResourceId}",
             req
@@ -279,7 +283,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -339,7 +343,7 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/ats/applications";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/ats/applications";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -375,7 +379,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -434,7 +438,7 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/unified/ats/applications/{id}/offers",
             req
@@ -474,7 +478,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -537,7 +541,11 @@ export class ATSApplications {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/unified/ats/applications/{id}", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/unified/ats/applications/{id}",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -588,7 +596,7 @@ export class ATSApplications {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "patch",
                 headers: headers,
                 responseType: "arraybuffer",

@@ -1,5 +1,5 @@
 # HRISLocations
-(*.hrisLocations*)
+(*hrisLocations*)
 
 ### Available Operations
 
@@ -28,7 +28,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -37,17 +36,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.HrisLocationsGetRequest](../../models/operations/hrislocationsgetrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `retries`                                                                                | [utils.RetryConfig](../../models/utils/retryconfig.md)                                   | :heavy_minus_sign:                                                                       | Configuration to override the default retry behavior of the client.                      |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `request`                                                                                    | [operations.HrisLocationsGetRequest](../../sdk/models/operations/hrislocationsgetrequest.md) | :heavy_check_mark:                                                                           | The request object to use for the request.                                                   |
+| `retries`                                                                                    | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                     | :heavy_minus_sign:                                                                           | Configuration to override the default retry behavior of the client.                          |
+| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
 
 
 ### Response
 
-**Promise<[operations.HrisLocationsGetResponse](../../models/operations/hrislocationsgetresponse.md)>**
+**Promise<[operations.HrisLocationsGetResponse](../../sdk/models/operations/hrislocationsgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## list
 
@@ -70,7 +73,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -79,14 +81,18 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.HrisLocationsListRequest](../../models/operations/hrislocationslistrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `retries`                                                                                  | [utils.RetryConfig](../../models/utils/retryconfig.md)                                     | :heavy_minus_sign:                                                                         | Configuration to override the default retry behavior of the client.                        |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.HrisLocationsListRequest](../../sdk/models/operations/hrislocationslistrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `retries`                                                                                      | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                       | :heavy_minus_sign:                                                                             | Configuration to override the default retry behavior of the client.                            |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.HrisLocationsListResponse](../../models/operations/hrislocationslistresponse.md)>**
+**Promise<[operations.HrisLocationsListResponse](../../sdk/models/operations/hrislocationslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

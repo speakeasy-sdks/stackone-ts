@@ -31,7 +31,7 @@ export class Accounts {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/accounts/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/accounts/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -62,7 +62,7 @@ export class Accounts {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "delete",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -117,7 +117,7 @@ export class Accounts {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/accounts/{id}", req);
+        const operationUrl: string = utils.generateURL(baseURL, "/accounts/{id}", req);
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -148,7 +148,7 @@ export class Accounts {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -205,7 +205,7 @@ export class Accounts {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/accounts";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/accounts";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -237,7 +237,7 @@ export class Accounts {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url + queryParams,
+                url: operationUrl + queryParams,
                 method: "get",
                 headers: headers,
                 responseType: "arraybuffer",

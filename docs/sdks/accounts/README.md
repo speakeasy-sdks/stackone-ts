@@ -1,5 +1,5 @@
 # Accounts
-(*.accounts*)
+(*accounts*)
 
 ### Available Operations
 
@@ -28,7 +28,6 @@ const id: string = "string";
 
   const res = await sdk.accounts.delete(id);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -40,14 +39,18 @@ const id: string = "string";
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `id`                                                                | *string*                                                            | :heavy_check_mark:                                                  | N/A                                                                 |
-| `retries`                                                           | [utils.RetryConfig](../../models/utils/retryconfig.md)              | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| `retries`                                                           | [utils.RetryConfig](../../internal/utils/retryconfig.md)            | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 | `config`                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)        | :heavy_minus_sign:                                                  | Available config options for making requests.                       |
 
 
 ### Response
 
-**Promise<[operations.AccountsDeleteResponse](../../models/operations/accountsdeleteresponse.md)>**
+**Promise<[operations.AccountsDeleteResponse](../../sdk/models/operations/accountsdeleteresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get
 
@@ -70,7 +73,6 @@ const id: string = "string";
 
   const res = await sdk.accounts.get(id);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -82,14 +84,18 @@ const id: string = "string";
 | Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `id`                                                                | *string*                                                            | :heavy_check_mark:                                                  | N/A                                                                 |
-| `retries`                                                           | [utils.RetryConfig](../../models/utils/retryconfig.md)              | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| `retries`                                                           | [utils.RetryConfig](../../internal/utils/retryconfig.md)            | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 | `config`                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)        | :heavy_minus_sign:                                                  | Available config options for making requests.                       |
 
 
 ### Response
 
-**Promise<[operations.AccountsGetResponse](../../models/operations/accountsgetresponse.md)>**
+**Promise<[operations.AccountsGetResponse](../../sdk/models/operations/accountsgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## list
 
@@ -113,7 +119,6 @@ const provider: string = "string";
 
   const res = await sdk.accounts.list(originOwnerId, provider);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -126,11 +131,15 @@ const provider: string = "string";
 | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `originOwnerId`                                                     | *string*                                                            | :heavy_minus_sign:                                                  | The origin owner identifier of the results to fetch                 |
 | `provider`                                                          | *string*                                                            | :heavy_minus_sign:                                                  | The provider of the results to fetch                                |
-| `retries`                                                           | [utils.RetryConfig](../../models/utils/retryconfig.md)              | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| `retries`                                                           | [utils.RetryConfig](../../internal/utils/retryconfig.md)            | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
 | `config`                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)        | :heavy_minus_sign:                                                  | Available config options for making requests.                       |
 
 
 ### Response
 
-**Promise<[operations.AccountsListResponse](../../models/operations/accountslistresponse.md)>**
+**Promise<[operations.AccountsListResponse](../../sdk/models/operations/accountslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

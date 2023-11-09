@@ -32,7 +32,7 @@ export class Proxy {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/unified/proxy";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/unified/proxy";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -79,7 +79,7 @@ export class Proxy {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "post",
                 headers: headers,
                 responseType: "arraybuffer",

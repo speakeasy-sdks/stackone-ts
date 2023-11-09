@@ -1,5 +1,5 @@
 # Candidates
-(*.ats.candidates*)
+(*ats.candidates*)
 
 ### Available Operations
 
@@ -45,7 +45,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.create(atsCreateCandidateRequestDto, xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -54,18 +53,22 @@ const xAccountId: string = "string";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `atsCreateCandidateRequestDto`                                                             | [shared.AtsCreateCandidateRequestDto](../../models/shared/atscreatecandidaterequestdto.md) | :heavy_check_mark:                                                                         | N/A                                                                                        |
-| `xAccountId`                                                                               | *string*                                                                                   | :heavy_check_mark:                                                                         | The account identifier                                                                     |
-| `retries`                                                                                  | [utils.RetryConfig](../../models/utils/retryconfig.md)                                     | :heavy_minus_sign:                                                                         | Configuration to override the default retry behavior of the client.                        |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                         | Type                                                                                              | Required                                                                                          | Description                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `atsCreateCandidateRequestDto`                                                                    | [shared.AtsCreateCandidateRequestDto](../../../sdk/models/shared/atscreatecandidaterequestdto.md) | :heavy_check_mark:                                                                                | N/A                                                                                               |
+| `xAccountId`                                                                                      | *string*                                                                                          | :heavy_check_mark:                                                                                | The account identifier                                                                            |
+| `retries`                                                                                         | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                          | :heavy_minus_sign:                                                                                | Configuration to override the default retry behavior of the client.                               |
+| `config`                                                                                          | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                      | :heavy_minus_sign:                                                                                | Available config options for making requests.                                                     |
 
 
 ### Response
 
-**Promise<[operations.AtsCandidatePostResponse](../../models/operations/atscandidatepostresponse.md)>**
+**Promise<[operations.AtsCandidatePostResponse](../../sdk/models/operations/atscandidatepostresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get
 
@@ -89,7 +92,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -98,17 +100,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
-| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| `request`                                                                                | [operations.AtsCandidatesGetRequest](../../models/operations/atscandidatesgetrequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
-| `retries`                                                                                | [utils.RetryConfig](../../models/utils/retryconfig.md)                                   | :heavy_minus_sign:                                                                       | Configuration to override the default retry behavior of the client.                      |
-| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
+| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `request`                                                                                    | [operations.AtsCandidatesGetRequest](../../sdk/models/operations/atscandidatesgetrequest.md) | :heavy_check_mark:                                                                           | The request object to use for the request.                                                   |
+| `retries`                                                                                    | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                     | :heavy_minus_sign:                                                                           | Configuration to override the default retry behavior of the client.                          |
+| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
 
 
 ### Response
 
-**Promise<[operations.AtsCandidatesGetResponse](../../models/operations/atscandidatesgetresponse.md)>**
+**Promise<[operations.AtsCandidatesGetResponse](../../sdk/models/operations/atscandidatesgetresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## list
 
@@ -131,7 +137,6 @@ import { StackOne } from "StackOne";
     xAccountId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -140,17 +145,21 @@ import { StackOne } from "StackOne";
 
 ### Parameters
 
-| Parameter                                                                                  | Type                                                                                       | Required                                                                                   | Description                                                                                |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| `request`                                                                                  | [operations.AtsCandidatesListRequest](../../models/operations/atscandidateslistrequest.md) | :heavy_check_mark:                                                                         | The request object to use for the request.                                                 |
-| `retries`                                                                                  | [utils.RetryConfig](../../models/utils/retryconfig.md)                                     | :heavy_minus_sign:                                                                         | Configuration to override the default retry behavior of the client.                        |
-| `config`                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                               | :heavy_minus_sign:                                                                         | Available config options for making requests.                                              |
+| Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `request`                                                                                      | [operations.AtsCandidatesListRequest](../../sdk/models/operations/atscandidateslistrequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `retries`                                                                                      | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                       | :heavy_minus_sign:                                                                             | Configuration to override the default retry behavior of the client.                            |
+| `config`                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                   | :heavy_minus_sign:                                                                             | Available config options for making requests.                                                  |
 
 
 ### Response
 
-**Promise<[operations.AtsCandidatesListResponse](../../models/operations/atscandidateslistresponse.md)>**
+**Promise<[operations.AtsCandidatesListResponse](../../sdk/models/operations/atscandidateslistresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## update
 
@@ -186,7 +195,6 @@ const xAccountId: string = "string";
 
   const res = await sdk.ats.candidates.update(atsUpdateCandidatesRequestDto, id, xAccountId);
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -195,16 +203,20 @@ const xAccountId: string = "string";
 
 ### Parameters
 
-| Parameter                                                                                    | Type                                                                                         | Required                                                                                     | Description                                                                                  |
-| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| `atsUpdateCandidatesRequestDto`                                                              | [shared.AtsUpdateCandidatesRequestDto](../../models/shared/atsupdatecandidatesrequestdto.md) | :heavy_check_mark:                                                                           | N/A                                                                                          |
-| `id`                                                                                         | *string*                                                                                     | :heavy_check_mark:                                                                           | N/A                                                                                          |
-| `xAccountId`                                                                                 | *string*                                                                                     | :heavy_check_mark:                                                                           | The account identifier                                                                       |
-| `retries`                                                                                    | [utils.RetryConfig](../../models/utils/retryconfig.md)                                       | :heavy_minus_sign:                                                                           | Configuration to override the default retry behavior of the client.                          |
-| `config`                                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                 | :heavy_minus_sign:                                                                           | Available config options for making requests.                                                |
+| Parameter                                                                                           | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `atsUpdateCandidatesRequestDto`                                                                     | [shared.AtsUpdateCandidatesRequestDto](../../../sdk/models/shared/atsupdatecandidatesrequestdto.md) | :heavy_check_mark:                                                                                  | N/A                                                                                                 |
+| `id`                                                                                                | *string*                                                                                            | :heavy_check_mark:                                                                                  | N/A                                                                                                 |
+| `xAccountId`                                                                                        | *string*                                                                                            | :heavy_check_mark:                                                                                  | The account identifier                                                                              |
+| `retries`                                                                                           | [utils.RetryConfig](../../internal/utils/retryconfig.md)                                            | :heavy_minus_sign:                                                                                  | Configuration to override the default retry behavior of the client.                                 |
+| `config`                                                                                            | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                        | :heavy_minus_sign:                                                                                  | Available config options for making requests.                                                       |
 
 
 ### Response
 
-**Promise<[operations.AtsCandidatePatchResponse](../../models/operations/atscandidatepatchresponse.md)>**
+**Promise<[operations.AtsCandidatePatchResponse](../../sdk/models/operations/atscandidatepatchresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

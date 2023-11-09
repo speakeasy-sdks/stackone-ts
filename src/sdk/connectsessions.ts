@@ -32,7 +32,7 @@ export class ConnectSessions {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/connect_sessions/authenticate";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/connect_sessions/authenticate";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -78,7 +78,7 @@ export class ConnectSessions {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "post",
                 headers: headers,
                 responseType: "arraybuffer",
@@ -139,7 +139,7 @@ export class ConnectSessions {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/connect_sessions";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/connect_sessions";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -185,7 +185,7 @@ export class ConnectSessions {
         const httpRes: AxiosResponse = await utils.Retry(() => {
             return client.request({
                 validateStatus: () => true,
-                url: url,
+                url: operationUrl,
                 method: "post",
                 headers: headers,
                 responseType: "arraybuffer",
