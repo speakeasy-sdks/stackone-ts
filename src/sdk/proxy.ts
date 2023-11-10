@@ -88,7 +88,7 @@ export class Proxy {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -96,7 +96,7 @@ export class Proxy {
 
         const res: operations.ProxyRequestPostResponse = new operations.ProxyRequestPostResponse({
             statusCode: httpRes.status,
-            contentType: contentType,
+            contentType: responseContentType,
             rawResponse: httpRes,
         });
         switch (true) {

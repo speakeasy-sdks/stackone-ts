@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { StackOne } from "StackOne";
 import { AtsCandidatePostRequest } from "StackOne/dist/sdk/models/operations";

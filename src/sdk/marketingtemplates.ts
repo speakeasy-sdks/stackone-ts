@@ -94,7 +94,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -103,20 +103,20 @@ export class MarketingTemplates {
         const res: operations.MarketingEmailTemplateCreateResponse =
             new operations.MarketingEmailTemplateCreateResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 201:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.createTemplateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.CreateTemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -208,7 +208,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -217,20 +217,20 @@ export class MarketingTemplates {
         const res: operations.MarketingOmniChannelTemplateCreateResponse =
             new operations.MarketingOmniChannelTemplateCreateResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 201:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.createTemplateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.CreateTemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -322,7 +322,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -331,20 +331,20 @@ export class MarketingTemplates {
         const res: operations.MarketingPushTemplateCreateResponse =
             new operations.MarketingPushTemplateCreateResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 201:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.createTemplateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.CreateTemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -422,7 +422,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -431,20 +431,20 @@ export class MarketingTemplates {
         const res: operations.MarketingEmailTemplatesGetResponse =
             new operations.MarketingEmailTemplatesGetResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -522,7 +522,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -531,20 +531,20 @@ export class MarketingTemplates {
         const res: operations.MarketingOmniChannelTemplatesGetResponse =
             new operations.MarketingOmniChannelTemplatesGetResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -622,7 +622,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -631,20 +631,20 @@ export class MarketingTemplates {
         const res: operations.MarketingPushTemplatesGetResponse =
             new operations.MarketingPushTemplatesGetResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templateResult = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplateResult
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -716,7 +716,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -725,7 +725,7 @@ export class MarketingTemplates {
         const res: operations.MarketingTemplatesListResponse =
             new operations.MarketingTemplatesListResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         switch (true) {
@@ -797,7 +797,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -806,20 +806,20 @@ export class MarketingTemplates {
         const res: operations.MarketingEmailTemplatesListResponse =
             new operations.MarketingEmailTemplatesListResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templatesPaginated = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplatesPaginated
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -894,7 +894,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -903,20 +903,20 @@ export class MarketingTemplates {
         const res: operations.MarketingOmniChannelTemplatesListResponse =
             new operations.MarketingOmniChannelTemplatesListResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templatesPaginated = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplatesPaginated
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
@@ -991,7 +991,7 @@ export class MarketingTemplates {
             });
         }, new utils.Retries(retryConfig, ["5XX", "4XX"]));
 
-        const contentType: string = httpRes?.headers?.["content-type"] ?? "";
+        const responseContentType: string = httpRes?.headers?.["content-type"] ?? "";
 
         if (httpRes?.status == null) {
             throw new Error(`status code not found in response: ${httpRes}`);
@@ -1000,20 +1000,20 @@ export class MarketingTemplates {
         const res: operations.MarketingPushTemplatesListResponse =
             new operations.MarketingPushTemplatesListResponse({
                 statusCode: httpRes.status,
-                contentType: contentType,
+                contentType: responseContentType,
                 rawResponse: httpRes,
             });
         const decodedRes = new TextDecoder().decode(httpRes?.data);
         switch (true) {
             case httpRes?.status == 200:
-                if (utils.matchContentType(contentType, `application/json`)) {
+                if (utils.matchContentType(responseContentType, `application/json`)) {
                     res.templatesPaginated = utils.objectToClass(
                         JSON.parse(decodedRes),
                         shared.TemplatesPaginated
                     );
                 } else {
                     throw new errors.SDKError(
-                        "unknown content-type received: " + contentType,
+                        "unknown content-type received: " + responseContentType,
                         httpRes.status,
                         decodedRes,
                         httpRes
