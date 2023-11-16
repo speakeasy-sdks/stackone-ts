@@ -70,7 +70,7 @@ export class AtsUsersGetResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 
     /**
      * The user with the given identifier was retrieved.

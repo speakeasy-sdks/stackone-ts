@@ -70,7 +70,7 @@ export class MarketingOmniChannelTemplatesGetResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 
     /**
      * The omni-channel template with the given identifier was retrieved.

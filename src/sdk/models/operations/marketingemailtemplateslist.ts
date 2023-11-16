@@ -67,7 +67,7 @@ export class MarketingEmailTemplatesListResponse extends SpeakeasyBase {
      * Raw HTTP response; suitable for custom response parsing
      */
     @SpeakeasyMetadata()
-    rawResponse?: AxiosResponse;
+    rawResponse: AxiosResponse;
 
     /**
      * The list of email templates was retrieved.
